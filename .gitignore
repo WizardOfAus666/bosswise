@@ -1,0 +1,16 @@
+.gradle/
+build/
+target/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+out/
+bin/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.zip

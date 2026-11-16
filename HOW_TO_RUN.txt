@@ -1,0 +1,97 @@
+================================================================================
+  BOSSWISE - Universal OSRS Monster Combat Intelligence & Strategy Engine
+================================================================================
+
+HOW TO RUN (READY-TO-RUN LAUNCHERS):
+------------------------------------
+1. Extract this entire zip folder anywhere on your PC (e.g. Desktop).
+2. Choose ANY of the easy launcher scripts:
+   - Double-click "run-plugin.bat" or "START_BOSSWISE.bat"
+   - Or in PowerShell run: .\run-plugin.ps1  (or .\run-bosswise.ps1)
+3. RuneLite will launch with BossWise pre-installed on the right sidebar!
+4. Click the golden scale with skull icon on the RuneLite sidebar.
+5. Log into Old School RuneScape: your character's skills, combat level,
+   bank gear, and completed quests automatically sync in real time!
+
+NEW FEATURE – UNIVERSAL OSRS MONSTER STRATEGY ENGINE:
+------------------------------------------------------
+1. 100% Monster Strategy Coverage:
+   - Covers ALL 75+ supported monsters: Bosses (Vorkath, Zulrah, KBD, Mole, GWD,
+     DT2 Bosses, Muspah, CG, Corp, Nex, Jad, Raids), Slayer creatures (Abyssal
+     demons, Gargoyles, Wyverns, Hydras, Nechryaels, Bloodvelds, Superiors),
+     Wilderness encounters, and regular training monsters.
+   - Researched directly from official OSRS Wiki mechanics with source links.
+
+2. Strategy Finder & Filter:
+   - Real-time search bar filtering monsters by name or specific weaknesses.
+   - Category filtering: Bosses, Slayer, Wilderness, Raids, Regular monsters.
+
+3. Dynamic Account Personalization:
+   - Scans player skills, completed quests, and available budget.
+   - Recommends: BEST OVERALL, BEST BUDGET, BEST DPS, BEST SURVIVAL, BEST VALUE.
+   - Flags missing skill/quest requirements with warning badges.
+
+4. Multi-Tier Combat Methods:
+   - Tiered strategy cards: Budget, Beginner, Mid-Game, High-Level, Endgame BiS, Specialised.
+   - Step-by-step fight instructions, prayer & potion setups, why each method works.
+   - One-click buttons: "⚡ Load in Gear Optimizer" and "🎒 View Supplies".
+
+5. Deep Combat Mechanics, Phases & Avoidance Tips:
+   - Explains dangerous specials (Woox walk, Acid pools, One-shot fireballs, Soul shield,
+     YARRRR prayer smashes, Strangle gazes, Healing orbs, Jad prayer animations).
+   - Details protection requirements (Dragonfire, Wyvern breath, Rock hammers, Boots of stone).
+   - Common mistakes card warning players of wipe conditions.
+
+6. Expanded Wide Sidebar & Authentic Light Brown Theme:
+   - Plugin width expanded to 280px (usable 256px) for spacious, effortless reading.
+   - Warm OSRS parchment & tan leather light brown theme with high-contrast espresso typography.
+   - Strictly calibrated with WrapText: zero overflow at 225px, 242px, and 280px.
+
+MASSIVE GEAR DATABASE & COMBAT INTELLIGENCE EXPANSION:
+------------------------------------------------------
+1. 242+ Verified OSRS Equipment Items:
+   - Structured JSON database (`equipment.json`) with attack/defence stats,
+     melee strength, ranged strength, magic damage %, prayer bonuses,
+     attack speeds, requirements, tradeability, and special attacks.
+
+2. OSRS Wiki MediaWiki Integration & Caching:
+   - Asynchronous, rate-limited MediaWiki querying with polite user-agent.
+   - Offline fallback to bundled verified baselines (`monsters.json` & `equipment.json`).
+   - Disk and memory caching with TTL and data confidence tracking.
+
+3. Special Equipment Effects & Stacking Catalog:
+   - Dragonbane: Dragon hunter lance (+20% acc/dmg), Dragon hunter crossbow (+30% acc/dmg).
+   - Demonbane: Arclight (+70% acc, +30% dmg), Emberlight (+70% acc, +36% dmg), Scorching bow.
+   - Undead: Salve amulet (+15%), Salve (e)/(ei) (+20%).
+   - Stacking Rules: Salve takes priority over Slayer helm (no double stack). Void stacks with Salve!
+   - Kalphitebane: Keris Partisan piercing and 3x special proc (+37.2% expected damage).
+   - Ratbane: Bone mace / shortbow / staff (+10 flat max hit).
+   - Wilderness Weapons: +50% accuracy and +50% damage in Wilderness.
+   - Tumeken's Shadow: 3x magic attack and magic damage multiplier.
+
+4. Multi-Setup Generation Engine:
+   - Generates ALL viable setups across styles (Melee, Ranged, Magic, Specialised)
+     and tiers (Budget, Best Value, High Tier, Max BiS, Specialised).
+   - Filters out non-viable styles (e.g. Melee against Kree'arra, non-spear against Corp,
+     Melee/Ranged against Kraken).
+
+5. Side-by-Side 5-Setup Comparison:
+   - Click "[Compare Setups (5)]" to inspect up to 5 complete setups side-by-side.
+   - Compares DPS, Hit Chance %, Max Hit, Total Loadout Cost, Prayer Bonus,
+     Average Defence, and DPS Efficiency (DPS per Million GP).
+   - Slot Matrix displaying side-by-side gear choices across all 11 slots.
+   - Matched 28-slot inventory setups for each tier.
+
+6. Account Requirement Validation:
+   - Validates character Attack, Strength, Defence, Ranged, Magic, Prayer, Slayer,
+     and quest completions.
+   - Highlights missing requirements clearly on equipped items with warning alerts.
+
+7. Zero Text Clipping Guaranteed:
+   - Calibrated for standard 225px and 242px RuneLite sidebar widths using `WrapText`.
+
+REQUIREMENTS:
+-------------
+- Windows 10 / 11
+- Java 11, 17, or 21 installed.
+  (If you don't have Java, get it free here: https://adoptium.net/temurin/releases/?version=17)
