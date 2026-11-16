@@ -144,3 +144,168 @@ BossWise is built for the official **RuneLite Plugin Hub**. All contributions mu
 - **No automation**: Never click, switch prayers, or automate gameplay.
 - **Purely informational**: Present combat calculations, strategy guides, and advice clearly to the user.
 - **No private server or deobfuscated client APIs**: Rely only on public `net.runelite.api` and `net.runelite.client` interfaces.
+
+---
+
+## 8. Developer Recipes: Adding & Removing Content
+
+BossWise is designed with a data-driven architecture. Almost all content (monsters, items, gear sets, strategies) can be modified directly in clean JSON resource files without touching complex Java engine code.
+
+### 📝 Recipe 1: Add a New Monster or Boss
+1. Open `src/main/resources/data/monsters.json`.
+2. Append a new monster JSON object:
+   ```json
+   {
+     "id": "amoxliatl",
+     "name": "Amoxliatl",
+     "category": "BOSS",
+     "primaryStyle": "MAGIC",
+     "combatLevel": 384,
+     "hitpoints": 500,
+     "defenceLevel": 160,
+     "magicDef": 120,
+     "rangedDef": 250,
+     "stabDef": 100,
+     "slashDef": 100,
+     "crushDef": 80,
+     "elementalWeakness": "FIRE",
+     "weaknessPercent": 50,
+     "attributes": [],
+     "suggestedBudget": 20000000,
+     "variants": [
+       { "npcId": 13686, "variantName": "Standard", "combatLevel": 384, "hitpoints": 500 }
+     ]
+   }
+   ```
+3. To add strategy and gear setups for it, see **Recipe 4**.
+4. Test that it loads: `./gradlew test`
+
+### 🗑️ Recipe 2: Remove a Monster or Boss
+1. In `src/main/resources/data/monsters.json`, delete the object matching that monster's `"id"`.
+2. In `src/main/resources/data/strategies.json`, delete the strategy entry matching the same `"monsterId"`.
+3. If it was also listed in `bosses.json`, remove it from there as well.
+
+### ⚔️ Recipe 3: Add a New Weapon or Armor Item
+1. Open `src/main/resources/data/equipment.json`.
+2. Add the item object under the JSON array (use the item's official RuneLite/OSRS item ID):
+   ```json
+   {
+     "itemId": 28682,
+     "name": "Noxious halberd",
+     "slot": "WEAPON",
+     "stabBonus": 92,
+     "slashBonus": 118,
+     "crushBonus": 20,
+     "magicBonus": -4,
+     "rangedBonus": 0,
+     "meleeStrength": 105,
+     "rangedStrength": 0,
+     "magicDamage": 0.0,
+     "prayerBonus": 0,
+     "attackSpeed": 5,
+     "twoHanded": true,
+     "attackType": "SLASH",
+     "cost": 45000000,
+     "attackRequirement": 82
+   }
+   ```
+3. The item will now automatically be available for gear calculations, DPS simulation, and strategy loadouts!
+
+### 🎯 Recipe 4: Add or Modify Gear Loadouts & Strategies
+1. Open `src/main/resources/data/strategies.json`.
+2. Locate the monster or add a new entry. Setups use the item names matching `equipment.json`:
+   ```json
+   {
+     "monsterId": "amoxliatl",
+     "monsterName": "Amoxliatl",
+     "category": "BOSS",
+     "primaryStyle": "MELEE",
+     "combatLevel": 384,
+     "protectionPrayer": "Protect from Magic",
+     "offensivePrayer": "Piety",
+     "attackStyleNotes": "Use crush weapons. Step back when frost breath charges.",
+     "wikiStrategyUrl": "https://oldschool.runescape.wiki/w/Amoxliatl/Strategies",
+     "recommendedGear": {
+       "bestInSlot": {
+         "weapon": "Inquisitor's mace",
+         "shield": "Avernic defender",
+         "head": "Torva full helm",
+         "body": "Torva platebody",
+         "legs": "Torva platelegs",
+         "boots": "Primordial boots",
+         "gloves": "Ferocious gloves",
+         "cape": "Infernal cape",
+         "amulet": "Amulet of torture",
+         "ring": "Ultor ring",
+         "ammo": "Radas blessing 4"
+       },
+       "budgetTier": {
+         "weapon": "Abyssal bludgeon",
+         "shield": null,
+         "head": "Helm of neitiznot",
+         "body": "Fighter torso",
+         "legs": "Obsidian platelegs",
+         "boots": "Dragon boots",
+         "gloves": "Barrows gloves",
+         "cape": "Fire cape",
+         "amulet": "Amulet of fury",
+         "ring": "Berserker ring (i)",
+         "ammo": "Radas blessing 2"
+       }
+     },
+     "recommendedInventory": [
+       "Super combat potion(4)",
+       "Prayer potion(4)",
+       "Shark",
+       "Teleport to house"
+     ]
+   }
+   ```
+
+### 🖥️ Recipe 5: Add or Remove a UI Tab / View
+Tabs are controlled in `src/main/java/com/bosswise/ui/BossWisePluginPanel.java`:
+- **To Remove an Unwanted Tab**:
+  1. Find the navigation row in `BossWisePluginPanel.java` (lines 184–208).
+  2. Comment out or delete the `addNavTab(navRowX, "Title", "TAB_ID");` line.
+  3. Comment out `contentCards.add(yourPanel, "TAB_ID");`.
+- **To Add a New Tab**:
+  1. Create your custom panel class (e.g. `MyCustomPanel.java` extending `JPanel`).
+  2. Instantiate it in `BossWisePluginPanel.java`.
+  3. Add it to `contentCards`: `contentCards.add(myCustomPanel, "MY_CUSTOM_TAB");`
+  4. Add a button in one of the navigation rows:
+     ```java
+     addNavTab(navRow3, "My Tab", "MY_CUSTOM_TAB");
+     ```
+
+### ⚙️ Recipe 6: Add or Remove User Settings
+Settings are declared in `src/main/java/com/bosswise/config/BossWiseConfig.java`:
+- Add a new config item:
+  ```java
+  @ConfigItem(
+      keyName = "showDpsOverlay",
+      name = "Show DPS Overlay",
+      description = "Displays live DPS calculation overlay on screen",
+      position = 10
+  )
+  default boolean showDpsOverlay() {
+      return true;
+  }
+  ```
+- To read this setting anywhere in the code:
+  ```java
+  if (config.showDpsOverlay()) {
+      // Do something
+  }
+  ```
+
+### ⚡ Recipe 7: Listen to In-Game RuneLite Events
+To respond to game events (hitsplat, NPC spawn, player death, chat message):
+1. In `src/main/java/com/bosswise/BossWisePlugin.java`, add an event subscriber method:
+   ```java
+   @Subscribe
+   public void onNpcSpawned(NpcSpawned event) {
+       NPC npc = event.getNpc();
+       // Your custom logic here
+   }
+   ```
+2. Any standard RuneLite event can be subscribed to with `@Subscribe`.
