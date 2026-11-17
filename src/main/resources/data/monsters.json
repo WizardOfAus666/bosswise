@@ -38,13 +38,17 @@
         "rangedDefence": -42,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Stab"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "0",
+        "attributes": [],
+        "wikiName": "Chicken (Normal)"
       }
-    ]
+    ],
+    "maxHitSummary": "0"
   },
   {
     "id": "cow",
@@ -85,13 +89,17 @@
         "rangedDefence": -21,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "1",
+        "attributes": [],
+        "wikiName": "Cow (1)"
       }
-    ]
+    ],
+    "maxHitSummary": "1"
   },
   {
     "id": "goblin",
@@ -115,30 +123,35 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 3029,
+        "npcId": 3045,
         "variantName": "Lumbridge Goblin",
         "location": "Lumbridge / Goblin Village",
         "combatLevel": 5,
-        "hitpoints": 5,
-        "attackLevel": 4,
-        "strengthLevel": 4,
+        "hitpoints": 12,
+        "attackLevel": 3,
+        "strengthLevel": 1,
         "defenceLevel": 4,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": -15,
-        "slashDefence": -15,
-        "crushDefence": -15,
-        "magicDefence": -15,
-        "rangedDefence": -15,
-        "attackSpeed": 4,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": 0,
+        "rangedDefence": 0,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Melee"
+          "Stab"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "legacyNpcId": 3029,
+        "maxHit": "1",
+        "attributes": [],
+        "wikiName": "Goblin (Level 5)"
       }
-    ]
+    ],
+    "maxHitSummary": "1"
   },
   {
     "id": "guard",
@@ -162,30 +175,35 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 3010,
+        "npcId": 11911,
         "variantName": "Varrock Guard",
         "location": "Varrock / Falador",
         "combatLevel": 21,
         "hitpoints": 22,
         "attackLevel": 19,
         "strengthLevel": 18,
-        "defenceLevel": 16,
+        "defenceLevel": 14,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 2,
-        "slashDefence": 5,
-        "crushDefence": 2,
-        "magicDefence": -4,
-        "rangedDefence": 2,
+        "stabDefence": 24,
+        "slashDefence": 30,
+        "crushDefence": 25,
+        "magicDefence": -9,
+        "rangedDefence": 25,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "legacyNpcId": 3010,
+        "maxHit": "3",
+        "attributes": [],
+        "wikiName": "Guard (Varrock 1)"
       }
-    ]
+    ],
+    "maxHitSummary": "3"
   },
   {
     "id": "hill_giant",
@@ -195,8 +213,8 @@
     "combatLevel": 28,
     "suggestedBudget": 50000,
     "classification": "GIANT",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 25,
     "weakness": "Slash Melee / Magic",
     "overheadPrayer": "Protect from Melee (optional)",
     "offensivePrayer": "Incredible Reflexes",
@@ -209,7 +227,7 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 2098,
+        "npcId": 7261,
         "variantName": "Edgeville Hill Giant",
         "location": "Edgeville Dungeon",
         "combatLevel": 28,
@@ -222,17 +240,24 @@
         "stabDefence": 0,
         "slashDefence": 0,
         "crushDefence": 0,
-        "magicDefence": -10,
+        "magicDefence": 0,
         "rangedDefence": 0,
-        "attackSpeed": 4,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": true
+        "cannonable": true,
+        "legacyNpcId": 2098,
+        "maxHit": "4",
+        "attributes": [],
+        "wikiName": "Hill Giant",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 25
       }
-    ]
+    ],
+    "maxHitSummary": "4"
   },
   {
     "id": "moss_giant",
@@ -262,24 +287,30 @@
         "combatLevel": 42,
         "hitpoints": 60,
         "attackLevel": 30,
-        "strengthLevel": 38,
+        "strengthLevel": 30,
         "defenceLevel": 30,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 5,
-        "slashDefence": 5,
-        "crushDefence": 5,
-        "magicDefence": -10,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": 0,
         "rangedDefence": 0,
-        "attackSpeed": 4,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "6",
+        "attributes": [],
+        "wikiName": "Moss giant (Level 42)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "maxHitSummary": "6"
   },
   {
     "id": "fire_giant",
@@ -309,48 +340,66 @@
         "combatLevel": 86,
         "hitpoints": 111,
         "attackLevel": 65,
-        "strengthLevel": 70,
+        "strengthLevel": 65,
         "defenceLevel": 65,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
-        "slashDefence": 0,
-        "crushDefence": 0,
-        "magicDefence": -10,
+        "slashDefence": 3,
+        "crushDefence": 2,
+        "magicDefence": 0,
         "rangedDefence": 0,
         "attackSpeed": 5,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "11",
+        "attributes": [
+          "fiery"
+        ],
+        "wikiName": "Fire giant (Level 86)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 100
       },
       {
         "npcId": 7251,
         "variantName": "Catacombs Fire Giant",
         "location": "Catacombs of Kourend",
-        "combatLevel": 104,
-        "hitpoints": 130,
-        "attackLevel": 75,
-        "strengthLevel": 85,
-        "defenceLevel": 75,
+        "combatLevel": 109,
+        "hitpoints": 150,
+        "attackLevel": 90,
+        "strengthLevel": 80,
+        "defenceLevel": 65,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 5,
-        "slashDefence": 5,
-        "crushDefence": 5,
-        "magicDefence": -5,
-        "rangedDefence": 5,
+        "stabDefence": 0,
+        "slashDefence": 3,
+        "crushDefence": 2,
+        "magicDefence": 0,
+        "rangedDefence": 0,
         "attackSpeed": 5,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "13",
+        "attributes": [
+          "fiery"
+        ],
+        "wikiName": "Fire giant (Level 109)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 100
       }
-    ]
+    ],
+    "attributes": [
+      "fiery"
+    ],
+    "maxHitSummary": "11 | 13"
   },
   {
     "id": "lesser_demon",
@@ -360,8 +409,8 @@
     "combatLevel": 82,
     "suggestedBudget": 150000,
     "classification": "DEMON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 40,
     "weakness": "Demonbane (Arclight) / Magic",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety / Incredible Reflexes",
@@ -380,7 +429,7 @@
         "combatLevel": 82,
         "hitpoints": 79,
         "attackLevel": 68,
-        "strengthLevel": 65,
+        "strengthLevel": 70,
         "defenceLevel": 71,
         "magicLevel": 1,
         "rangedLevel": 1,
@@ -391,13 +440,24 @@
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "8",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Lesser demon (Level 82)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "8"
   },
   {
     "id": "greater_demon",
@@ -407,8 +467,8 @@
     "combatLevel": 92,
     "suggestedBudget": 300000,
     "classification": "DEMON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 40,
     "weakness": "Demonbane (Arclight/Emberlight) / Slash",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -428,7 +488,7 @@
         "hitpoints": 87,
         "attackLevel": 76,
         "strengthLevel": 78,
-        "defenceLevel": 73,
+        "defenceLevel": 81,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
@@ -438,45 +498,28 @@
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "9",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Greater demon (Level 92)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       },
       {
-        "npcId": 7247,
+        "npcId": 7245,
         "variantName": "Catacombs Greater Demon",
         "location": "Catacombs of Kourend",
         "combatLevel": 100,
-        "hitpoints": 105,
-        "attackLevel": 85,
-        "strengthLevel": 88,
-        "defenceLevel": 82,
-        "magicLevel": 1,
-        "rangedLevel": 1,
-        "stabDefence": 10,
-        "slashDefence": 10,
-        "crushDefence": 10,
-        "magicDefence": -5,
-        "rangedDefence": 10,
-        "attackSpeed": 4,
-        "attackStyles": [
-          "Melee"
-        ],
-        "wilderness": false,
-        "multiCombat": true,
-        "cannonable": false
-      },
-      {
-        "npcId": 2026,
-        "variantName": "Wilderness Greater Demon",
-        "location": "Wilderness Demonic Ruins",
-        "combatLevel": 92,
-        "hitpoints": 87,
-        "attackLevel": 76,
-        "strengthLevel": 78,
-        "defenceLevel": 73,
+        "hitpoints": 115,
+        "attackLevel": 90,
+        "strengthLevel": 70,
+        "defenceLevel": 80,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
@@ -486,13 +529,57 @@
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
+        ],
+        "wilderness": false,
+        "multiCombat": true,
+        "cannonable": false,
+        "legacyNpcId": 7247,
+        "maxHit": "8",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Greater demon (Level 100)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
+      },
+      {
+        "npcId": 7871,
+        "variantName": "Wilderness Greater Demon",
+        "location": "Wilderness Demonic Ruins",
+        "combatLevel": 104,
+        "hitpoints": 120,
+        "attackLevel": 76,
+        "strengthLevel": 90,
+        "defenceLevel": 81,
+        "magicLevel": 1,
+        "rangedLevel": 1,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": -10,
+        "rangedDefence": 0,
+        "attackSpeed": 4,
+        "attackStyles": [
+          "Slash"
         ],
         "wilderness": true,
         "multiCombat": true,
-        "cannonable": true
+        "cannonable": true,
+        "legacyNpcId": 2026,
+        "maxHit": "10",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Greater demon (Level 104 (Wilderness Slayer Cave))",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "9 | 8 | 10"
   },
   {
     "id": "black_demon",
@@ -502,8 +589,8 @@
     "combatLevel": 172,
     "suggestedBudget": 500000,
     "classification": "DEMON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 40,
     "weakness": "Demonbane (Arclight/Emberlight) / Slash",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -516,14 +603,14 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 2048,
+        "npcId": 240,
         "variantName": "Taverley Black Demon",
         "location": "Taverley Dungeon",
         "combatLevel": 172,
         "hitpoints": 157,
-        "attackLevel": 140,
-        "strengthLevel": 145,
-        "defenceLevel": 142,
+        "attackLevel": 145,
+        "strengthLevel": 148,
+        "defenceLevel": 152,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
@@ -533,37 +620,56 @@
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "legacyNpcId": 2048,
+        "maxHit": "16",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Black demon (Level 172)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       },
       {
         "npcId": 7242,
         "variantName": "Catacombs Black Demon",
         "location": "Catacombs of Kourend",
         "combatLevel": 184,
-        "hitpoints": 175,
-        "attackLevel": 150,
-        "strengthLevel": 155,
-        "defenceLevel": 150,
+        "hitpoints": 170,
+        "attackLevel": 155,
+        "strengthLevel": 158,
+        "defenceLevel": 162,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 15,
-        "slashDefence": 15,
-        "crushDefence": 15,
-        "magicDefence": -5,
-        "rangedDefence": 15,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": -10,
+        "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "17",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Black demon (Level 184)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "16 | 17"
   },
   {
     "id": "bloodveld",
@@ -572,7 +678,7 @@
     "primaryStyle": "MELEE",
     "combatLevel": 76,
     "suggestedBudget": 300000,
-    "classification": "NONE",
+    "classification": "DEMON",
     "elementalWeakness": "FIRE",
     "elementalWeaknessPercent": 50,
     "weakness": "Fire Magic (+50% dmg) / Slash Melee",
@@ -594,23 +700,28 @@
         "location": "Slayer Tower",
         "combatLevel": 76,
         "hitpoints": 120,
-        "attackLevel": 62,
-        "strengthLevel": 60,
+        "attackLevel": 75,
+        "strengthLevel": 45,
         "defenceLevel": 30,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
         "slashDefence": 0,
         "crushDefence": 0,
-        "magicDefence": -10,
+        "magicDefence": 0,
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee (vs Magic Def)"
+          "Magical melee"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "5",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Bloodveld (Normal)"
       },
       {
         "npcId": 7276,
@@ -618,25 +729,34 @@
         "location": "Catacombs of Kourend",
         "combatLevel": 123,
         "hitpoints": 170,
-        "attackLevel": 105,
-        "strengthLevel": 100,
-        "defenceLevel": 50,
+        "attackLevel": 110,
+        "strengthLevel": 115,
+        "defenceLevel": 30,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 5,
-        "slashDefence": 5,
-        "crushDefence": 5,
-        "magicDefence": -5,
-        "rangedDefence": 5,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": 0,
+        "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee (vs Magic Def)"
+          "Magical melee"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "12",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Mutated Bloodveld"
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "5 | 12"
   },
   {
     "id": "dust_devil",
@@ -646,8 +766,8 @@
     "combatLevel": 93,
     "suggestedBudget": 1000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "AIR",
+    "elementalWeaknessPercent": 35,
     "weakness": "Burst/Barrage Magic (Multi-combat stacking)",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Mystic Might / Augury",
@@ -667,23 +787,28 @@
         "location": "Smoke Dungeon",
         "combatLevel": 93,
         "hitpoints": 105,
-        "attackLevel": 80,
-        "strengthLevel": 80,
-        "defenceLevel": 70,
+        "attackLevel": 105,
+        "strengthLevel": 70,
+        "defenceLevel": 40,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
         "slashDefence": 0,
         "crushDefence": 0,
-        "magicDefence": -10,
+        "magicDefence": 0,
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Ranged melee"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "8",
+        "attributes": [],
+        "wikiName": "Dust devil (Smoke Dungeon)",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 35
       },
       {
         "npcId": 7249,
@@ -691,25 +816,31 @@
         "location": "Catacombs of Kourend",
         "combatLevel": 110,
         "hitpoints": 130,
-        "attackLevel": 90,
+        "attackLevel": 120,
         "strengthLevel": 90,
-        "defenceLevel": 80,
+        "defenceLevel": 40,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 10,
-        "slashDefence": 10,
-        "crushDefence": 10,
-        "magicDefence": -5,
-        "rangedDefence": 10,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": 0,
+        "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Ranged melee"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "10",
+        "attributes": [],
+        "wikiName": "Dust devil (Catacombs of Kourend)",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 35
       }
-    ]
+    ],
+    "maxHitSummary": "8 | 10"
   },
   {
     "id": "gargoyle",
@@ -719,8 +850,8 @@
     "combatLevel": 111,
     "suggestedBudget": 1500000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 40,
     "weakness": "Crush Melee (Bludgeon / Cudgel / Mace)",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -741,24 +872,35 @@
         "combatLevel": 111,
         "hitpoints": 105,
         "attackLevel": 75,
-        "strengthLevel": 75,
-        "defenceLevel": 105,
+        "strengthLevel": 105,
+        "defenceLevel": 107,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 20,
-        "slashDefence": 20,
-        "crushDefence": -10,
+        "stabDefence": 50,
+        "slashDefence": 60,
+        "crushDefence": -20,
         "magicDefence": 20,
         "rangedDefence": 20,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "11",
+        "attributes": [
+          "golem"
+        ],
+        "wikiName": "Gargoyle (Upstairs)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "golem"
+    ],
+    "maxHitSummary": "11"
   },
   {
     "id": "kurask",
@@ -789,25 +931,34 @@
         "location": "Fremennik Slayer Dungeon",
         "combatLevel": 106,
         "hitpoints": 97,
-        "attackLevel": 75,
-        "strengthLevel": 75,
-        "defenceLevel": 100,
+        "attackLevel": 67,
+        "strengthLevel": 105,
+        "defenceLevel": 105,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
-        "slashDefence": 0,
-        "crushDefence": -5,
+        "slashDefence": 20,
+        "crushDefence": 20,
         "magicDefence": 0,
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "11",
+        "attributes": [
+          "leafy"
+        ],
+        "wikiName": "Kurask (Normal)"
       }
-    ]
+    ],
+    "attributes": [
+      "leafy"
+    ],
+    "maxHitSummary": "11"
   },
   {
     "id": "nechryael",
@@ -833,54 +984,69 @@
     "superiorNpcId": 7411,
     "variants": [
       {
-        "npcId": 8,
+        "npcId": 11,
         "variantName": "Slayer Tower",
         "location": "Slayer Tower",
         "combatLevel": 115,
         "hitpoints": 105,
-        "attackLevel": 90,
-        "strengthLevel": 90,
-        "defenceLevel": 85,
+        "attackLevel": 97,
+        "strengthLevel": 97,
+        "defenceLevel": 105,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 0,
-        "slashDefence": 0,
-        "crushDefence": 0,
-        "magicDefence": -10,
-        "rangedDefence": 0,
+        "stabDefence": 20,
+        "slashDefence": 20,
+        "crushDefence": 20,
+        "magicDefence": 0,
+        "rangedDefence": 20,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 8,
+        "maxHit": "11",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Nechryael (Slayer Tower basement)"
       },
       {
         "npcId": 7278,
         "variantName": "Greater Nechryael",
         "location": "Catacombs of Kourend",
-        "combatLevel": 145,
-        "hitpoints": 210,
-        "attackLevel": 115,
-        "strengthLevel": 115,
-        "defenceLevel": 105,
+        "combatLevel": 200,
+        "hitpoints": 205,
+        "attackLevel": 197,
+        "strengthLevel": 197,
+        "defenceLevel": 85,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 10,
-        "slashDefence": 10,
-        "crushDefence": 10,
-        "magicDefence": -5,
-        "rangedDefence": 10,
+        "stabDefence": 50,
+        "slashDefence": 50,
+        "crushDefence": 50,
+        "magicDefence": 0,
+        "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "21",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Greater Nechryael (Regular)"
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "11 | 21"
   },
   {
     "id": "abyssal_demon",
@@ -906,28 +1072,34 @@
     "superiorNpcId": 7410,
     "variants": [
       {
-        "npcId": 415,
+        "npcId": 11239,
         "variantName": "Slayer Tower",
         "location": "Slayer Tower Floor 3",
         "combatLevel": 124,
         "hitpoints": 150,
         "attackLevel": 97,
-        "strengthLevel": 97,
+        "strengthLevel": 67,
         "defenceLevel": 135,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 20,
         "slashDefence": 20,
         "crushDefence": 20,
-        "magicDefence": 20,
+        "magicDefence": 0,
         "rangedDefence": 20,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Stab"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 415,
+        "maxHit": "8",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Abyssal demon (Wilderness Slayer Cave)"
       },
       {
         "npcId": 7241,
@@ -936,24 +1108,33 @@
         "combatLevel": 124,
         "hitpoints": 150,
         "attackLevel": 97,
-        "strengthLevel": 97,
+        "strengthLevel": 67,
         "defenceLevel": 135,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 20,
         "slashDefence": 20,
         "crushDefence": 20,
-        "magicDefence": 20,
+        "magicDefence": 0,
         "rangedDefence": 20,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Stab"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "8",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Abyssal demon (Catacombs of Kourend)"
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "8"
   },
   {
     "id": "skeletal_wyvern",
@@ -963,8 +1144,8 @@
     "combatLevel": 140,
     "suggestedBudget": 3500000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 25,
     "weakness": "Crush Melee / Dragonbane / Crossbow (Diamond bolts)",
     "overheadPrayer": "Protect from Melee (if close) or Protect from Missiles",
     "offensivePrayer": "Rigour / Piety",
@@ -981,28 +1162,39 @@
         "variantName": "Standard",
         "location": "Asgarnia Ice Dungeon",
         "combatLevel": 140,
-        "hitpoints": 210,
-        "attackLevel": 120,
-        "strengthLevel": 130,
+        "hitpoints": 200,
+        "attackLevel": 125,
+        "strengthLevel": 116,
         "defenceLevel": 120,
-        "magicLevel": 1,
-        "rangedLevel": 90,
-        "stabDefence": 80,
-        "slashDefence": 100,
-        "crushDefence": 40,
-        "magicDefence": 140,
-        "rangedDefence": 80,
-        "attackSpeed": 4,
+        "magicLevel": 125,
+        "rangedLevel": 120,
+        "stabDefence": 140,
+        "slashDefence": 90,
+        "crushDefence": 90,
+        "magicDefence": 80,
+        "rangedDefence": 140,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Melee",
           "Ranged",
-          "Icy Breath"
+          "Slash",
+          "Icy breath"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "13 (Ranged)",
+        "attributes": [
+          "dragon"
+        ],
+        "wikiName": "Skeletal Wyvern (2)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 25
       }
-    ]
+    ],
+    "attributes": [
+      "dragon"
+    ],
+    "maxHitSummary": "13 (Ranged)"
   },
   {
     "id": "marble_gargoyle",
@@ -1012,8 +1204,8 @@
     "combatLevel": 255,
     "suggestedBudget": 3000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 40,
     "weakness": "Crush Melee (Bludgeon / Cudgel)",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -1029,28 +1221,40 @@
         "npcId": 7407,
         "variantName": "Marble Gargoyle Superior",
         "location": "Slayer Tower Floor 2",
-        "combatLevel": 255,
-        "hitpoints": 480,
-        "attackLevel": 190,
-        "strengthLevel": 190,
-        "defenceLevel": 170,
+        "combatLevel": 349,
+        "hitpoints": 270,
+        "attackLevel": 230,
+        "strengthLevel": 250,
+        "defenceLevel": 190,
         "magicLevel": 1,
-        "rangedLevel": 120,
-        "stabDefence": 40,
-        "slashDefence": 40,
-        "crushDefence": -10,
+        "rangedLevel": 220,
+        "stabDefence": 50,
+        "slashDefence": 50,
+        "crushDefence": 0,
         "magicDefence": 50,
-        "rangedDefence": 40,
+        "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
-          "Stone Ranged"
+          "Slash",
+          "Ranged",
+          "Magic (special)"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "26 (melee)30 (ranged)38 (special)",
+        "attributes": [
+          "golem"
+        ],
+        "wikiName": "Marble gargoyle",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "golem"
+    ],
+    "maxHitSummary": "26 (melee)30 (ranged)38 (special)"
   },
   {
     "id": "greater_abyssal_demon",
@@ -1077,27 +1281,36 @@
         "npcId": 7410,
         "variantName": "Superior Abyssal Demon",
         "location": "Slayer Tower / Catacombs",
-        "combatLevel": 340,
+        "combatLevel": 342,
         "hitpoints": 400,
-        "attackLevel": 240,
-        "strengthLevel": 240,
-        "defenceLevel": 220,
+        "attackLevel": 300,
+        "strengthLevel": 260,
+        "defenceLevel": 240,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 40,
-        "slashDefence": 40,
-        "crushDefence": 40,
-        "magicDefence": 40,
-        "rangedDefence": 40,
+        "stabDefence": 50,
+        "slashDefence": 50,
+        "crushDefence": 50,
+        "magicDefence": 0,
+        "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Stab"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "27",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Greater abyssal demon"
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "27"
   },
   {
     "id": "revenant_dragon",
@@ -1107,8 +1320,8 @@
     "combatLevel": 135,
     "suggestedBudget": 5000000,
     "classification": "UNDEAD",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "AIR",
+    "elementalWeaknessPercent": 30,
     "weakness": "Wilderness Weapons (Webweaver/Chainmace) + Salve (ei)",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Rigour / Piety",
@@ -1121,32 +1334,46 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 7941,
+        "npcId": 7940,
         "variantName": "Revenant Caves Dragon",
         "location": "Revenant Caves",
         "combatLevel": 135,
-        "hitpoints": 170,
-        "attackLevel": 150,
-        "strengthLevel": 150,
-        "defenceLevel": 120,
+        "hitpoints": 155,
+        "attackLevel": 106,
+        "strengthLevel": 126,
+        "defenceLevel": 87,
         "magicLevel": 150,
-        "rangedLevel": 150,
-        "stabDefence": 20,
-        "slashDefence": 20,
-        "crushDefence": 20,
-        "magicDefence": 30,
-        "rangedDefence": 20,
-        "attackSpeed": 4,
+        "rangedLevel": 151,
+        "stabDefence": 143,
+        "slashDefence": 206,
+        "crushDefence": 188,
+        "magicDefence": 101,
+        "rangedDefence": 197,
+        "attackSpeed": 5,
         "attackStyles": [
-          "Melee",
+          "Slash",
           "Ranged",
           "Magic"
         ],
         "wilderness": true,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7941,
+        "maxHit": "30",
+        "attributes": [
+          "undead",
+          "spectral"
+        ],
+        "wikiName": "Revenant dragon",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 30
       }
-    ]
+    ],
+    "attributes": [
+      "spectral",
+      "undead"
+    ],
+    "maxHitSummary": "30"
   },
   {
     "id": "green_dragon",
@@ -1156,8 +1383,8 @@
     "combatLevel": 79,
     "suggestedBudget": 200000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 50,
     "weakness": "Stab Melee (Lance / Fang / D Sword) / Dragonbane",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -1176,25 +1403,38 @@
         "combatLevel": 79,
         "hitpoints": 75,
         "attackLevel": 68,
-        "strengthLevel": 65,
+        "strengthLevel": 68,
         "defenceLevel": 68,
-        "magicLevel": 1,
+        "magicLevel": 68,
         "rangedLevel": 1,
-        "stabDefence": 20,
+        "stabDefence": 0,
         "slashDefence": 40,
         "crushDefence": 40,
         "magicDefence": 30,
-        "rangedDefence": 20,
+        "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
+          "Slash",
           "Dragonfire"
         ],
         "wilderness": true,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "8 (Slash)",
+        "attributes": [
+          "dragon",
+          "fiery"
+        ],
+        "wikiName": "Green dragon (Level 79)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon",
+      "fiery"
+    ],
+    "maxHitSummary": "8 (Slash)"
   },
   {
     "id": "brutal_black_dragon",
@@ -1204,8 +1444,8 @@
     "combatLevel": 318,
     "suggestedBudget": 8000000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 50,
     "weakness": "Dragon hunter crossbow / Dragon hunter lance / Twisted bow",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Rigour",
@@ -1223,27 +1463,40 @@
         "location": "Catacombs of Kourend",
         "combatLevel": 318,
         "hitpoints": 315,
-        "attackLevel": 260,
-        "strengthLevel": 260,
+        "attackLevel": 330,
+        "strengthLevel": 210,
         "defenceLevel": 258,
         "magicLevel": 250,
-        "rangedLevel": 1,
-        "stabDefence": 50,
+        "rangedLevel": 0,
+        "stabDefence": 0,
         "slashDefence": 70,
         "crushDefence": 70,
-        "magicDefence": 50,
+        "magicDefence": 60,
         "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
+          "Slash",
           "Magic",
-          "Dragonfire",
-          "Melee"
+          "Dragonfire"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "29 (Melee; Magic)",
+        "attributes": [
+          "dragon",
+          "fiery"
+        ],
+        "wikiName": "Brutal black dragon",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon",
+      "fiery"
+    ],
+    "maxHitSummary": "29 (Melee; Magic)"
   },
   {
     "id": "scurrius",
@@ -1267,32 +1520,42 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 7221,
+        "npcId": 7222,
         "variantName": "Solo Scurrius",
         "location": "Varrock Sewers",
-        "combatLevel": 60,
+        "combatLevel": 200,
         "hitpoints": 500,
-        "attackLevel": 40,
-        "strengthLevel": 40,
-        "defenceLevel": 40,
-        "magicLevel": 1,
-        "rangedLevel": 1,
+        "attackLevel": 300,
+        "strengthLevel": 100,
+        "defenceLevel": 60,
+        "magicLevel": 50,
+        "rangedLevel": 50,
         "stabDefence": 20,
         "slashDefence": 20,
-        "crushDefence": 0,
-        "magicDefence": 20,
+        "crushDefence": 20,
+        "magicDefence": 10,
         "rangedDefence": 20,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
+          "Magic",
           "Ranged",
-          "Magic"
+          "Melee"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7221,
+        "maxHit": "13 (Melee)",
+        "attributes": [
+          "rat"
+        ],
+        "wikiName": "Scurrius (Solo)"
       }
-    ]
+    ],
+    "attributes": [
+      "rat"
+    ],
+    "maxHitSummary": "13 (Melee)"
   },
   {
     "id": "vorkath",
@@ -1302,8 +1565,8 @@
     "combatLevel": 732,
     "suggestedBudget": 15000000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 40,
     "weakness": "Dragonbane (DHCB/DHL), Salve amulet (ei) (+20% dmg/acc)",
     "overheadPrayer": "Protect from Magic (if wearing Ranged)",
     "offensivePrayer": "Rigour",
@@ -1316,7 +1579,7 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 8061,
+        "npcId": 8059,
         "variantName": "Post-Quest Vorkath",
         "location": "Ungael",
         "combatLevel": 732,
@@ -1333,16 +1596,32 @@
         "rangedDefence": 26,
         "attackSpeed": 5,
         "attackStyles": [
-          "Melee",
-          "Ranged",
+          "Slash",
           "Magic",
+          "Ranged",
           "Dragonfire"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 8061,
+        "maxHit": "30 (Magic)",
+        "attributes": [
+          "dragon",
+          "undead",
+          "fiery"
+        ],
+        "wikiName": "Vorkath (Post-quest)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "dragon",
+      "fiery",
+      "undead"
+    ],
+    "maxHitSummary": "30 (Magic)"
   },
   {
     "id": "zulrah",
@@ -1352,8 +1631,8 @@
     "combatLevel": 725,
     "suggestedBudget": 12000000,
     "classification": "REPTILE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 50,
     "weakness": "Magic on Green/Orange phases; Ranged on Blue (Tanzanite) phase",
     "overheadPrayer": "Protect from Missiles / Magic depending on phase",
     "offensivePrayer": "Augury / Rigour",
@@ -1371,26 +1650,31 @@
         "location": "Zul-Andra Shrine",
         "combatLevel": 725,
         "hitpoints": 500,
-        "attackLevel": 300,
-        "strengthLevel": 300,
+        "attackLevel": 1,
+        "strengthLevel": 1,
         "defenceLevel": 300,
         "magicLevel": 300,
         "rangedLevel": 300,
-        "stabDefence": 50,
-        "slashDefence": 50,
-        "crushDefence": 50,
-        "magicDefence": 0,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": -45,
         "rangedDefence": 50,
-        "attackSpeed": 4,
+        "attackSpeed": 3,
         "attackStyles": [
-          "Ranged",
-          "Venom"
+          "Ranged"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "41",
+        "attributes": [],
+        "wikiName": "Zulrah (Serpentine)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "maxHitSummary": "41"
   },
   {
     "id": "calvarion",
@@ -1417,28 +1701,37 @@
         "npcId": 11993,
         "variantName": "Standard",
         "location": "Wilderness (Level 21)",
-        "combatLevel": 272,
-        "hitpoints": 300,
-        "attackLevel": 200,
-        "strengthLevel": 200,
-        "defenceLevel": 170,
-        "magicLevel": 1,
+        "combatLevel": 264,
+        "hitpoints": 150,
+        "attackLevel": 250,
+        "strengthLevel": 250,
+        "defenceLevel": 225,
+        "magicLevel": 178,
         "rangedLevel": 1,
-        "stabDefence": 150,
-        "slashDefence": 150,
-        "crushDefence": 0,
-        "magicDefence": 250,
-        "rangedDefence": 250,
-        "attackSpeed": 4,
+        "stabDefence": 130,
+        "slashDefence": 128,
+        "crushDefence": -10,
+        "magicDefence": 198,
+        "rangedDefence": 211,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Crush",
-          "Lightning Magic"
+          "Slash",
+          "Magic"
         ],
         "wilderness": true,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "26",
+        "attributes": [
+          "undead"
+        ],
+        "wikiName": "Calvar'ion (Normal)"
       }
-    ]
+    ],
+    "attributes": [
+      "undead"
+    ],
+    "maxHitSummary": "26"
   },
   {
     "id": "corporeal_beast",
@@ -1448,8 +1741,8 @@
     "combatLevel": 785,
     "suggestedBudget": 15000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 10,
     "weakness": "Spears ONLY (Zamorakian spear / Fang)",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety",
@@ -1471,22 +1764,28 @@
         "strengthLevel": 320,
         "defenceLevel": 310,
         "magicLevel": 350,
-        "rangedLevel": 1,
+        "rangedLevel": 150,
         "stabDefence": 25,
-        "slashDefence": 170,
-        "crushDefence": 170,
+        "slashDefence": 200,
+        "crushDefence": 100,
         "magicDefence": 150,
-        "rangedDefence": 80,
+        "rangedDefence": 230,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
-          "Magic Spikes"
+          "Crush",
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "33 (Melee)",
+        "attributes": [],
+        "wikiName": "Corporeal Beast",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 10
       }
-    ]
+    ],
+    "maxHitSummary": "33 (Melee)"
   },
   {
     "id": "kreearra",
@@ -1496,8 +1795,8 @@
     "combatLevel": 580,
     "suggestedBudget": 20000000,
     "classification": "FIEND",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "AIR",
+    "elementalWeaknessPercent": 30,
     "weakness": "Ranged (Chinchompas / Bowfa / Crossbow) - MELEE FORBIDDEN",
     "overheadPrayer": "Protect from Ranged",
     "offensivePrayer": "Rigour",
@@ -1516,7 +1815,7 @@
         "combatLevel": 580,
         "hitpoints": 255,
         "attackLevel": 300,
-        "strengthLevel": 280,
+        "strengthLevel": 200,
         "defenceLevel": 260,
         "magicLevel": 200,
         "rangedLevel": 380,
@@ -1524,17 +1823,29 @@
         "slashDefence": 180,
         "crushDefence": 180,
         "magicDefence": 200,
-        "rangedDefence": 15,
+        "rangedDefence": 200,
         "attackSpeed": 3,
         "attackStyles": [
-          "Ranged Tornadoes",
-          "Magic"
+          "Ranged",
+          "Ranged magic",
+          "Magical melee"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "69 (Ranged)",
+        "attributes": [
+          "flying"
+        ],
+        "wikiName": "Kree'arra",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 30
       }
-    ]
+    ],
+    "attributes": [
+      "flying"
+    ],
+    "maxHitSummary": "69 (Ranged)"
   },
   {
     "id": "tztok_jad",
@@ -1544,8 +1855,8 @@
     "combatLevel": 702,
     "suggestedBudget": 5000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 40,
     "weakness": "Ranged (Blowpipe / Bowfa / Crossbow)",
     "overheadPrayer": "Protect from Missiles / Protect from Magic (Active Reaction)",
     "offensivePrayer": "Rigour / Eagle Eye",
@@ -1571,19 +1882,25 @@
         "stabDefence": 0,
         "slashDefence": 0,
         "crushDefence": 0,
-        "magicDefence": 480,
+        "magicDefence": 0,
         "rangedDefence": 0,
         "attackSpeed": 8,
         "attackStyles": [
-          "Melee",
-          "Ranged Falling Rock",
-          "Magic Fireball"
+          "Stab",
+          "Magic",
+          "Ranged"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "97 (Melee)",
+        "attributes": [],
+        "wikiName": "TzTok-Jad",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "maxHitSummary": "97 (Melee)"
   },
   {
     "id": "al_kharid_warrior",
@@ -1607,30 +1924,35 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 3100,
+        "npcId": 3292,
         "variantName": "Palace Guard",
         "location": "Al-Kharid Palace",
         "combatLevel": 9,
         "hitpoints": 19,
         "attackLevel": 7,
-        "strengthLevel": 8,
-        "defenceLevel": 7,
+        "strengthLevel": 5,
+        "defenceLevel": 4,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": -5,
-        "slashDefence": -5,
-        "crushDefence": -5,
-        "magicDefence": -15,
-        "rangedDefence": -5,
+        "stabDefence": 12,
+        "slashDefence": 15,
+        "crushDefence": 10,
+        "magicDefence": -1,
+        "rangedDefence": 12,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 3100,
+        "maxHit": "2",
+        "attributes": [],
+        "wikiName": "Al Kharid warrior"
       }
-    ]
+    ],
+    "maxHitSummary": "2"
   },
   {
     "id": "ice_giant",
@@ -1660,24 +1982,30 @@
         "combatLevel": 53,
         "hitpoints": 70,
         "attackLevel": 40,
-        "strengthLevel": 45,
+        "strengthLevel": 40,
         "defenceLevel": 40,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 5,
-        "slashDefence": 5,
-        "crushDefence": 0,
-        "magicDefence": -10,
-        "rangedDefence": 5,
+        "stabDefence": 0,
+        "slashDefence": 3,
+        "crushDefence": 2,
+        "magicDefence": 0,
+        "rangedDefence": 0,
         "attackSpeed": 5,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "7",
+        "attributes": [],
+        "wikiName": "Ice giant (1)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 100
       }
-    ]
+    ],
+    "maxHitSummary": "7"
   },
   {
     "id": "ogre",
@@ -1687,8 +2015,8 @@
     "combatLevel": 53,
     "suggestedBudget": 80000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 20,
     "weakness": "Ranged / Magic",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Eagle Eye",
@@ -1701,30 +2029,37 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 2094,
+        "npcId": 136,
         "variantName": "Training Camp Ogre",
         "location": "Combat Training Camp",
         "combatLevel": 53,
         "hitpoints": 60,
-        "attackLevel": 40,
-        "strengthLevel": 42,
-        "defenceLevel": 42,
+        "attackLevel": 43,
+        "strengthLevel": 43,
+        "defenceLevel": 43,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
         "slashDefence": 0,
         "crushDefence": 0,
-        "magicDefence": -10,
+        "magicDefence": 0,
         "rangedDefence": 0,
-        "attackSpeed": 5,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": true
+        "cannonable": true,
+        "legacyNpcId": 2094,
+        "maxHit": "7",
+        "attributes": [],
+        "wikiName": "Ogre (Level 53)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 20
       }
-    ]
+    ],
+    "maxHitSummary": "7"
   },
   {
     "id": "turoth",
@@ -1748,30 +2083,40 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 426,
+        "npcId": 430,
         "variantName": "Standard",
         "location": "Fremennik Slayer Dungeon",
         "combatLevel": 83,
         "hitpoints": 76,
-        "attackLevel": 60,
-        "strengthLevel": 62,
-        "defenceLevel": 65,
+        "attackLevel": 53,
+        "strengthLevel": 83,
+        "defenceLevel": 83,
         "magicLevel": 1,
         "rangedLevel": 1,
         "stabDefence": 0,
-        "slashDefence": 0,
-        "crushDefence": -5,
+        "slashDefence": 20,
+        "crushDefence": 20,
         "magicDefence": 0,
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Stab"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 426,
+        "maxHit": "9",
+        "attributes": [
+          "leafy"
+        ],
+        "wikiName": "Turoth (Baby)"
       }
-    ]
+    ],
+    "attributes": [
+      "leafy"
+    ],
+    "maxHitSummary": "9"
   },
   {
     "id": "basilisk",
@@ -1781,8 +2126,8 @@
     "combatLevel": 61,
     "suggestedBudget": 300000,
     "classification": "REPTILE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 40,
     "weakness": "Crush Melee / Mirror Shield required",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -1802,25 +2147,31 @@
         "location": "Fremennik Slayer Dungeon",
         "combatLevel": 61,
         "hitpoints": 75,
-        "attackLevel": 45,
+        "attackLevel": 30,
         "strengthLevel": 45,
-        "defenceLevel": 50,
+        "defenceLevel": 75,
         "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 10,
-        "slashDefence": 10,
-        "crushDefence": -5,
-        "magicDefence": 10,
-        "rangedDefence": 10,
+        "stabDefence": 20,
+        "slashDefence": 20,
+        "crushDefence": 0,
+        "magicDefence": 20,
+        "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "5",
+        "attributes": [],
+        "wikiName": "Basilisk",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "maxHitSummary": "5"
   },
   {
     "id": "basilisk_knight",
@@ -1830,8 +2181,8 @@
     "combatLevel": 204,
     "suggestedBudget": 5000000,
     "classification": "REPTILE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 40,
     "weakness": "Crush Melee (Fang / Mace / Cudgel) / Mirror Shield required",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety",
@@ -1849,26 +2200,32 @@
         "location": "Jormungand's Prison",
         "combatLevel": 204,
         "hitpoints": 300,
-        "attackLevel": 170,
-        "strengthLevel": 170,
-        "defenceLevel": 180,
-        "magicLevel": 170,
+        "attackLevel": 186,
+        "strengthLevel": 186,
+        "defenceLevel": 186,
+        "magicLevel": 186,
         "rangedLevel": 1,
-        "stabDefence": 50,
-        "slashDefence": 50,
-        "crushDefence": 0,
-        "magicDefence": 60,
-        "rangedDefence": 50,
+        "stabDefence": 30,
+        "slashDefence": 30,
+        "crushDefence": -15,
+        "magicDefence": 30,
+        "rangedDefence": 20,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
+          "Slash",
           "Magic"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "20",
+        "attributes": [],
+        "wikiName": "Basilisk Knight",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "maxHitSummary": "20"
   },
   {
     "id": "drake",
@@ -1878,8 +2235,8 @@
     "combatLevel": 192,
     "suggestedBudget": 4000000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 50,
     "weakness": "Dragonbane (DHL / DHCB) / Crossbow",
     "overheadPrayer": "Protect from Missiles",
     "offensivePrayer": "Rigour / Piety",
@@ -1896,28 +2253,39 @@
         "variantName": "Standard",
         "location": "Mount Karuulm",
         "combatLevel": 192,
-        "hitpoints": 250,
-        "attackLevel": 160,
-        "strengthLevel": 160,
-        "defenceLevel": 150,
-        "magicLevel": 1,
-        "rangedLevel": 160,
-        "stabDefence": 50,
-        "slashDefence": 80,
+        "hitpoints": 225,
+        "attackLevel": 140,
+        "strengthLevel": 118,
+        "defenceLevel": 120,
+        "magicLevel": 112,
+        "rangedLevel": 140,
+        "stabDefence": 5,
+        "slashDefence": 60,
         "crushDefence": 60,
-        "magicDefence": 100,
-        "rangedDefence": 40,
+        "magicDefence": 20,
+        "rangedDefence": 100,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
           "Ranged",
-          "Volcanic Eruption"
+          "Ranged melee",
+          "Dragonfire"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "15 (Ranged)",
+        "attributes": [
+          "dragon"
+        ],
+        "wikiName": "Drake",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon"
+    ],
+    "maxHitSummary": "15 (Ranged)"
   },
   {
     "id": "wyrm",
@@ -1926,9 +2294,9 @@
     "primaryStyle": "MELEE",
     "combatLevel": 99,
     "suggestedBudget": 1000000,
-    "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "classification": "DRAGON",
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Stab Melee (Dragon sword / Fang) / Magic",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety",
@@ -1944,28 +2312,39 @@
         "npcId": 8610,
         "variantName": "Standard",
         "location": "Mount Karuulm",
-        "combatLevel": 99,
-        "hitpoints": 130,
+        "combatLevel": 97,
+        "hitpoints": 120,
         "attackLevel": 85,
-        "strengthLevel": 85,
-        "defenceLevel": 75,
+        "strengthLevel": 60,
+        "defenceLevel": 80,
         "magicLevel": 80,
-        "rangedLevel": 1,
+        "rangedLevel": 80,
         "stabDefence": 10,
-        "slashDefence": 30,
-        "crushDefence": 30,
-        "magicDefence": 20,
+        "slashDefence": 50,
+        "crushDefence": 50,
+        "magicDefence": 50,
         "rangedDefence": 20,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
-          "Magic"
+          "Magic",
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "13 (Magic)",
+        "attributes": [
+          "dragon"
+        ],
+        "wikiName": "Wyrm (Idle)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon"
+    ],
+    "maxHitSummary": "13 (Magic)"
   },
   {
     "id": "hydra",
@@ -1996,26 +2375,37 @@
         "location": "Mount Karuulm",
         "combatLevel": 194,
         "hitpoints": 300,
-        "attackLevel": 170,
-        "strengthLevel": 170,
-        "defenceLevel": 150,
-        "magicLevel": 160,
-        "rangedLevel": 170,
-        "stabDefence": 40,
-        "slashDefence": 60,
-        "crushDefence": 60,
-        "magicDefence": 40,
-        "rangedDefence": 30,
-        "attackSpeed": 4,
+        "attackLevel": 1,
+        "strengthLevel": 1,
+        "defenceLevel": 100,
+        "magicLevel": 210,
+        "rangedLevel": 210,
+        "stabDefence": 160,
+        "slashDefence": 160,
+        "crushDefence": 160,
+        "magicDefence": 160,
+        "rangedDefence": 0,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Ranged",
-          "Magic"
+          "Magic",
+          "Ranged"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "22",
+        "attributes": [
+          "dragon"
+        ],
+        "wikiName": "Hydra",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "dragon"
+    ],
+    "maxHitSummary": "22"
   },
   {
     "id": "kraken",
@@ -2025,8 +2415,8 @@
     "combatLevel": 291,
     "suggestedBudget": 5000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Magic ONLY (Trident of the seas / swamp / Sanguinesti)",
     "overheadPrayer": "None (or Augury/Mystic Might)",
     "offensivePrayer": "Augury / Mystic Might",
@@ -2046,23 +2436,29 @@
         "hitpoints": 255,
         "attackLevel": 1,
         "strengthLevel": 1,
-        "defenceLevel": 250,
-        "magicLevel": 130,
+        "defenceLevel": 1,
+        "magicLevel": 1,
         "rangedLevel": 1,
-        "stabDefence": 150,
-        "slashDefence": 150,
-        "crushDefence": 150,
-        "magicDefence": 0,
-        "rangedDefence": 150,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": 130,
+        "rangedDefence": 300,
         "attackSpeed": 4,
         "attackStyles": [
-          "Magic Water Spout"
+          "Magic (100% prayer penetration)"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "28",
+        "attributes": [],
+        "wikiName": "Kraken (Kraken)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "maxHitSummary": "28"
   },
   {
     "id": "rune_dragon",
@@ -2072,8 +2468,8 @@
     "combatLevel": 380,
     "suggestedBudget": 20000000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Dragon hunter lance (Stab) / Justiciar tank",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety",
@@ -2091,28 +2487,41 @@
         "location": "Lithkren Vault",
         "combatLevel": 380,
         "hitpoints": 330,
-        "attackLevel": 310,
-        "strengthLevel": 310,
-        "defenceLevel": 286,
+        "attackLevel": 284,
+        "strengthLevel": 284,
+        "defenceLevel": 276,
         "magicLevel": 196,
-        "rangedLevel": 196,
-        "stabDefence": 45,
+        "rangedLevel": 246,
+        "stabDefence": 20,
         "slashDefence": 115,
-        "crushDefence": 105,
-        "magicDefence": 140,
+        "crushDefence": 90,
+        "magicDefence": 30,
         "rangedDefence": 95,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
+          "Slash",
+          "Ranged",
           "Magic",
-          "Dragonfire",
-          "Lightning"
+          "Dragonfire"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "29 (Melee)",
+        "attributes": [
+          "dragon",
+          "fiery"
+        ],
+        "wikiName": "Rune dragon",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon",
+      "fiery"
+    ],
+    "maxHitSummary": "29 (Melee)"
   },
   {
     "id": "tekton",
@@ -2122,8 +2531,8 @@
     "combatLevel": 750,
     "suggestedBudget": 25000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 20,
     "weakness": "Crush Melee ONLY (Dragon warhammer / Inquisitor / Bludgeon / Fang)",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -2136,7 +2545,7 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 7542,
+        "npcId": 7540,
         "variantName": "Chambers Tekton",
         "location": "Chambers of Xeric",
         "combatLevel": 750,
@@ -2148,19 +2557,32 @@
         "rangedLevel": 1,
         "stabDefence": 155,
         "slashDefence": 165,
-        "crushDefence": 40,
-        "magicDefence": 150,
-        "rangedDefence": 150,
-        "attackSpeed": 4,
+        "crushDefence": 105,
+        "magicDefence": 0,
+        "rangedDefence": 0,
+        "attackSpeed": 3,
         "attackStyles": [
-          "Crush Melee",
-          "Meteor Magic"
+          "Stab",
+          "Slash",
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7542,
+        "maxHit": "52",
+        "attributes": [
+          "xerician"
+        ],
+        "wikiName": "Tekton (Normal)",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 20
       }
-    ]
+    ],
+    "attributes": [
+      "xerician"
+    ],
+    "maxHitSummary": "52"
   },
   {
     "id": "great_olm",
@@ -2170,8 +2592,8 @@
     "combatLevel": 1042,
     "suggestedBudget": 50000000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Melee hand: DHL (Dragonbane); Mage hand: Trident/Sang/Shadow; Head: Twisted Bow/Bowfa",
     "overheadPrayer": "Protect from Missiles / Magic",
     "offensivePrayer": "Piety / Augury / Rigour",
@@ -2184,32 +2606,45 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 7554,
+        "npcId": 7551,
         "variantName": "Great Olm (Head)",
         "location": "Chambers of Xeric",
-        "combatLevel": 1042,
+        "combatLevel": 1043,
         "hitpoints": 800,
         "attackLevel": 250,
         "strengthLevel": 250,
-        "defenceLevel": 175,
+        "defenceLevel": 150,
         "magicLevel": 250,
         "rangedLevel": 250,
-        "stabDefence": 50,
-        "slashDefence": 50,
-        "crushDefence": 50,
-        "magicDefence": 50,
+        "stabDefence": 200,
+        "slashDefence": 200,
+        "crushDefence": 200,
+        "magicDefence": 200,
         "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
-          "Ranged",
           "Magic",
-          "Dragonfire Sphere"
+          "Ranged"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7554,
+        "maxHit": "27 / 28 / 29 (phase 4)",
+        "attributes": [
+          "dragon",
+          "xerician"
+        ],
+        "wikiName": "Great Olm (Head (Normal))",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon",
+      "xerician"
+    ],
+    "maxHitSummary": "27 / 28 / 29 (phase 4)"
   },
   {
     "id": "kephri",
@@ -2219,8 +2654,8 @@
     "combatLevel": 450,
     "suggestedBudget": 15000000,
     "classification": "KALPHITE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 40,
     "weakness": "Kalphite / Scarab: Keris Partisan (33% bonus + 3x proc) / Fang",
     "overheadPrayer": "Protect from Missiles",
     "offensivePrayer": "Piety",
@@ -2236,28 +2671,38 @@
         "npcId": 11719,
         "variantName": "Kephri Scabarite",
         "location": "Tombs of Amascut",
-        "combatLevel": 450,
-        "hitpoints": 360,
-        "attackLevel": 100,
-        "strengthLevel": 100,
+        "combatLevel": 341,
+        "hitpoints": 150,
+        "attackLevel": 0,
+        "strengthLevel": 0,
         "defenceLevel": 80,
-        "magicLevel": 100,
-        "rangedLevel": 100,
+        "magicLevel": 125,
+        "rangedLevel": 0,
         "stabDefence": 60,
-        "slashDefence": 120,
-        "crushDefence": 120,
+        "slashDefence": 300,
+        "crushDefence": 100,
         "magicDefence": 200,
-        "rangedDefence": 150,
-        "attackSpeed": 4,
+        "rangedDefence": 300,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Ranged Bomb",
-          "Swarm"
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "24",
+        "attributes": [
+          "kalphite"
+        ],
+        "wikiName": "Kephri (Shielded)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "kalphite"
+    ],
+    "maxHitSummary": "24"
   },
   {
     "id": "sand_crab",
@@ -2267,8 +2712,8 @@
     "combatLevel": 15,
     "suggestedBudget": 10000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 20,
     "weakness": "Crush / Slash",
     "overheadPrayer": "None",
     "offensivePrayer": "Piety",
@@ -2281,7 +2726,7 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 7206,
+        "npcId": 5935,
         "variantName": "Hosidius Shore",
         "location": "Hosidius",
         "combatLevel": 15,
@@ -2298,13 +2743,20 @@
         "rangedDefence": 0,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7206,
+        "maxHit": "1",
+        "attributes": [],
+        "wikiName": "Sand Crab (Active)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 20
       }
-    ]
+    ],
+    "maxHitSummary": "1"
   },
   {
     "id": "general_graardor",
@@ -2314,8 +2766,8 @@
     "combatLevel": 624,
     "suggestedBudget": 25000000,
     "classification": "GIANT",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 40,
     "weakness": "Slash (Osmumten Fang / Scythe) or Ranged (Bowfa)",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety / Rigour",
@@ -2337,7 +2789,7 @@
         "strengthLevel": 350,
         "defenceLevel": 250,
         "magicLevel": 80,
-        "rangedLevel": 100,
+        "rangedLevel": 350,
         "stabDefence": 90,
         "slashDefence": 90,
         "crushDefence": 90,
@@ -2345,14 +2797,20 @@
         "rangedDefence": 90,
         "attackSpeed": 6,
         "attackStyles": [
-          "Melee",
+          "Crush",
           "Ranged"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "60 (melee)",
+        "attributes": [],
+        "wikiName": "General Graardor",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "maxHitSummary": "60 (melee)"
   },
   {
     "id": "sarachnis",
@@ -2362,8 +2820,8 @@
     "combatLevel": 318,
     "suggestedBudget": 5000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 40,
     "weakness": "Heavy Crush Weakness (Inquisitor / Bludgeon / Cudgel)",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -2380,17 +2838,17 @@
         "variantName": "Forthos Lair",
         "location": "Forthos Dungeon",
         "combatLevel": 318,
-        "hitpoints": 390,
-        "attackLevel": 250,
-        "strengthLevel": 200,
+        "hitpoints": 400,
+        "attackLevel": 200,
+        "strengthLevel": 240,
         "defenceLevel": 150,
         "magicLevel": 150,
-        "rangedLevel": 150,
-        "stabDefence": 70,
-        "slashDefence": 70,
+        "rangedLevel": 300,
+        "stabDefence": 60,
+        "slashDefence": 40,
         "crushDefence": 10,
-        "magicDefence": 30,
-        "rangedDefence": 80,
+        "magicDefence": 150,
+        "rangedDefence": 300,
         "attackSpeed": 4,
         "attackStyles": [
           "Melee",
@@ -2398,9 +2856,15 @@
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "31",
+        "attributes": [],
+        "wikiName": "Sarachnis",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "maxHitSummary": "31"
   },
   {
     "id": "kril_tsutsaroth",
@@ -2410,8 +2874,8 @@
     "combatLevel": 650,
     "suggestedBudget": 20000000,
     "classification": "DEMON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 30,
     "weakness": "Demonbane (Arclight / Emberlight) & Slash / Magic",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -2434,21 +2898,32 @@
         "defenceLevel": 270,
         "magicLevel": 200,
         "rangedLevel": 1,
-        "stabDefence": 80,
-        "slashDefence": 85,
+        "stabDefence": 70,
+        "slashDefence": 80,
         "crushDefence": 80,
-        "magicDefence": 130,
+        "magicDefence": 80,
         "rangedDefence": 80,
         "attackSpeed": 6,
         "attackStyles": [
-          "Melee",
+          "Slash",
           "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "30 (magic)",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "K'ril Tsutsaroth",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 30
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "30 (magic)"
   },
   {
     "id": "commander_zilyana",
@@ -2478,25 +2953,29 @@
         "combatLevel": 596,
         "hitpoints": 255,
         "attackLevel": 280,
-        "strengthLevel": 250,
+        "strengthLevel": 196,
         "defenceLevel": 300,
         "magicLevel": 300,
         "rangedLevel": 250,
         "stabDefence": 100,
         "slashDefence": 100,
         "crushDefence": 100,
-        "magicDefence": 300,
+        "magicDefence": 100,
         "rangedDefence": 100,
-        "attackSpeed": 5,
+        "attackSpeed": 2,
         "attackStyles": [
-          "Melee",
+          "Crush",
           "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "27 (melee)",
+        "attributes": [],
+        "wikiName": "Commander Zilyana"
       }
-    ]
+    ],
+    "maxHitSummary": "27 (melee)"
   },
   {
     "id": "phantom_muspah",
@@ -2506,8 +2985,8 @@
     "combatLevel": 742,
     "suggestedBudget": 20000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "AIR",
+    "elementalWeaknessPercent": 65,
     "weakness": "Ranged (Bowfa / Crossbow with Sapphire bolts) & Magic (Shadow / Trident)",
     "overheadPrayer": "Protect from Magic / Ranged",
     "offensivePrayer": "Rigour",
@@ -2523,29 +3002,39 @@
         "npcId": 12077,
         "variantName": "Standard Encounter",
         "location": "Icy Grotto",
-        "combatLevel": 742,
+        "combatLevel": 741,
         "hitpoints": 850,
-        "attackLevel": 250,
-        "strengthLevel": 250,
-        "defenceLevel": 150,
+        "attackLevel": 280,
+        "strengthLevel": 280,
+        "defenceLevel": 200,
         "magicLevel": 150,
-        "rangedLevel": 250,
-        "stabDefence": 80,
-        "slashDefence": 80,
-        "crushDefence": 80,
-        "magicDefence": 200,
-        "rangedDefence": 60,
-        "attackSpeed": 4,
+        "rangedLevel": 280,
+        "stabDefence": 185,
+        "slashDefence": 134,
+        "crushDefence": 120,
+        "magicDefence": 437,
+        "rangedDefence": 56,
+        "attackSpeed": 6,
         "attackStyles": [
           "Ranged",
-          "Magic",
-          "Melee"
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "61 (Ranged)",
+        "attributes": [
+          "spectral"
+        ],
+        "wikiName": "Phantom Muspah (Ranged)",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 65
       }
-    ]
+    ],
+    "attributes": [
+      "spectral"
+    ],
+    "maxHitSummary": "61 (Ranged)"
   },
   {
     "id": "king_black_dragon",
@@ -2555,8 +3044,8 @@
     "combatLevel": 276,
     "suggestedBudget": 5000000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 50,
     "weakness": "Dragonbane Weapons (Dragon Hunter Crossbow / Lance) & Stab",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Rigour / Piety",
@@ -2578,22 +3067,35 @@
         "strengthLevel": 240,
         "defenceLevel": 240,
         "magicLevel": 240,
-        "rangedLevel": 240,
-        "stabDefence": 70,
+        "rangedLevel": 1,
+        "stabDefence": 40,
         "slashDefence": 90,
         "crushDefence": 90,
         "magicDefence": 80,
         "rangedDefence": 70,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
-          "Magic"
+          "Stab",
+          "Dragonfire"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "25 (Melee)",
+        "attributes": [
+          "dragon",
+          "fiery"
+        ],
+        "wikiName": "King Black Dragon",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon",
+      "fiery"
+    ],
+    "maxHitSummary": "25 (Melee)"
   },
   {
     "id": "giant_mole",
@@ -2603,8 +3105,8 @@
     "combatLevel": 230,
     "suggestedBudget": 5000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Dharok's Greataxe or Ranged (Bowfa / Twisted Bow)",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -2625,22 +3127,28 @@
         "attackLevel": 200,
         "strengthLevel": 200,
         "defenceLevel": 200,
-        "magicLevel": 120,
-        "rangedLevel": 100,
+        "magicLevel": 200,
+        "rangedLevel": 1,
         "stabDefence": 60,
         "slashDefence": 80,
         "crushDefence": 100,
-        "magicDefence": 100,
-        "rangedDefence": 80,
+        "magicDefence": 80,
+        "rangedDefence": 60,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "21",
+        "attributes": [],
+        "wikiName": "Giant Mole",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "maxHitSummary": "21"
   },
   {
     "id": "dagannoth_kings",
@@ -2650,8 +3158,8 @@
     "combatLevel": 303,
     "suggestedBudget": 15000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 35,
     "weakness": "Tribrid: Rex (Magic), Supreme (Melee Slash), Prime (Ranged)",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety / Rigour / Augury",
@@ -2664,7 +3172,7 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 2265,
+        "npcId": 2267,
         "variantName": "Dagannoth Rex",
         "location": "Waterbirth Dungeon",
         "combatLevel": 303,
@@ -2681,13 +3189,20 @@
         "rangedDefence": 255,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 2265,
+        "maxHit": "26",
+        "attributes": [],
+        "wikiName": "Dagannoth Rex",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 35
       }
-    ]
+    ],
+    "maxHitSummary": "26"
   },
   {
     "id": "spindel",
@@ -2697,8 +3212,8 @@
     "combatLevel": 244,
     "suggestedBudget": 2000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 25,
     "weakness": "Crush (Ursine chainmace / Cudgel / Bludgeon)",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety",
@@ -2711,31 +3226,39 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 11989,
+        "npcId": 11998,
         "variantName": "Wilderness Lair",
         "location": "Wilderness Lair",
-        "combatLevel": 244,
-        "hitpoints": 300,
-        "attackLevel": 220,
-        "strengthLevel": 200,
-        "defenceLevel": 120,
-        "magicLevel": 100,
-        "rangedLevel": 100,
-        "stabDefence": 80,
-        "slashDefence": 80,
-        "crushDefence": -10,
-        "magicDefence": 100,
-        "rangedDefence": 120,
+        "combatLevel": 302,
+        "hitpoints": 515,
+        "attackLevel": 200,
+        "strengthLevel": 130,
+        "defenceLevel": 225,
+        "magicLevel": 235,
+        "rangedLevel": 286,
+        "stabDefence": 70,
+        "slashDefence": 70,
+        "crushDefence": 10,
+        "magicDefence": 205,
+        "rangedDefence": 103,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
-          "Magic"
+          "Stab",
+          "Magic",
+          "Ranged"
         ],
         "wilderness": true,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 11989,
+        "maxHit": "14 (Melee)",
+        "attributes": [],
+        "wikiName": "Spindel",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 25
       }
-    ]
+    ],
+    "maxHitSummary": "14 (Melee)"
   },
   {
     "id": "artio",
@@ -2759,31 +3282,37 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 11988,
+        "npcId": 11992,
         "variantName": "Wilderness Lair",
         "location": "Wilderness Lair",
-        "combatLevel": 260,
-        "hitpoints": 300,
-        "attackLevel": 240,
-        "strengthLevel": 240,
-        "defenceLevel": 160,
-        "magicLevel": 100,
-        "rangedLevel": 100,
-        "stabDefence": 100,
-        "slashDefence": 100,
-        "crushDefence": 100,
-        "magicDefence": 10,
-        "rangedDefence": 120,
-        "attackSpeed": 4,
+        "combatLevel": 320,
+        "hitpoints": 450,
+        "attackLevel": 250,
+        "strengthLevel": 270,
+        "defenceLevel": 150,
+        "magicLevel": 90,
+        "rangedLevel": 120,
+        "stabDefence": 125,
+        "slashDefence": 110,
+        "crushDefence": 110,
+        "magicDefence": 0,
+        "rangedDefence": 40,
+        "attackSpeed": 5,
         "attackStyles": [
-          "Melee",
-          "Magic"
+          "Crush",
+          "Magic",
+          "Ranged"
         ],
         "wilderness": true,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 11988,
+        "maxHit": "35 (Crush)",
+        "attributes": [],
+        "wikiName": "Artio"
       }
-    ]
+    ],
+    "maxHitSummary": "35 (Crush)"
   },
   {
     "id": "barrows",
@@ -2824,11 +3353,18 @@
         "rangedDefence": 249,
         "attackSpeed": 7,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "29 (normal)",
+        "attributes": [
+          "spectral"
+        ],
+        "wikiName": "Dharok the Wretched",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 50
       },
       {
         "npcId": 1672,
@@ -2836,8 +3372,8 @@
         "location": "Barrows Crypt",
         "combatLevel": 98,
         "hitpoints": 100,
-        "attackLevel": 100,
-        "strengthLevel": 100,
+        "attackLevel": 1,
+        "strengthLevel": 1,
         "defenceLevel": 100,
         "magicLevel": 100,
         "rangedLevel": 1,
@@ -2846,13 +3382,21 @@
         "crushDef": 117,
         "magicDefence": 73,
         "rangedDefence": 0,
-        "attackSpeed": 4,
+        "attackSpeed": 6,
         "attackStyles": [
           "Magic"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "crushDefence": 117,
+        "maxHit": "20",
+        "attributes": [
+          "spectral"
+        ],
+        "wikiName": "Ahrim the Blighted",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 50
       },
       {
         "npcId": 1675,
@@ -2860,8 +3404,8 @@
         "location": "Barrows Crypt",
         "combatLevel": 98,
         "hitpoints": 100,
-        "attackLevel": 100,
-        "strengthLevel": 100,
+        "attackLevel": 1,
+        "strengthLevel": 1,
         "defenceLevel": 100,
         "magicLevel": 1,
         "rangedLevel": 100,
@@ -2876,9 +3420,21 @@
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "crushDefence": 90,
+        "maxHit": "20",
+        "attributes": [
+          "spectral"
+        ],
+        "wikiName": "Karil the Tainted",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "spectral"
+    ],
+    "maxHitSummary": "29 (normal) | 20"
   },
   {
     "id": "cerberus",
@@ -2888,8 +3444,8 @@
     "combatLevel": 318,
     "suggestedBudget": 15000000,
     "classification": "DEMON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 40,
     "weakness": "Demonbane (Arclight / Emberlight) & Crush weapons (Inquisitor / Bludgeon)",
     "overheadPrayer": "Protect from Magic / Prayer flicking summoned souls",
     "offensivePrayer": "Piety",
@@ -2915,19 +3471,30 @@
         "stabDefence": 50,
         "slashDefence": 100,
         "crushDefence": 25,
-        "magicDefence": 100,
+        "magicDefence": 65,
         "rangedDefence": 100,
-        "attackSpeed": 4,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Melee",
-          "Magic",
-          "Ranged"
+          "Stab",
+          "Ranged",
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "23",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Cerberus",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "23"
   },
   {
     "id": "alchemical_hydra",
@@ -2937,8 +3504,8 @@
     "combatLevel": 426,
     "suggestedBudget": 20000000,
     "classification": "DRAGON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Dragonbane weapons (DHCB / DHL / Bowfa / Twisted bow)",
     "overheadPrayer": "Protect from Magic / Missiles (alternates every 3 attacks)",
     "offensivePrayer": "Rigour",
@@ -2961,21 +3528,32 @@
         "defenceLevel": 100,
         "magicLevel": 260,
         "rangedLevel": 260,
-        "stabDefence": 150,
+        "stabDefence": 75,
         "slashDefence": 150,
         "crushDefence": 150,
         "magicDefence": 150,
         "rangedDefence": 45,
         "attackSpeed": 6,
         "attackStyles": [
-          "Magic",
-          "Ranged"
+          "Ranged",
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "17x2 (default)",
+        "attributes": [
+          "dragon"
+        ],
+        "wikiName": "Alchemical Hydra (Serpentine)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon"
+    ],
+    "maxHitSummary": "17x2 (default)"
   },
   {
     "id": "grotesque_guardians",
@@ -2985,8 +3563,8 @@
     "combatLevel": 243,
     "suggestedBudget": 5000000,
     "classification": "GARGOYLE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 40,
     "weakness": "Crush (Bludgeon / Mace) for Dusk; Ranged (Blowpipe / Bowfa) for Dawn; Rock hammer required",
     "overheadPrayer": "Protect from Missiles / Protect from Melee",
     "offensivePrayer": "Piety / Rigour",
@@ -2999,31 +3577,39 @@
     "slayerTaskOnly": true,
     "variants": [
       {
-        "npcId": 7882,
+        "npcId": 7851,
         "variantName": "Dusk",
         "location": "Slayer Tower Roof",
-        "combatLevel": 243,
+        "combatLevel": 248,
         "hitpoints": 450,
-        "attackLevel": 140,
+        "attackLevel": 200,
         "strengthLevel": 140,
-        "defenceLevel": 120,
-        "magicLevel": 120,
-        "rangedLevel": 120,
-        "stabDefence": 40,
-        "slashDefence": 40,
-        "crushDefence": 10,
-        "magicDefence": 150,
-        "rangedDefence": 100,
-        "attackSpeed": 4,
+        "defenceLevel": 100,
+        "magicLevel": 140,
+        "rangedLevel": 140,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": 0,
+        "rangedDefence": 0,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Melee"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7882,
+        "maxHit": "15 (melee) 33 (special attack)",
+        "attributes": [
+          "golem"
+        ],
+        "wikiName": "Dusk (First form)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 40
       },
       {
-        "npcId": 7884,
+        "npcId": 7852,
         "variantName": "Dawn",
         "location": "Slayer Tower Roof",
         "combatLevel": 228,
@@ -3032,21 +3618,37 @@
         "strengthLevel": 140,
         "defenceLevel": 100,
         "magicLevel": 100,
-        "rangedLevel": 100,
-        "stabDefence": 100,
-        "slashDefence": 100,
-        "crushDefence": 80,
-        "magicDefence": 100,
+        "rangedLevel": 140,
+        "stabDefence": 0,
+        "slashDefence": 0,
+        "crushDefence": 0,
+        "magicDefence": 80,
         "rangedDefence": 0,
-        "attackSpeed": 4,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Ranged"
+          "Slash",
+          "Ranged",
+          "Magic (special)"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7884,
+        "maxHit": "15",
+        "attributes": [
+          "flying",
+          "golem"
+        ],
+        "wikiName": "Dawn",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 70
       }
-    ]
+    ],
+    "attributes": [
+      "flying",
+      "golem"
+    ],
+    "maxHitSummary": "15 (melee) 33 (special attack) | 15"
   },
   {
     "id": "duke_sucellus",
@@ -3073,28 +3675,37 @@
         "npcId": 12191,
         "variantName": "Duke Sucellus",
         "location": "Lassar Undercity",
-        "combatLevel": 504,
-        "hitpoints": 850,
+        "combatLevel": 758,
+        "hitpoints": 485,
         "attackLevel": 300,
-        "strengthLevel": 300,
-        "defenceLevel": 235,
-        "magicLevel": 250,
-        "rangedLevel": 250,
-        "stabDefence": 65,
-        "slashDefence": 15,
-        "crushDefence": 65,
-        "magicDefence": 265,
-        "rangedDefence": 265,
+        "strengthLevel": 345,
+        "defenceLevel": 275,
+        "magicLevel": 310,
+        "rangedLevel": 0,
+        "stabDefence": 255,
+        "slashDefence": 45,
+        "crushDefence": 190,
+        "magicDefence": 440,
+        "rangedDefence": 320,
         "attackSpeed": 5,
         "attackStyles": [
-          "Melee",
-          "Magic"
+          "Magic",
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "56 (Melee)",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Duke Sucellus (Post-quest, Awake)"
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "56 (Melee)"
   },
   {
     "id": "vardorvis",
@@ -3104,8 +3715,8 @@
     "combatLevel": 536,
     "suggestedBudget": 20000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 35,
     "weakness": "Slash (Soulreaper Axe / Blade of Saeldor / Tentacle whip / Fang / Bellator)",
     "overheadPrayer": "Protect from Melee (Protect from Missiles when Strangle head shoots)",
     "offensivePrayer": "Piety",
@@ -3121,28 +3732,33 @@
         "npcId": 12223,
         "variantName": "Vardorvis",
         "location": "The Stranglewood",
-        "combatLevel": 536,
+        "combatLevel": 784,
         "hitpoints": 700,
-        "attackLevel": 270,
-        "strengthLevel": 270,
-        "defenceLevel": 215,
-        "magicLevel": 180,
-        "rangedLevel": 240,
-        "stabDefence": 135,
-        "slashDefence": -15,
+        "attackLevel": 280,
+        "strengthLevel": 0,
+        "defenceLevel": 0,
+        "magicLevel": 215,
+        "rangedLevel": 0,
+        "stabDefence": 215,
+        "slashDefence": 65,
         "crushDefence": 85,
-        "magicDefence": 220,
-        "rangedDefence": 200,
-        "attackSpeed": 4,
+        "magicDefence": 580,
+        "rangedDefence": 580,
+        "attackSpeed": 5,
         "attackStyles": [
-          "Melee",
-          "Ranged"
+          "Slash"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "32-43 (Melee)",
+        "attributes": [],
+        "wikiName": "Vardorvis (Post-quest)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 35
       }
-    ]
+    ],
+    "maxHitSummary": "32-43 (Melee)"
   },
   {
     "id": "the_whisperer",
@@ -3152,8 +3768,8 @@
     "combatLevel": 480,
     "suggestedBudget": 20000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 60,
     "weakness": "Shadow of Tumeken / Sang staff / Trident of the swamp",
     "overheadPrayer": "Protect from Magic / Protect from Missiles (3-attack rhythm)",
     "offensivePrayer": "Augury",
@@ -3169,28 +3785,33 @@
         "npcId": 12204,
         "variantName": "The Whisperer",
         "location": "Cam Dooral",
-        "combatLevel": 480,
+        "combatLevel": 791,
         "hitpoints": 900,
-        "attackLevel": 200,
-        "strengthLevel": 200,
-        "defenceLevel": 170,
-        "magicLevel": 200,
-        "rangedLevel": 200,
-        "stabDefence": 200,
-        "slashDefence": 200,
-        "crushDefence": 200,
-        "magicDefence": 0,
-        "rangedDefence": 200,
-        "attackSpeed": 5,
+        "attackLevel": 280,
+        "strengthLevel": 280,
+        "defenceLevel": 250,
+        "magicLevel": 180,
+        "rangedLevel": 180,
+        "stabDefence": 180,
+        "slashDefence": 300,
+        "crushDefence": 220,
+        "magicDefence": 10,
+        "rangedDefence": 300,
+        "attackSpeed": 10,
         "attackStyles": [
-          "Magic",
-          "Ranged"
+          "All"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "42 (x2) (Melee)",
+        "attributes": [],
+        "wikiName": "The Whisperer (Post-quest)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 60
       }
-    ]
+    ],
+    "maxHitSummary": "42 (x2) (Melee)"
   },
   {
     "id": "the_leviathan",
@@ -3217,29 +3838,33 @@
         "npcId": 12214,
         "variantName": "The Leviathan",
         "location": "The Scar",
-        "combatLevel": 520,
+        "combatLevel": 798,
         "hitpoints": 900,
-        "attackLevel": 250,
-        "strengthLevel": 250,
-        "defenceLevel": 190,
-        "magicLevel": 150,
-        "rangedLevel": 260,
-        "stabDefence": 160,
-        "slashDefence": 160,
-        "crushDefence": 160,
-        "magicDefence": 150,
-        "rangedDefence": 40,
+        "attackLevel": 300,
+        "strengthLevel": 360,
+        "defenceLevel": 250,
+        "magicLevel": 160,
+        "rangedLevel": 160,
+        "stabDefence": 260,
+        "slashDefence": 190,
+        "crushDefence": 230,
+        "magicDefence": 280,
+        "rangedDefence": 50,
         "attackSpeed": 5,
         "attackStyles": [
+          "Melee",
           "Ranged",
-          "Magic",
-          "Melee"
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "50 (Melee orb & Bite)",
+        "attributes": [],
+        "wikiName": "The Leviathan (Post-quest)"
       }
-    ]
+    ],
+    "maxHitSummary": "50 (Melee orb & Bite)"
   },
   {
     "id": "nex",
@@ -3268,27 +3893,31 @@
         "location": "Ancient Prison",
         "combatLevel": 1001,
         "hitpoints": 3400,
-        "attackLevel": 320,
-        "strengthLevel": 320,
+        "attackLevel": 315,
+        "strengthLevel": 200,
         "defenceLevel": 260,
-        "magicLevel": 270,
-        "rangedLevel": 300,
+        "magicLevel": 230,
+        "rangedLevel": 350,
         "stabDefence": 40,
         "slashDefence": 140,
-        "crushDefence": 100,
-        "magicDefence": 200,
-        "rangedDefence": 140,
+        "crushDefence": 35,
+        "magicDefence": 300,
+        "rangedDefence": 190,
         "attackSpeed": 4,
         "attackStyles": [
           "Magic",
           "Ranged",
-          "Melee"
+          "Crush"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "33 (Magic)",
+        "attributes": [],
+        "wikiName": "Nex"
       }
-    ]
+    ],
+    "maxHitSummary": "33 (Magic)"
   },
   {
     "id": "kalphite_queen",
@@ -3298,8 +3927,8 @@
     "combatLevel": 333,
     "suggestedBudget": 5000000,
     "classification": "KALPHITE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 40,
     "weakness": "Keris Partisan / Crush for Phase 1; Ranged (Bowfa / Blowpipe) for Phase 2",
     "overheadPrayer": "Protect from Magic / Protect from Missiles",
     "offensivePrayer": "Piety / Rigour",
@@ -3321,7 +3950,7 @@
         "strengthLevel": 300,
         "defenceLevel": 300,
         "magicLevel": 150,
-        "rangedLevel": 150,
+        "rangedLevel": 1,
         "stabDefence": 50,
         "slashDefence": 50,
         "crushDefence": 10,
@@ -3329,13 +3958,20 @@
         "rangedDefence": 100,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
-          "Magic",
-          "Ranged"
+          "Stab",
+          "Ranged",
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "31",
+        "attributes": [
+          "kalphite"
+        ],
+        "wikiName": "Kalphite Queen (Crawling)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 40
       },
       {
         "npcId": 965,
@@ -3347,22 +3983,34 @@
         "strengthLevel": 300,
         "defenceLevel": 300,
         "magicLevel": 150,
-        "rangedLevel": 150,
+        "rangedLevel": 1,
         "stabDefence": 100,
         "slashDefence": 100,
         "crushDefence": 100,
-        "magicDefence": 100,
+        "magicDefence": 10,
         "rangedDefence": 10,
         "attackSpeed": 4,
         "attackStyles": [
-          "Magic",
-          "Ranged"
+          "Stab",
+          "Ranged",
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "31",
+        "attributes": [
+          "kalphite"
+        ],
+        "wikiName": "Kalphite Queen (Airborne)",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "kalphite"
+    ],
+    "maxHitSummary": "31"
   },
   {
     "id": "abyssal_sire",
@@ -3390,27 +4038,35 @@
         "variantName": "Abyssal Sire",
         "location": "Abyssal Nexus",
         "combatLevel": 350,
-        "hitpoints": 400,
+        "hitpoints": 425,
         "attackLevel": 180,
-        "strengthLevel": 180,
+        "strengthLevel": 136,
         "defenceLevel": 250,
         "magicLevel": 200,
-        "rangedLevel": 200,
-        "stabDefence": 60,
+        "rangedLevel": 1,
+        "stabDefence": 40,
         "slashDefence": 60,
-        "crushDefence": 40,
-        "magicDefence": 150,
-        "rangedDefence": 100,
-        "attackSpeed": 6,
+        "crushDefence": 50,
+        "magicDefence": 20,
+        "rangedDefence": 60,
+        "attackSpeed": 7,
         "attackStyles": [
-          "Melee",
-          "Magic"
+          "Melee"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "66 (Melee)",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Abyssal Sire (Phase 1)"
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "66 (Melee)"
   },
   {
     "id": "corrupted_gauntlet",
@@ -3437,18 +4093,18 @@
         "npcId": 9035,
         "variantName": "Corrupted Hunllef",
         "location": "Prifddinas",
-        "combatLevel": 674,
+        "combatLevel": 894,
         "hitpoints": 1000,
-        "attackLevel": 220,
-        "strengthLevel": 220,
+        "attackLevel": 240,
+        "strengthLevel": 240,
         "defenceLevel": 240,
-        "magicLevel": 220,
-        "rangedLevel": 220,
-        "stabDefence": 60,
-        "slashDefence": 60,
-        "crushDefence": 60,
-        "magicDefence": 60,
-        "rangedDefence": 60,
+        "magicLevel": 240,
+        "rangedLevel": 240,
+        "stabDefence": 20,
+        "slashDefence": 20,
+        "crushDefence": 20,
+        "magicDefence": 20,
+        "rangedDefence": 20,
         "attackSpeed": 5,
         "attackStyles": [
           "Magic",
@@ -3456,9 +4112,13 @@
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "68",
+        "attributes": [],
+        "wikiName": "Corrupted Hunllef"
       }
-    ]
+    ],
+    "maxHitSummary": "68"
   },
   {
     "id": "tombs_of_amascut",
@@ -3468,8 +4128,8 @@
     "combatLevel": 1000,
     "suggestedBudget": 20000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Fang (Kephri/Ba-ba/Wardens), Bowfa (Zebak/Wardens), Shadow/Trident (Akkha/Wardens)",
     "overheadPrayer": "Tribrid (Overheads match boss attacks)",
     "offensivePrayer": "Piety / Rigour / Augury",
@@ -3485,29 +4145,35 @@
         "npcId": 11761,
         "variantName": "Wardens P3",
         "location": "Necropolis",
-        "combatLevel": 1000,
-        "hitpoints": 1200,
-        "attackLevel": 250,
-        "strengthLevel": 250,
+        "combatLevel": 544,
+        "hitpoints": 880,
+        "attackLevel": 150,
+        "strengthLevel": 150,
         "defenceLevel": 150,
-        "magicLevel": 250,
-        "rangedLevel": 250,
-        "stabDefence": 50,
-        "slashDefence": 80,
-        "crushDefence": 80,
-        "magicDefence": 60,
-        "rangedDefence": 40,
-        "attackSpeed": 5,
+        "magicLevel": 150,
+        "rangedLevel": 150,
+        "stabDefence": 40,
+        "slashDefence": 40,
+        "crushDefence": 20,
+        "magicDefence": 20,
+        "rangedDefence": 20,
+        "attackSpeed": 7,
         "attackStyles": [
-          "Magic",
+          "Melee",
           "Ranged",
-          "Melee"
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "26",
+        "attributes": [],
+        "wikiName": "Elidinis' Warden (Damaged)",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "maxHitSummary": "26"
   },
   {
     "id": "chambers_of_xeric",
@@ -3516,9 +4182,9 @@
     "primaryStyle": "TRIBRID",
     "combatLevel": 1043,
     "suggestedBudget": 20000000,
-    "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "classification": "DRAGON",
+    "elementalWeakness": "EARTH",
+    "elementalWeaknessPercent": 50,
     "weakness": "Melee (DHL on Olm hand, Tekton), Ranged (Olm head, Shamans), Magic (Mage hand)",
     "overheadPrayer": "Protect from Magic / Missiles",
     "offensivePrayer": "Piety / Rigour / Augury",
@@ -3531,32 +4197,45 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 7554,
+        "npcId": 7551,
         "variantName": "Great Olm",
         "location": "Mount Quidamortem",
         "combatLevel": 1043,
-        "hitpoints": 1600,
-        "attackLevel": 300,
-        "strengthLevel": 300,
-        "defenceLevel": 175,
+        "hitpoints": 800,
+        "attackLevel": 250,
+        "strengthLevel": 250,
+        "defenceLevel": 150,
         "magicLevel": 250,
         "rangedLevel": 250,
-        "stabDefence": 50,
-        "slashDefence": 50,
-        "crushDefence": 50,
-        "magicDefence": 50,
+        "stabDefence": 200,
+        "slashDefence": 200,
+        "crushDefence": 200,
+        "magicDefence": 200,
         "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
           "Magic",
-          "Ranged",
-          "Melee"
+          "Ranged"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 7554,
+        "maxHit": "27 / 28 / 29 (phase 4)",
+        "attributes": [
+          "dragon",
+          "xerician"
+        ],
+        "wikiName": "Great Olm (Head (Normal))",
+        "elementalWeakness": "EARTH",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "attributes": [
+      "dragon",
+      "xerician"
+    ],
+    "maxHitSummary": "27 / 28 / 29 (phase 4)"
   },
   {
     "id": "theatre_of_blood",
@@ -3580,32 +4259,35 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 8374,
+        "npcId": 10847,
         "variantName": "Verzik Vitur P3",
         "location": "Ver Sinhaza",
         "combatLevel": 1040,
         "hitpoints": 2000,
-        "attackLevel": 350,
-        "strengthLevel": 350,
-        "defenceLevel": 200,
-        "magicLevel": 300,
-        "rangedLevel": 300,
-        "stabDefence": 70,
-        "slashDefence": 60,
-        "crushDefence": 70,
-        "magicDefence": 100,
-        "rangedDefence": 100,
-        "attackSpeed": 4,
+        "attackLevel": 400,
+        "strengthLevel": 400,
+        "defenceLevel": 20,
+        "magicLevel": 400,
+        "rangedLevel": 400,
+        "stabDefence": 20,
+        "slashDefence": 20,
+        "crushDefence": 20,
+        "magicDefence": 20,
+        "rangedDefence": 20,
+        "attackSpeed": 14,
         "attackStyles": [
-          "Magic",
-          "Ranged",
-          "Melee"
+          "Magic"
         ],
         "wilderness": false,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 8374,
+        "maxHit": "137",
+        "attributes": [],
+        "wikiName": "Verzik Vitur (Hard mode, Phase 1)"
       }
-    ]
+    ],
+    "maxHitSummary": "137"
   },
   {
     "id": "callisto",
@@ -3615,8 +4297,8 @@
     "combatLevel": 470,
     "suggestedBudget": 5000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 30,
     "weakness": "Wilderness Weapons (Ursine chainmace / Viggora's) & Heavy Crush",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety",
@@ -3629,31 +4311,39 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 6503,
+        "npcId": 6609,
         "variantName": "Callisto",
         "location": "Deep Wilderness (Level 51)",
         "combatLevel": 470,
         "hitpoints": 1000,
         "attackLevel": 350,
-        "strengthLevel": 350,
-        "defenceLevel": 250,
-        "magicLevel": 200,
-        "rangedLevel": 1,
-        "stabDefence": 135,
-        "slashDefence": 105,
-        "crushDefence": 15,
-        "magicDefence": 250,
-        "rangedDefence": 250,
+        "strengthLevel": 300,
+        "defenceLevel": 225,
+        "magicLevel": 140,
+        "rangedLevel": 200,
+        "stabDefence": 150,
+        "slashDefence": 130,
+        "crushDefence": 125,
+        "magicDefence": 0,
+        "rangedDefence": 50,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
-          "Magic"
+          "Crush",
+          "Magic",
+          "Ranged"
         ],
         "wilderness": true,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 6503,
+        "maxHit": "55 (Crush)",
+        "attributes": [],
+        "wikiName": "Callisto",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 30
       }
-    ]
+    ],
+    "maxHitSummary": "55 (Crush)"
   },
   {
     "id": "venenatis",
@@ -3663,8 +4353,8 @@
     "combatLevel": 464,
     "suggestedBudget": 5000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "FIRE",
+    "elementalWeaknessPercent": 40,
     "weakness": "Wilderness Weapons (Ursine chainmace) & Crush",
     "overheadPrayer": "Protect from Magic",
     "offensivePrayer": "Piety",
@@ -3677,31 +4367,39 @@
     "slayerTaskOnly": false,
     "variants": [
       {
-        "npcId": 6504,
+        "npcId": 6610,
         "variantName": "Venenatis",
         "location": "Wilderness (Level 28)",
         "combatLevel": 464,
-        "hitpoints": 900,
-        "attackLevel": 320,
-        "strengthLevel": 320,
-        "defenceLevel": 260,
-        "magicLevel": 250,
-        "rangedLevel": 250,
-        "stabDefence": 150,
-        "slashDefence": 120,
-        "crushDefence": 20,
-        "magicDefence": 250,
-        "rangedDefence": 250,
+        "hitpoints": 850,
+        "attackLevel": 300,
+        "strengthLevel": 200,
+        "defenceLevel": 321,
+        "magicLevel": 300,
+        "rangedLevel": 350,
+        "stabDefence": 100,
+        "slashDefence": 100,
+        "crushDefence": 10,
+        "magicDefence": 300,
+        "rangedDefence": 150,
         "attackSpeed": 4,
         "attackStyles": [
+          "Stab",
           "Magic",
           "Ranged"
         ],
         "wilderness": true,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "legacyNpcId": 6504,
+        "maxHit": "21 (Melee)",
+        "attributes": [],
+        "wikiName": "Venenatis",
+        "elementalWeakness": "FIRE",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "maxHitSummary": "21 (Melee)"
   },
   {
     "id": "vetion",
@@ -3729,27 +4427,36 @@
         "variantName": "Vet'ion",
         "location": "Wilderness (Level 35)",
         "combatLevel": 454,
-        "hitpoints": 510,
-        "attackLevel": 300,
-        "strengthLevel": 300,
-        "defenceLevel": 250,
-        "magicLevel": 250,
+        "hitpoints": 255,
+        "attackLevel": 430,
+        "strengthLevel": 430,
+        "defenceLevel": 395,
+        "magicLevel": 300,
         "rangedLevel": 1,
-        "stabDefence": 150,
-        "slashDefence": 120,
+        "stabDefence": 201,
+        "slashDefence": 200,
         "crushDefence": -10,
         "magicDefence": 250,
-        "rangedDefence": 250,
-        "attackSpeed": 4,
+        "rangedDefence": 270,
+        "attackSpeed": 6,
         "attackStyles": [
-          "Magic",
-          "Melee"
+          "Slash",
+          "Magic"
         ],
         "wilderness": true,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "44",
+        "attributes": [
+          "undead"
+        ],
+        "wikiName": "Vet'ion (Normal)"
       }
-    ]
+    ],
+    "attributes": [
+      "undead"
+    ],
+    "maxHitSummary": "44"
   },
   {
     "id": "chaos_elemental",
@@ -3759,8 +4466,8 @@
     "combatLevel": 305,
     "suggestedBudget": 2000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "AIR",
+    "elementalWeaknessPercent": 50,
     "weakness": "Bow of Faerdhinen / Craw's Bow / Webweaver / Trident",
     "overheadPrayer": "Protect from Missiles",
     "offensivePrayer": "Rigour",
@@ -3788,17 +4495,23 @@
         "crushDefence": 70,
         "magicDefence": 70,
         "rangedDefence": 70,
-        "attackSpeed": 5,
+        "attackSpeed": 4,
         "attackStyles": [
           "Magic",
           "Ranged",
-          "Melee"
+          "Melee (Crush?)"
         ],
         "wilderness": true,
         "multiCombat": true,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "28",
+        "attributes": [],
+        "wikiName": "Chaos Elemental",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 50
       }
-    ]
+    ],
+    "maxHitSummary": "28"
   },
   {
     "id": "thermonuclear_smoke_devil",
@@ -3808,8 +4521,8 @@
     "combatLevel": 301,
     "suggestedBudget": 10000000,
     "classification": "NONE",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "AIR",
+    "elementalWeaknessPercent": 20,
     "weakness": "Fang / Scythe / Claws / Special attack dumping",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -3827,26 +4540,31 @@
         "location": "Smoke Devil Dungeon",
         "combatLevel": 301,
         "hitpoints": 240,
-        "attackLevel": 200,
-        "strengthLevel": 200,
-        "defenceLevel": 180,
+        "attackLevel": 230,
+        "strengthLevel": 220,
+        "defenceLevel": 360,
         "magicLevel": 1,
-        "rangedLevel": 1,
-        "stabDefence": 120,
-        "slashDefence": 80,
-        "crushDefence": 100,
-        "magicDefence": 600,
-        "rangedDefence": 600,
-        "attackSpeed": 4,
+        "rangedLevel": 310,
+        "stabDefence": 11,
+        "slashDefence": 4,
+        "crushDefence": 9,
+        "magicDefence": 800,
+        "rangedDefence": 900,
+        "attackSpeed": 2,
         "attackStyles": [
-          "Melee",
-          "Ranged"
+          "Magical ranged (100% prayer penetration)"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": true
+        "cannonable": true,
+        "maxHit": "8",
+        "attributes": [],
+        "wikiName": "Thermonuclear smoke devil",
+        "elementalWeakness": "AIR",
+        "elementalWeaknessPercent": 20
       }
-    ]
+    ],
+    "maxHitSummary": "8"
   },
   {
     "id": "skotizo",
@@ -3856,8 +4574,8 @@
     "combatLevel": 321,
     "suggestedBudget": 5000000,
     "classification": "DEMON",
-    "elementalWeakness": "NONE",
-    "elementalWeaknessPercent": 0,
+    "elementalWeakness": "WATER",
+    "elementalWeaknessPercent": 40,
     "weakness": "Demonbane (Arclight / Emberlight) - 1-hits awakened altars!",
     "overheadPrayer": "Protect from Melee",
     "offensivePrayer": "Piety",
@@ -3875,25 +4593,36 @@
         "location": "Catacombs of Kourend",
         "combatLevel": 321,
         "hitpoints": 450,
-        "attackLevel": 220,
-        "strengthLevel": 220,
+        "attackLevel": 240,
+        "strengthLevel": 250,
         "defenceLevel": 200,
-        "magicLevel": 220,
-        "rangedLevel": 220,
+        "magicLevel": 280,
+        "rangedLevel": 1,
         "stabDefence": 80,
         "slashDefence": 80,
         "crushDefence": 80,
-        "magicDefence": 120,
-        "rangedDefence": 80,
+        "magicDefence": 80,
+        "rangedDefence": 130,
         "attackSpeed": 4,
         "attackStyles": [
-          "Melee",
+          "Stab",
           "Magic"
         ],
         "wilderness": false,
         "multiCombat": false,
-        "cannonable": false
+        "cannonable": false,
+        "maxHit": "38",
+        "attributes": [
+          "demon"
+        ],
+        "wikiName": "Skotizo",
+        "elementalWeakness": "WATER",
+        "elementalWeaknessPercent": 40
       }
-    ]
+    ],
+    "attributes": [
+      "demon"
+    ],
+    "maxHitSummary": "38"
   }
 ]

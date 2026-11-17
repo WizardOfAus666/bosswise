@@ -1,0 +1,283 @@
+BOSSWISE data sync against the OSRS Wiki dps-calc dataset
+items corrected: 171 (723 fields)   monster variants corrected: 87 (647 fields)
+
+ITEM Rune scimitar -> Rune scimitar {'slashDefence': (0, 1)}
+ITEM Dragon scimitar -> Dragon scimitar {'slashDefence': (0, 1)}
+ITEM Dragon sword -> Dragon shortsword {'slashDefence': (0, 2), 'crushDefence': (0, 1)}
+ITEM Dragon mace -> Dragon mace {'slashAttack': (-4, -2), 'meleeStrength': (66, 55)}
+ITEM Leaf-bladed sword -> Leaf-bladed sword {'slashAttack': (0, 62), 'itemId': (4158, 11902)}
+ITEM Leaf-bladed battleaxe -> Leaf-bladed battleaxe {'stabAttack': (0, -2), 'crushAttack': (92, 72), 'rangedDefence': (0, -1)}
+ITEM id kept (not in wiki dataset): Sarachnis cudgel = 23509 (wiki Sarachnis cudgel uses 23528)
+ITEM Sarachnis cudgel -> Sarachnis cudgel {'stabAttack': (0, 30)}
+ITEM id kept (not in wiki dataset): Zombie axe = 28678 (wiki Zombie axe uses 28810)
+ITEM Zombie axe -> Zombie axe {'stabAttack': (0, -3), 'stabDefence': (0, -1), 'rangedDefence': (0, -1), 'meleeStrength': (85, 107)}
+ITEM Ghrazi rapier -> Ghrazi rapier {'stabAttack': (94, 100), 'meleeStrength': (89, 93)}
+ITEM Blade of saeldor -> Blade of Saeldor [Charged] {'slashAttack': (94, 100), 'meleeStrength': (89, 93)}
+ITEM Inquisitor's mace -> Inquisitor's mace {'stabAttack': (55, 52), 'slashAttack': (0, -4), 'crushAttack': (95, 102), 'meleeStrength': (89, 96)}
+ITEM Dragon hunter lance -> Dragon hunter lance {'meleeStrength': (75, 70)}
+ITEM Darklight -> Darklight {'slashAttack': (18, 16), 'crushAttack': (0, -2), 'slashDefence': (0, 3), 'crushDefence': (0, 2), 'magicDefence': (0, 2), 'meleeStrength': (16, 13), 'attackSpeed': (4, 5)}
+ITEM Arclight -> Arclight [Charged] {'slashDefence': (0, 3), 'crushDefence': (0, 2), 'magicDefence': (0, 2)}
+ITEM Emberlight -> Emberlight {'stabAttack': (45, 63), 'slashAttack': (85, 70), 'slashDefence': (0, 3), 'crushDefence': (0, 2), 'magicDefence': (0, 5), 'meleeStrength': (80, 13), 'itemId': (28682, 29589)}
+ITEM Keris -> Keris [Unpoisoned] {'slashAttack': (0, 20), 'crushAttack': (0, -10), 'magicAttack': (0, 2), 'magicDefence': (0, 2), 'meleeStrength': (35, 30), 'prayerBonus': (0, 2)}
+ITEM Keris partisan -> Keris partisan {'slashAttack': (0, -2), 'crushAttack': (33, 57), 'magicAttack': (0, 2), 'itemId': (25985, 25979)}
+ITEM Keris partisan of breaching -> Keris partisan of breaching {'slashAttack': (0, -2), 'crushAttack': (33, 57), 'magicAttack': (0, 2), 'itemId': (27287, 25981)}
+ITEM Keris partisan of the sun -> Keris partisan of the sun {'slashAttack': (0, -2), 'crushAttack': (33, 57), 'magicAttack': (0, 2)}
+ITEM Bone mace -> Bone mace {'stabAttack': (0, 40), 'slashAttack': (0, -2), 'crushAttack': (40, 60), 'meleeStrength': (38, 55), 'prayerBonus': (2, 0), 'itemId': (28796, 28792)}
+ITEM Viggora's chainmace -> Viggora's chainmace [Charged] {'stabAttack': (0, 53), 'slashAttack': (0, -2), 'slashDefence': (0, 1), 'prayerBonus': (0, 2)}
+ITEM Ursine chainmace -> Ursine chainmace [Charged] {'stabAttack': (0, 53), 'slashAttack': (0, -2), 'crushAttack': (75, 71), 'meleeStrength': (73, 74), 'prayerBonus': (0, 2)}
+ITEM Zamorakian hasta -> Zamorakian hasta {'stabAttack': (75, 85), 'crushDefence': (13, 12), 'magicDefence': (2, 0)}
+ITEM Dual macuahuitl -> Dual macuahuitl {'stabAttack': (0, 115), 'slashAttack': (0, -4), 'crushAttack': (85, 121), 'magicAttack': (0, -4), 'meleeStrength': (78, 81), 'itemId': (28307, 28997)}
+ITEM Abyssal bludgeon -> Abyssal bludgeon {'prayerBonus': (1, 0)}
+ITEM Dragon warhammer -> Dragon warhammer {'stabAttack': (0, -4), 'slashAttack': (0, -4), 'magicAttack': (0, -4)}
+ITEM Dragon claws -> Dragon claws {'crushAttack': (0, -4), 'stabDefence': (0, 13), 'slashDefence': (0, 26), 'crushDefence': (0, 7)}
+ITEM Voidwaker -> Voidwaker {'crushAttack': (0, -2), 'magicAttack': (0, 5), 'slashDefence': (0, 1), 'magicDefence': (0, 2)}
+ITEM Dragon dagger (p++) -> Dragon dagger [Poison++] {'crushAttack': (0, -4), 'magicAttack': (0, 1), 'magicDefence': (0, 1)}
+ITEM Zamorakian spear -> Zamorakian spear {'stabDefence': (0, 13), 'slashDefence': (0, 13), 'crushDefence': (0, 12), 'rangedDefence': (0, 13)}
+ITEM Dharok's greataxe -> Dharok's greataxe [Undamaged] {'stabAttack': (0, -4), 'magicAttack': (0, -4), 'rangedDefence': (0, -1)}
+ITEM Guthan's warspear -> Guthan's warspear [Undamaged] {'stabDefence': (0, 7), 'slashDefence': (0, 7), 'crushDefence': (0, 7)}
+ITEM Karil's crossbow -> Karil's crossbow [Undamaged] {'attackSpeed': (3, 4)}
+ITEM Verac's flail -> Verac's flail [Undamaged] {'stabAttack': (0, 68), 'slashAttack': (0, -2)}
+ITEM Soulreaper axe -> Soulreaper axe {'stabAttack': (0, 28), 'slashAttack': (121, 134), 'crushAttack': (0, 66), 'meleeStrength': (135, 125)}
+ITEM Magic shortbow (i) -> Magic shortbow (i) {'attackSpeed': (3, 4), 'itemId': (861, 12788)}
+ITEM Rune crossbow -> Rune crossbow {'attackSpeed': (4, 6)}
+ITEM Dragon crossbow -> Dragon crossbow {'attackSpeed': (4, 6)}
+ITEM Armadyl crossbow -> Armadyl crossbow {'attackSpeed': (4, 6)}
+ITEM Dragon hunter crossbow -> Dragon hunter crossbow {'attackSpeed': (4, 6)}
+ITEM Zaryte crossbow -> Zaryte crossbow {'stabDefence': (0, 14), 'slashDefence': (0, 14), 'crushDefence': (0, 12), 'magicDefence': (0, 15), 'rangedDefence': (0, 16), 'attackSpeed': (4, 6)}
+ITEM Toxic blowpipe -> Toxic blowpipe [Charged] {'attackSpeed': (2, 3)}
+ITEM Bow of faerdhinen -> Bow of Faerdhinen [Charged] {'attackSpeed': (4, 5)}
+ITEM Twisted bow -> Twisted bow {'attackSpeed': (5, 6)}
+ITEM Venator bow -> Venator bow [Charged] {'rangedAttack': (75, 90), 'rangedStrength': (20, 25), 'attackSpeed': (4, 5)}
+ITEM Scorching bow -> Scorching bow {'rangedAttack': (95, 124), 'rangedStrength': (75, 40), 'attackSpeed': (4, 5), 'itemId': (28688, 29591)}
+ITEM Craw's bow -> Craw's bow [Charged] {'attackSpeed': (3, 4)}
+ITEM Webweaver bow -> Webweaver bow [Charged] {'rangedStrength': (70, 65), 'attackSpeed': (3, 4)}
+ITEM Bone bow -> Bone shortbow {'rangedAttack': (50, 69), 'rangedStrength': (35, 0), 'attackSpeed': (3, 4)}
+ITEM Eclipse atlatl -> Eclipse atlatl {'rangedAttack': (65, 87), 'meleeStrength': (0, 40), 'rangedStrength': (45, 0), 'attackSpeed': (3, 4), 'itemId': (28310, 29000)}
+ITEM Trident of the seas -> Trident of the Seas [Charged] {'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'magicDefence': (2, 15)}
+ITEM Trident of the swamp -> Trident of the Swamp [Charged] {'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'magicDefence': (2, 15)}
+ITEM Sanguinesti staff -> Sanguinesti staff [Charged] {'rangedAttack': (0, -4), 'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'magicDefence': (0, 15)}
+ITEM Tumeken's shadow -> Tumeken's shadow [Charged] {'magicDefence': (0, 20), 'prayerBonus': (0, 1)}
+ITEM id kept (not in wiki dataset): Warped sceptre = 28676 (wiki Warped sceptre uses 28585)
+ITEM Warped sceptre -> Warped sceptre [Charged] {'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'magicDefence': (0, 12)}
+ITEM Iban's staff (u) -> Iban's staff (u) {'stabAttack': (0, 10), 'slashAttack': (0, -1), 'crushAttack': (0, 40), 'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'magicDefence': (2, 10), 'meleeStrength': (0, 50), 'itemId': (1409, 12658)}
+ITEM Kodai wand -> Kodai wand {'slashDefence': (0, 3), 'crushDefence': (0, 3), 'magicDefence': (0, 20)}
+ITEM Staff of the dead -> Staff of the Dead {'stabAttack': (0, 55), 'slashAttack': (0, 70), 'slashDefence': (0, 3), 'crushDefence': (0, 3), 'magicDefence': (0, 17)}
+ITEM Harmonised nightmare staff -> Harmonised Nightmare staff {'magicAttack': (20, 16), 'magicDefence': (0, 14), 'magicDamagePercent': (24, 15), 'attackSpeed': (4, 5)}
+ITEM id kept (not in wiki dataset): Accursed sceptre = 27659 (wiki Accursed sceptre uses 27665)
+ITEM Accursed sceptre -> Accursed sceptre [Charged] {'magicAttack': (25, 22), 'magicDefence': (0, 20), 'magicDamagePercent': (10, 0)}
+ITEM id kept (not in wiki dataset): Purging staff = 28685 (wiki Purging staff uses 29594)
+ITEM Purging staff -> Purging staff {'stabAttack': (0, 10), 'slashAttack': (0, -5), 'crushAttack': (0, 83), 'magicAttack': (25, 37), 'stabDefence': (0, 1), 'slashDefence': (0, 1), 'magicDefence': (0, 25), 'meleeStrength': (0, 62)}
+ITEM Bone staff -> Bone staff {'magicAttack': (15, 14), 'itemId': (28792, 28796)}
+ITEM Dragon defender -> Dragon defender [Normal] {'magicAttack': (0, -3), 'rangedAttack': (0, -2)}
+ITEM Avernic defender -> Avernic defender [Normal] {'magicAttack': (0, -5), 'rangedAttack': (0, -4)}
+ITEM Dragonfire shield -> Dragonfire shield [Charged] {'stabAttack': (-10, 0), 'slashAttack': (-10, 0), 'crushAttack': (-10, 0)}
+ITEM Dragonfire ward -> Dragonfire ward [Charged] {'stabAttack': (0, -10), 'slashAttack': (0, -10), 'crushAttack': (0, -10), 'magicAttack': (0, -10), 'stabDefence': (58, 25), 'slashDefence': (54, 30), 'crushDefence': (56, 28), 'magicDefence': (18, 28), 'rangedDefence': (52, 68), 'meleeStrength': (0, -2), 'rangedStrength': (0, 8)}
+ITEM Ancient wyvern shield -> Ancient wyvern shield [Charged] {'stabAttack': (0, -10), 'slashAttack': (0, -10), 'crushAttack': (0, -10), 'rangedAttack': (0, -10), 'stabDefence': (60, 72), 'slashDefence': (58, 80), 'crushDefence': (62, 75), 'magicDefence': (20, 15), 'rangedDefence': (58, -5), 'meleeStrength': (0, -2)}
+ITEM Arcane spirit shield -> Arcane spirit shield {'magicDamagePercent': (0, 3)}
+ITEM Elidinis' ward (f) -> Elidinis' ward (f) {'itemId': (27277, 27251)}
+ITEM Tome of fire -> Tome of Fire [Charged] {'magicDefence': (0, 8)}
+ITEM Tome of water -> Tome of Water [Charged] {'itemId': (24444, 25574)}
+ITEM id kept (not in wiki dataset): Tome of earth = 28690 (wiki Tome of Earth uses 30064)
+ITEM Torva full helm -> Torva full helm [Restored] {'magicAttack': (0, -5), 'rangedAttack': (0, -5), 'stabDefence': (68, 59), 'slashDefence': (65, 60), 'crushDefence': (63, 62), 'magicDefence': (-5, -2), 'rangedDefence': (65, 57), 'prayerBonus': (0, 1)}
+ITEM Slayer helmet (i) -> Slayer helmet (i) {'magicAttack': (0, 3), 'rangedAttack': (0, 3), 'magicDefence': (-1, 10), 'itemId': (11864, 11865)}
+ITEM Black mask (i) -> Black mask (i) [(10)] {'stabDefence': (0, 9), 'slashDefence': (0, 10), 'crushDefence': (0, 8), 'magicDefence': (0, -1), 'rangedDefence': (0, 9), 'itemId': (11865, 11774)}
+ITEM Void melee helm -> Void melee helm [Normal] {'stabDefence': (0, 6), 'slashDefence': (0, 6), 'crushDefence': (0, 6), 'magicDefence': (0, 6), 'rangedDefence': (0, 6)}
+ITEM Void ranger helm -> Void ranger helm [Normal] {'stabDefence': (0, 6), 'slashDefence': (0, 6), 'crushDefence': (0, 6), 'magicDefence': (0, 6), 'rangedDefence': (0, 6)}
+ITEM Void mage helm -> Void mage helm [Normal] {'stabDefence': (0, 6), 'slashDefence': (0, 6), 'crushDefence': (0, 6), 'magicDefence': (0, 6), 'rangedDefence': (0, 6)}
+ITEM Masori mask (f) -> Masori mask (f) {'magicAttack': (0, -1), 'stabDefence': (20, 8), 'slashDefence': (18, 10), 'crushDefence': (22, 12), 'magicDefence': (6, 12), 'rangedDefence': (16, 9), 'rangedStrength': (4, 2), 'prayerBonus': (0, 1), 'itemId': (26235, 27235)}
+ITEM Ancestral hat -> Ancestral hat {'rangedAttack': (0, -2), 'slashDefence': (10, 11), 'crushDefence': (14, 13), 'magicDefence': (15, 5), 'magicDamagePercent': (2, 3)}
+ITEM Virtus mask -> Virtus mask {'magicAttack': (6, 8), 'rangedAttack': (0, -3), 'stabDefence': (14, 15), 'slashDefence': (12, 14), 'magicDefence': (18, 6), 'magicDamagePercent': (1, 2), 'itemId': (28254, 26241)}
+ITEM Crystal helm -> Crystal helm [Active] {'magicAttack': (0, -10), 'stabDefence': (16, 12), 'slashDefence': (14, 8), 'crushDefence': (18, 14), 'magicDefence': (4, 10), 'rangedDefence': (14, 18), 'prayerBonus': (1, 2)}
+ITEM Serpentine helm -> Serpentine helm [Charged] {'stabAttack': (-5, 0), 'slashAttack': (-5, 0), 'crushAttack': (-5, 0), 'crushDefence': (54, 58)}
+ITEM Fighter torso -> Fighter torso [Normal] {'magicAttack': (0, -40), 'stabDefence': (85, 62), 'crushDefence': (85, 62), 'magicDefence': (0, -10), 'rangedDefence': (80, 67)}
+ITEM Bandos chestplate -> Bandos chestplate {'magicAttack': (0, -15), 'rangedAttack': (0, -10)}
+ITEM Torva platebody -> Torva platebody [Restored] {'magicAttack': (0, -18), 'rangedAttack': (0, -14), 'stabDefence': (135, 117), 'slashDefence': (128, 111), 'crushDefence': (125, 117), 'magicDefence': (-10, -11), 'rangedDefence': (145, 142), 'prayerBonus': (0, 1)}
+ITEM Proselyte hauberk -> Proselyte hauberk {'magicAttack': (0, -30), 'rangedAttack': (0, -15), 'stabDefence': (44, 65), 'slashDefence': (37, 63), 'crushDefence': (26, 55), 'magicDefence': (-11, -6), 'rangedDefence': (40, 63), 'itemId': (9672, 9674)}
+ITEM Black d'hide body -> Black d'hide body {'magicAttack': (0, -15), 'rangedAttack': (15, 30), 'stabDefence': (28, 30), 'slashDefence': (15, 38), 'crushDefence': (35, 45)}
+ITEM Saradomin d'hide body -> Saradomin d'hide body {'magicAttack': (0, -15), 'rangedAttack': (15, 30), 'stabDefence': (28, 55), 'slashDefence': (15, 47), 'crushDefence': (35, 60), 'magicDefence': (45, 50), 'rangedDefence': (50, 55), 'itemId': (11838, 10386)}
+ITEM Crystal body -> Crystal body [Active] {'magicAttack': (0, -18), 'rangedAttack': (25, 31), 'stabDefence': (48, 46), 'slashDefence': (42, 38), 'crushDefence': (52, 48), 'magicDefence': (35, 44), 'rangedDefence': (48, 68)}
+ITEM id kept (not in wiki dataset): Masori body (f) = 26237 (wiki Masori body (f) uses 27238)
+ITEM Masori body (f) -> Masori body (f) {'magicAttack': (0, -4), 'rangedAttack': (30, 43), 'stabDefence': (65, 59), 'slashDefence': (58, 52), 'crushDefence': (68, 64), 'magicDefence': (45, 74), 'rangedDefence': (55, 60), 'prayerBonus': (0, 1)}
+ITEM Ahrim's robetop -> Ahrim's robetop [Undamaged] {'rangedAttack': (0, -10), 'stabDefence': (42, 52), 'slashDefence': (32, 37), 'crushDefence': (52, 63)}
+ITEM Ancestral robe top -> Ancestral robe top {'rangedAttack': (0, -8), 'stabDefence': (35, 42), 'slashDefence': (28, 31), 'crushDefence': (42, 51), 'magicDefence': (42, 28), 'magicDamagePercent': (2, 3)}
+ITEM Virtus robe top -> Virtus robe top {'magicAttack': (31, 35), 'rangedAttack': (0, -11), 'stabDefence': (40, 47), 'slashDefence': (32, 36), 'crushDefence': (48, 56), 'magicDefence': (50, 31), 'magicDamagePercent': (1, 2), 'prayerBonus': (1, 2), 'itemId': (28256, 26243)}
+ITEM Bandos tassets -> Bandos tassets {'magicAttack': (0, -21), 'rangedAttack': (0, -7), 'slashDefence': (70, 63), 'magicDefence': (-21, -4), 'rangedDefence': (63, 93)}
+ITEM Torva platelegs -> Torva platelegs [Restored] {'magicAttack': (0, -24), 'rangedAttack': (0, -11), 'stabDefence': (112, 87), 'slashDefence': (105, 78), 'crushDefence': (100, 79), 'magicDefence': (-10, -9), 'rangedDefence': (120, 102), 'prayerBonus': (0, 1)}
+ITEM Proselyte cuisse -> Proselyte cuisse {'magicAttack': (0, -21), 'rangedAttack': (0, -11), 'slashDefence': (28, 31), 'crushDefence': (20, 29), 'magicDefence': (-8, -4), 'rangedDefence': (30, 31), 'itemId': (9674, 9676)}
+ITEM Black d'hide chaps -> Black d'hide chaps {'magicAttack': (0, -10), 'rangedAttack': (8, 17), 'stabDefence': (17, 18), 'slashDefence': (11, 20), 'crushDefence': (22, 26), 'magicDefence': (28, 23), 'rangedDefence': (31, 26), 'itemId': (2501, 2497)}
+ITEM Saradomin d'hide chaps -> Saradomin chaps {'magicAttack': (0, -10), 'rangedAttack': (8, 17), 'stabDefence': (17, 31), 'slashDefence': (11, 25), 'crushDefence': (22, 33), 'itemId': (11840, 10388)}
+ITEM Crystal legs -> Crystal legs [Active] {'magicAttack': (0, -12), 'rangedAttack': (17, 18), 'stabDefence': (36, 26), 'slashDefence': (32, 21), 'crushDefence': (39, 30), 'magicDefence': (26, 34), 'rangedDefence': (36, 38)}
+ITEM id kept (not in wiki dataset): Masori chaps (f) = 26239 (wiki Masori chaps (f) uses 27241)
+ITEM Masori chaps (f) -> Masori chaps (f) {'magicAttack': (0, -2), 'rangedAttack': (20, 27), 'stabDefence': (48, 35), 'slashDefence': (43, 30), 'crushDefence': (50, 39), 'magicDefence': (33, 46), 'rangedDefence': (41, 37), 'prayerBonus': (0, 1)}
+ITEM Ahrim's robeskirt -> Ahrim's robeskirt [Undamaged] {'rangedAttack': (0, -7), 'stabDefence': (30, 33), 'slashDefence': (23, 30), 'crushDefence': (37, 36)}
+ITEM Ancestral robe bottom -> Ancestral robe bottom {'rangedAttack': (0, -7), 'stabDefence': (26, 27), 'slashDefence': (21, 24), 'crushDefence': (31, 30), 'magicDefence': (31, 20), 'magicDamagePercent': (2, 3)}
+ITEM Virtus robe bottom -> Virtus robe bottom {'magicAttack': (23, 26), 'rangedAttack': (0, -9), 'stabDefence': (30, 31), 'slashDefence': (24, 28), 'crushDefence': (36, 34), 'magicDefence': (38, 22), 'magicDamagePercent': (1, 2), 'itemId': (28258, 26245)}
+ITEM Climbing boots -> Climbing boots {'slashDefence': (0, 2), 'crushDefence': (0, 2)}
+ITEM Dragon boots -> Dragon boots {'magicAttack': (0, -3), 'rangedAttack': (0, -1), 'rangedDefence': (16, 0)}
+ITEM Primordial boots -> Primordial boots {'magicAttack': (0, -4), 'rangedAttack': (0, -1), 'slashDefence': (23, 22), 'crushDefence': (24, 22), 'rangedDefence': (22, 0)}
+ITEM id kept (not in wiki dataset): Blessed d'hide boots = 19937 (wiki Saradomin d'hide boots uses 19933)
+ITEM Blessed d'hide boots -> Saradomin d'hide boots {'magicAttack': (0, -10), 'stabDefence': (5, 4), 'slashDefence': (6, 4), 'crushDefence': (7, 4), 'magicDefence': (5, 4), 'rangedDefence': (5, 4)}
+ITEM Pegasian boots -> Pegasian boots {'magicAttack': (0, -12), 'stabDefence': (12, 5), 'slashDefence': (13, 5), 'crushDefence': (14, 5), 'magicDefence': (12, 5), 'rangedDefence': (12, 5), 'rangedStrength': (0, 1)}
+ITEM Devout boots -> Devout boots {'stabDefence': (5, 0), 'slashDefence': (5, 0), 'crushDefence': (5, 0), 'magicDefence': (5, 0), 'rangedDefence': (5, 0)}
+ITEM Boots of brimstone -> Boots of Brimstone {'slashAttack': (3, 0), 'crushAttack': (3, 0), 'rangedAttack': (3, 5), 'stabDefence': (11, 10), 'slashDefence': (12, 10), 'crushDefence': (13, 10), 'rangedDefence': (11, 5), 'meleeStrength': (3, 0), 'itemId': (23037, 22951)}
+ITEM Zaryte vambraces -> Zaryte vambraces {'stabAttack': (0, -8), 'slashAttack': (0, -8), 'crushAttack': (0, -8), 'stabDefence': (0, 8), 'slashDefence': (0, 8), 'crushDefence': (0, 8), 'magicDefence': (0, 5), 'rangedDefence': (0, 8), 'prayerBonus': (2, 1), 'itemId': (26229, 26235)}
+ITEM Tormented bracelet -> Tormented bracelet {'prayerBonus': (0, 2)}
+ITEM Chaos gauntlets -> Chaos gauntlets {'stabAttack': (0, 2), 'slashAttack': (0, 2), 'crushAttack': (0, 2), 'stabDefence': (0, 8), 'slashDefence': (0, 9), 'crushDefence': (0, 7), 'meleeStrength': (0, 2)}
+ITEM Ava's accumulator -> Ava's accumulator {'slashDefence': (0, 1), 'magicDefence': (0, 4)}
+ITEM Imbued saradomin cape -> Imbued Saradomin cape [Normal] {'stabDefence': (0, 3), 'slashDefence': (0, 3), 'crushDefence': (0, 3), 'magicDefence': (0, 15), 'prayerBonus': (2, 0)}
+ITEM Mythical cape -> Mythical cape {'stabDefence': (0, 8), 'slashDefence': (0, 8), 'crushDefence': (0, 8), 'magicDefence': (0, 8), 'rangedDefence': (0, 8)}
+ITEM Occult necklace -> Occult necklace {'magicDamagePercent': (4, 5), 'prayerBonus': (0, 2)}
+ITEM Salve amulet (ei) -> Salve amulet(ei) {'stabDefence': (0, 3), 'slashDefence': (0, 3), 'crushDefence': (0, 3)}
+ITEM Amulet of blood fury -> Amulet of blood fury {'stabDefence': (0, 15), 'slashDefence': (0, 15), 'crushDefence': (0, 15), 'magicDefence': (0, 15), 'rangedDefence': (0, 15)}
+ITEM Berserker ring (i) -> Berserker ring (i) {'stabDefence': (4, 0), 'slashDefence': (4, 0), 'crushDefence': (4, 8), 'magicDefence': (4, 0), 'rangedDefence': (4, 0)}
+ITEM id kept (not in wiki dataset): Ultor ring = 28301 (wiki Ultor ring uses 28307)
+ITEM Archers ring (i) -> Archers ring (i) {'rangedDefence': (0, 8)}
+ITEM id kept (not in wiki dataset): Venator ring = 28304 (wiki Venator ring uses 28310)
+ITEM Seers ring (i) -> Seers ring (i) {'magicDefence': (0, 12)}
+ITEM Magus ring -> Magus ring {'itemId': (28307, 28313)}
+ITEM Bellator ring -> Bellator ring {'itemId': (28310, 28316)}
+ITEM Ring of suffering (i) -> Ring of suffering (i) [Recoil] {'itemId': (19550, 20657)}
+ITEM Dragon ruby bolts (e) -> Ruby dragon bolts (e) {'itemId': (9244, 21944)}
+ITEM Dragon diamond bolts (e) -> Diamond dragon bolts (e) {'itemId': (9245, 21946)}
+ITEM Dragon dart -> Dragon dart [Poison] {'itemId': (25867, 11231)}
+ITEM id kept (not in wiki dataset): Amethyst dart = 25869 (wiki Amethyst dart uses 25851)
+ITEM Peace blessing -> Peaceful blessing {'itemId': (20220, 20226)}
+ITEM Mirror shield -> Mirror shield {'slashDefence': (12, 15), 'crushDefence': (10, 5), 'magicDefence': (-2, 5)}
+ITEM V's shield -> V's shield [Equipable] {'stabDefence': (48, 27), 'slashDefence': (46, 31), 'crushDefence': (44, 29), 'magicDefence': (-4, 5), 'rangedDefence': (48, 29), 'prayerBonus': (1, 0)}
+ITEM Boots of stone -> Boots of stone {'stabDefence': (7, 1), 'slashDefence': (7, 1), 'crushDefence': (7, 1), 'rangedDefence': (7, 0), 'meleeStrength': (1, 0), 'itemId': (22951, 23037)}
+ITEM Insulated boots -> Insulated boots {'stabDefence': (2, 1), 'slashDefence': (2, 1), 'crushDefence': (2, 0), 'rangedDefence': (2, 1)}
+ITEM UNVERIFIED (no wiki row): Rock hammer
+ITEM Granite hammer -> Granite hammer {'crushAttack': (56, 57), 'magicAttack': (0, -3), 'rangedAttack': (0, -1), 'meleeStrength': (68, 56)}
+ITEM Scythe of vitur -> Scythe of Vitur [Charged] {'stabAttack': (0, 70), 'slashAttack': (110, 125), 'magicAttack': (0, -6), 'stabDefence': (0, -2), 'slashDefence': (0, 8), 'crushDefence': (0, 10)}
+ITEM id kept (not in wiki dataset): Crystal halberd = 13092 (wiki Crystal halberd uses 23987)
+ITEM Crystal halberd -> Crystal halberd [Active] {'slashAttack': (85, 110), 'crushAttack': (0, 5), 'magicAttack': (0, -4), 'stabDefence': (0, -1), 'slashDefence': (0, 4), 'crushDefence': (0, 5), 'prayerBonus': (1, 0)}
+ITEM Black chinchompa -> Black chinchompa {'rangedStrength': (0, 30), 'attackSpeed': (3, 4)}
+ITEM Iban's staff -> Iban's staff [Regular] {'stabAttack': (0, 10), 'slashAttack': (0, -1), 'crushAttack': (0, 40), 'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'meleeStrength': (0, 50)}
+ITEM id kept (not in wiki dataset): Ancient sceptre = 27299 (wiki Ancient sceptre uses 27624)
+ITEM Ancient sceptre -> Ancient sceptre [Normal] {'stabAttack': (0, 20), 'slashAttack': (0, -1), 'crushAttack': (0, 50), 'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'magicDefence': (0, 15), 'meleeStrength': (50, 60), 'magicDamagePercent': (5, 10), 'prayerBonus': (2, -1)}
+ITEM Dragon dagger -> Dragon dagger [Unpoisoned] {'crushAttack': (0, -4), 'magicAttack': (0, 1), 'magicDefence': (0, 1)}
+ITEM Dharok's helm -> Dharok's helm [Undamaged] {'magicAttack': (0, -3), 'rangedAttack': (0, -1), 'magicDefence': (0, -1)}
+ITEM Dharok's platebody -> Dharok's platebody [Undamaged] {'magicAttack': (0, -30), 'rangedAttack': (0, -10), 'crushDefence': (105, 107), 'magicDefence': (0, -6)}
+ITEM Dharok's platelegs -> Dharok's platelegs [Undamaged] {'magicAttack': (0, -21), 'rangedAttack': (0, -11), 'crushDefence': (70, 83), 'magicDefence': (0, -4)}
+ITEM Dharok's greataxe -> Dharok's greataxe [Undamaged] {'stabAttack': (0, -4), 'magicAttack': (0, -4), 'rangedDefence': (0, -1)}
+ITEM Karil's leathertop -> Karil's leathertop [Undamaged] {'magicAttack': (0, -15), 'crushDefence': (60, 50), 'rangedDefence': (0, 57)}
+ITEM Karil's leatherskirt -> Karil's leatherskirt [Undamaged] {'magicAttack': (0, -10), 'crushDefence': (34, 28), 'rangedDefence': (0, 33)}
+ITEM Karil's crossbow -> Karil's crossbow [Undamaged] {'attackSpeed': (3, 4)}
+ITEM Verac's helm -> Verac's helm [Undamaged] {'magicAttack': (0, -6), 'rangedAttack': (0, -2)}
+ITEM Verac's brassard -> Verac's brassard [Undamaged] {'magicAttack': (0, -6), 'rangedAttack': (0, -2), 'stabDefence': (82, 81), 'slashDefence': (78, 95), 'crushDefence': (70, 85), 'rangedDefence': (80, 81), 'prayerBonus': (2, 5)}
+ITEM Verac's plateskirt -> Verac's plateskirt [Undamaged] {'magicAttack': (0, -21), 'rangedAttack': (0, -11), 'stabDefence': (51, 85), 'slashDefence': (49, 82), 'crushDefence': (47, 83), 'rangedDefence': (51, 84)}
+ITEM Verac's flail -> Verac's flail [Undamaged] {'stabAttack': (0, 68), 'slashAttack': (0, -2)}
+ITEM id kept (not in wiki dataset): Blood moon chestplate = 28926 (wiki Blood Moon chestplate uses 29022)
+ITEM Blood moon chestplate -> Blood Moon chestplate [New] {'magicAttack': (0, -15), 'rangedAttack': (0, -10), 'stabDefence': (75, 60), 'crushDefence': (65, 80), 'magicDefence': (0, 40), 'rangedDefence': (0, 79)}
+ITEM id kept (not in wiki dataset): Blood moon tassets = 28929 (wiki Blood Moon tassets uses 29025)
+ITEM Blood moon tassets -> Blood Moon tassets [New] {'magicAttack': (0, -21), 'rangedAttack': (0, -7), 'stabDefence': (52, 30), 'slashDefence': (58, 50), 'crushDefence': (48, 49), 'magicDefence': (0, 32), 'rangedDefence': (0, 46), 'meleeStrength': (3, 2)}
+ITEM id kept (not in wiki dataset): Eclipse moon chestplate = 28938 (wiki Eclipse Moon chestplate uses 29004)
+ITEM Eclipse moon chestplate -> Eclipse Moon chestplate [New] {'magicAttack': (0, -15), 'rangedAttack': (28, 31), 'stabDefence': (50, 15), 'slashDefence': (45, 18), 'crushDefence': (55, 57), 'magicDefence': (0, 55), 'rangedDefence': (0, 32), 'meleeStrength': (0, 3), 'rangedStrength': (2, 0)}
+ITEM id kept (not in wiki dataset): Eclipse moon tassets = 28941 (wiki Eclipse Moon tassets uses 29007)
+ITEM Eclipse moon tassets -> Eclipse Moon tassets [New] {'magicAttack': (0, -15), 'rangedAttack': (16, 17), 'stabDefence': (35, 9), 'slashDefence': (30, 13), 'crushDefence': (38, 37), 'magicDefence': (0, 31), 'rangedDefence': (0, 17), 'meleeStrength': (0, 1), 'rangedStrength': (1, 0)}
+ITEM Atlatl dart -> Atlatl dart {'rangedStrength': (20, 0), 'itemId': (28949, 28991)}
+ITEM id kept (not in wiki dataset): Blue moon chestplate = 28952 (wiki Blue Moon chestplate uses 29013)
+ITEM Blue moon chestplate -> Blue Moon chestplate [New] {'magicAttack': (26, 30), 'stabDefence': (40, 0), 'slashDefence': (35, 0), 'crushDefence': (45, 51), 'magicDefence': (0, 28), 'meleeStrength': (0, 2)}
+ITEM Blue moon tassets -> Blue Moon tassets [New] {'magicAttack': (17, 22), 'stabDefence': (28, 0), 'slashDefence': (24, 0), 'crushDefence': (32, 23), 'magicDefence': (0, 32), 'meleeStrength': (0, 1), 'itemId': (28955, 29016)}
+ITEM id kept (not in wiki dataset): Blue moon spear = 28961 (wiki Blue Moon spear uses 28988)
+ITEM Blue moon spear -> Blue Moon spear {'stabAttack': (85, 70), 'slashAttack': (0, 62), 'crushAttack': (0, 62), 'magicAttack': (25, 30), 'stabDefence': (0, 2), 'slashDefence': (0, 3), 'crushDefence': (0, 1), 'magicDefence': (0, 15), 'meleeStrength': (78, 71), 'attackSpeed': (4, 5)}
+ITEM God d'hide body -> Saradomin d'hide body {'magicAttack': (0, -15), 'stabDefence': (40, 55), 'slashDefence': (32, 47), 'crushDefence': (45, 60), 'rangedDefence': (0, 55)}
+ITEM God d'hide chaps -> Saradomin chaps {'magicAttack': (0, -10), 'stabDefence': (22, 31), 'slashDefence': (18, 25), 'crushDefence': (25, 33), 'rangedDefence': (0, 31), 'itemId': (10378, 10388)}
+ITEM Rune platebody -> Rune platebody {'magicAttack': (0, -30), 'rangedAttack': (0, -15), 'magicDefence': (0, -6)}
+ITEM Rune platelegs -> Rune platelegs {'magicAttack': (0, -21), 'rangedAttack': (0, -11), 'magicDefence': (0, -4)}
+ITEM Rune full helm -> Rune full helm {'magicAttack': (0, -6), 'rangedAttack': (0, -3), 'magicDefence': (0, -1)}
+ITEM Rune kiteshield -> Rune kiteshield {'magicAttack': (0, -8), 'rangedAttack': (0, -3), 'magicDefence': (0, -1)}
+ITEM Salve amulet -> Salve amulet {'stabDefence': (0, 3), 'slashDefence': (0, 3), 'crushDefence': (0, 3), 'prayerBonus': (0, 3)}
+ITEM Salve amulet (e) -> Salve amulet (e) {'stabDefence': (0, 3), 'slashDefence': (0, 3), 'crushDefence': (0, 3), 'prayerBonus': (0, 3), 'itemId': (10551, 10588)}
+ITEM Sapphire dragon bolts (e) -> Sapphire dragon bolts (e) {'itemId': (21938, 21940)}
+ITEM Monk's robe top -> Monk's robe top {'itemId': (542, 544)}
+ITEM Monk's robe -> Monk's robe {'itemId': (544, 542)}
+ITEM id kept (not in wiki dataset): Twisted buckler = 20701 (wiki Twisted buckler uses 21000)
+ITEM Twisted buckler -> Twisted buckler {'stabAttack': (0, -7), 'slashAttack': (0, -8), 'crushAttack': (0, -7), 'magicAttack': (0, -10), 'stabDefence': (18, 22), 'slashDefence': (15, 24), 'crushDefence': (12, 22), 'magicDefence': (10, 26), 'rangedDefence': (26, 58)}
+MONSTER Chicken / Standard -> Chicken [Normal] {'attackStyles': (['Melee'], ['Stab'])}
+MONSTER Cow / Standard -> Cow [1] {'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Goblin / Lumbridge Goblin -> Goblin [Level 5] {'hitpoints': (5, 12), 'attackLevel': (4, 3), 'strengthLevel': (4, 1), 'stabDefence': (-15, 0), 'slashDefence': (-15, 0), 'crushDefence': (-15, 0), 'magicDefence': (-15, 0), 'rangedDefence': (-15, 0), 'attackSpeed': (4, 6), 'npcId': (3029, 3045), 'attackStyles': (['Melee'], ['Stab'])}
+MONSTER Guard / Varrock Guard -> Guard [Varrock 1] {'defenceLevel': (16, 14), 'stabDefence': (2, 24), 'slashDefence': (5, 30), 'crushDefence': (2, 25), 'magicDefence': (-4, -9), 'rangedDefence': (2, 25), 'npcId': (3010, 11911), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Hill Giant / Edgeville Hill Giant -> Hill Giant {'magicDefence': (-10, 0), 'attackSpeed': (4, 6), 'npcId': (2098, 7261), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Moss Giant / Standard -> Moss giant [Level 42] {'strengthLevel': (38, 30), 'stabDefence': (5, 0), 'slashDefence': (5, 0), 'crushDefence': (5, 0), 'magicDefence': (-10, 0), 'attackSpeed': (4, 6), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Fire Giant / Waterfall Fire Giant -> Fire giant [Level 86] {'strengthLevel': (70, 65), 'slashDefence': (0, 3), 'crushDefence': (0, 2), 'magicDefence': (-10, 0), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Fire Giant / Catacombs Fire Giant -> Fire giant [Level 109] {'hitpoints': (130, 150), 'attackLevel': (75, 90), 'strengthLevel': (85, 80), 'defenceLevel': (75, 65), 'stabDefence': (5, 0), 'slashDefence': (5, 3), 'crushDefence': (5, 2), 'magicDefence': (-5, 0), 'rangedDefence': (5, 0), 'combatLevel': (104, 109), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Lesser Demon / Standard -> Lesser demon [Level 82] {'strengthLevel': (65, 70), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Greater Demon / Brimhaven / Chasm -> Greater demon [Level 92] {'defenceLevel': (73, 81), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Greater Demon / Catacombs Greater Demon -> Greater demon [Level 100] {'hitpoints': (105, 115), 'attackLevel': (85, 90), 'strengthLevel': (88, 70), 'defenceLevel': (82, 80), 'stabDefence': (10, 0), 'slashDefence': (10, 0), 'crushDefence': (10, 0), 'magicDefence': (-5, -10), 'rangedDefence': (10, 0), 'npcId': (7247, 7245), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Greater Demon / Wilderness Greater Demon -> Greater demon [Level 104 (Wilderness Slayer Cave)] {'hitpoints': (87, 120), 'strengthLevel': (78, 90), 'defenceLevel': (73, 81), 'combatLevel': (92, 104), 'npcId': (2026, 7871), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Black Demon / Taverley Black Demon -> Black demon [Level 172] {'attackLevel': (140, 145), 'strengthLevel': (145, 148), 'defenceLevel': (142, 152), 'npcId': (2048, 240), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Black Demon / Catacombs Black Demon -> Black demon [Level 184] {'hitpoints': (175, 170), 'attackLevel': (150, 155), 'strengthLevel': (155, 158), 'defenceLevel': (150, 162), 'stabDefence': (15, 0), 'slashDefence': (15, 0), 'crushDefence': (15, 0), 'magicDefence': (-5, -10), 'rangedDefence': (15, 0), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Bloodveld / Slayer Tower -> Bloodveld [Normal] {'attackLevel': (62, 75), 'strengthLevel': (60, 45), 'magicDefence': (-10, 0), 'attackStyles': (['Melee (vs Magic Def)'], ['Magical melee'])}
+MONSTER Bloodveld / Mutated Bloodveld -> Mutated Bloodveld {'attackLevel': (105, 110), 'strengthLevel': (100, 115), 'defenceLevel': (50, 30), 'stabDefence': (5, 0), 'slashDefence': (5, 0), 'crushDefence': (5, 0), 'magicDefence': (-5, 0), 'rangedDefence': (5, 0), 'attackStyles': (['Melee (vs Magic Def)'], ['Magical melee'])}
+MONSTER Dust Devil / Smoke Dungeon -> Dust devil [Smoke Dungeon] {'attackLevel': (80, 105), 'strengthLevel': (80, 70), 'defenceLevel': (70, 40), 'magicDefence': (-10, 0), 'attackStyles': (['Melee'], ['Ranged melee'])}
+MONSTER Dust Devil / Catacombs Dust Devil -> Dust devil [Catacombs of Kourend] {'attackLevel': (90, 120), 'defenceLevel': (80, 40), 'stabDefence': (10, 0), 'slashDefence': (10, 0), 'crushDefence': (10, 0), 'magicDefence': (-5, 0), 'rangedDefence': (10, 0), 'attackStyles': (['Melee'], ['Ranged melee'])}
+MONSTER Gargoyle / Standard -> Gargoyle [Upstairs] {'strengthLevel': (75, 105), 'defenceLevel': (105, 107), 'stabDefence': (20, 50), 'slashDefence': (20, 60), 'crushDefence': (-10, -20), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Kurask / Standard -> Kurask [Normal] {'attackLevel': (75, 67), 'strengthLevel': (75, 105), 'defenceLevel': (100, 105), 'slashDefence': (0, 20), 'crushDefence': (-5, 20), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Nechryael / Slayer Tower -> Nechryael [Slayer Tower basement] {'attackLevel': (90, 97), 'strengthLevel': (90, 97), 'defenceLevel': (85, 105), 'stabDefence': (0, 20), 'slashDefence': (0, 20), 'crushDefence': (0, 20), 'magicDefence': (-10, 0), 'rangedDefence': (0, 20), 'npcId': (8, 11), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Nechryael / Greater Nechryael -> Greater Nechryael [Regular] {'hitpoints': (210, 205), 'attackLevel': (115, 197), 'strengthLevel': (115, 197), 'defenceLevel': (105, 85), 'stabDefence': (10, 50), 'slashDefence': (10, 50), 'crushDefence': (10, 50), 'magicDefence': (-5, 0), 'rangedDefence': (10, 50), 'combatLevel': (145, 200), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Abyssal Demon / Slayer Tower -> Abyssal demon [Wilderness Slayer Cave] {'strengthLevel': (97, 67), 'magicDefence': (20, 0), 'npcId': (415, 11239), 'attackStyles': (['Melee'], ['Stab'])}
+MONSTER Abyssal Demon / Catacombs Abyssal Demon -> Abyssal demon [Catacombs of Kourend] {'strengthLevel': (97, 67), 'magicDefence': (20, 0), 'attackStyles': (['Melee'], ['Stab'])}
+MONSTER Skeletal Wyvern / Standard -> Skeletal Wyvern [2] {'hitpoints': (210, 200), 'attackLevel': (120, 125), 'strengthLevel': (130, 116), 'magicLevel': (1, 125), 'rangedLevel': (90, 120), 'stabDefence': (80, 140), 'slashDefence': (100, 90), 'crushDefence': (40, 90), 'magicDefence': (140, 80), 'rangedDefence': (80, 140), 'attackSpeed': (4, 6), 'attackStyles': (['Melee', 'Ranged', 'Icy Breath'], ['Ranged', 'Slash', 'Icy breath'])}
+MONSTER Marble Gargoyle / Marble Gargoyle Superior -> Marble gargoyle {'hitpoints': (480, 270), 'attackLevel': (190, 230), 'strengthLevel': (190, 250), 'defenceLevel': (170, 190), 'rangedLevel': (120, 220), 'stabDefence': (40, 50), 'slashDefence': (40, 50), 'crushDefence': (-10, 0), 'rangedDefence': (40, 50), 'combatLevel': (255, 349), 'attackStyles': (['Melee', 'Stone Ranged'], ['Slash', 'Ranged', 'Magic (special)'])}
+MONSTER Greater Abyssal Demon / Superior Abyssal Demon -> Greater abyssal demon {'attackLevel': (240, 300), 'strengthLevel': (240, 260), 'defenceLevel': (220, 240), 'stabDefence': (40, 50), 'slashDefence': (40, 50), 'crushDefence': (40, 50), 'magicDefence': (40, 0), 'rangedDefence': (40, 50), 'combatLevel': (340, 342), 'attackStyles': (['Melee'], ['Stab'])}
+MONSTER Revenant Dragon / Revenant Caves Dragon -> Revenant dragon {'hitpoints': (170, 155), 'attackLevel': (150, 106), 'strengthLevel': (150, 126), 'defenceLevel': (120, 87), 'rangedLevel': (150, 151), 'stabDefence': (20, 143), 'slashDefence': (20, 206), 'crushDefence': (20, 188), 'magicDefence': (30, 101), 'rangedDefence': (20, 197), 'attackSpeed': (4, 5), 'npcId': (7941, 7940), 'attackStyles': (['Melee', 'Ranged', 'Magic'], ['Slash', 'Ranged', 'Magic'])}
+MONSTER Green Dragon / Wilderness Green Dragon -> Green dragon [Level 79] {'strengthLevel': (65, 68), 'magicLevel': (1, 68), 'stabDefence': (20, 0), 'rangedDefence': (20, 50), 'attackStyles': (['Melee', 'Dragonfire'], ['Slash', 'Dragonfire'])}
+MONSTER Brutal Black Dragon / Catacombs Brutal Black -> Brutal black dragon {'attackLevel': (260, 330), 'strengthLevel': (260, 210), 'rangedLevel': (1, 0), 'stabDefence': (50, 0), 'magicDefence': (50, 60), 'attackStyles': (['Magic', 'Dragonfire', 'Melee'], ['Slash', 'Magic', 'Dragonfire'])}
+MONSTER Scurrius / Solo Scurrius -> Scurrius [Solo] {'attackLevel': (40, 300), 'strengthLevel': (40, 100), 'defenceLevel': (40, 60), 'magicLevel': (1, 50), 'rangedLevel': (1, 50), 'crushDefence': (0, 20), 'magicDefence': (20, 10), 'combatLevel': (60, 200), 'npcId': (7221, 7222), 'attackStyles': (['Melee', 'Ranged', 'Magic'], ['Magic', 'Ranged', 'Melee'])}
+MONSTER Vorkath / Post-Quest Vorkath -> Vorkath [Post-quest] {'npcId': (8061, 8059), 'attackStyles': (['Melee', 'Ranged', 'Magic', 'Dragonfire'], ['Slash', 'Magic', 'Ranged', 'Dragonfire'])}
+MONSTER Zulrah / Green (Serpentine) -> Zulrah [Serpentine] {'attackLevel': (300, 1), 'strengthLevel': (300, 1), 'stabDefence': (50, 0), 'slashDefence': (50, 0), 'crushDefence': (50, 0), 'magicDefence': (0, -45), 'attackSpeed': (4, 3), 'attackStyles': (['Ranged', 'Venom'], ['Ranged'])}
+MONSTER Calvar'ion / Standard -> Calvar'ion [Normal] {'hitpoints': (300, 150), 'attackLevel': (200, 250), 'strengthLevel': (200, 250), 'defenceLevel': (170, 225), 'magicLevel': (1, 178), 'stabDefence': (150, 130), 'slashDefence': (150, 128), 'crushDefence': (0, -10), 'magicDefence': (250, 198), 'rangedDefence': (250, 211), 'combatLevel': (272, 264), 'attackSpeed': (4, 6), 'attackStyles': (['Crush', 'Lightning Magic'], ['Slash', 'Magic'])}
+MONSTER Corporeal Beast / Standard -> Corporeal Beast {'rangedLevel': (1, 150), 'slashDefence': (170, 200), 'crushDefence': (170, 100), 'rangedDefence': (80, 230), 'attackStyles': (['Melee', 'Magic Spikes'], ['Crush', 'Magic'])}
+MONSTER Kree'arra / Standard -> Kree'arra {'strengthLevel': (280, 200), 'rangedDefence': (15, 200), 'attackStyles': (['Ranged Tornadoes', 'Magic'], ['Ranged', 'Ranged magic', 'Magical melee'])}
+MONSTER TzTok-Jad / Wave 63 Jad -> TzTok-Jad {'magicDefence': (480, 0), 'attackStyles': (['Melee', 'Ranged Falling Rock', 'Magic Fireball'], ['Stab', 'Magic', 'Ranged'])}
+MONSTER Al-Kharid Warrior / Palace Guard -> Al Kharid warrior {'strengthLevel': (8, 5), 'defenceLevel': (7, 4), 'stabDefence': (-5, 12), 'slashDefence': (-5, 15), 'crushDefence': (-5, 10), 'magicDefence': (-15, -1), 'rangedDefence': (-5, 12), 'npcId': (3100, 3292), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Ice Giant / Standard -> Ice giant [1] {'strengthLevel': (45, 40), 'stabDefence': (5, 0), 'slashDefence': (5, 3), 'crushDefence': (0, 2), 'magicDefence': (-10, 0), 'rangedDefence': (5, 0), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Ogre / Training Camp Ogre -> Ogre [Level 53] {'attackLevel': (40, 43), 'strengthLevel': (42, 43), 'defenceLevel': (42, 43), 'magicDefence': (-10, 0), 'attackSpeed': (5, 6), 'npcId': (2094, 136), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Turoth / Standard -> Turoth [Baby] {'attackLevel': (60, 53), 'strengthLevel': (62, 83), 'defenceLevel': (65, 83), 'slashDefence': (0, 20), 'crushDefence': (-5, 20), 'npcId': (426, 430), 'attackStyles': (['Melee'], ['Stab'])}
+MONSTER Basilisk / Standard -> Basilisk {'attackLevel': (45, 30), 'defenceLevel': (50, 75), 'stabDefence': (10, 20), 'slashDefence': (10, 20), 'crushDefence': (-5, 0), 'magicDefence': (10, 20), 'rangedDefence': (10, 0), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Basilisk Knight / Standard -> Basilisk Knight {'attackLevel': (170, 186), 'strengthLevel': (170, 186), 'defenceLevel': (180, 186), 'magicLevel': (170, 186), 'stabDefence': (50, 30), 'slashDefence': (50, 30), 'crushDefence': (0, -15), 'magicDefence': (60, 30), 'rangedDefence': (50, 20), 'attackStyles': (['Melee', 'Magic'], ['Slash', 'Magic'])}
+MONSTER Drake / Standard -> Drake {'hitpoints': (250, 225), 'attackLevel': (160, 140), 'strengthLevel': (160, 118), 'defenceLevel': (150, 120), 'magicLevel': (1, 112), 'rangedLevel': (160, 140), 'stabDefence': (50, 5), 'slashDefence': (80, 60), 'magicDefence': (100, 20), 'rangedDefence': (40, 100), 'attackStyles': (['Melee', 'Ranged', 'Volcanic Eruption'], ['Ranged', 'Ranged melee', 'Dragonfire'])}
+MONSTER Wyrm / Standard -> Wyrm [Idle] {'hitpoints': (130, 120), 'strengthLevel': (85, 60), 'defenceLevel': (75, 80), 'rangedLevel': (1, 80), 'slashDefence': (30, 50), 'crushDefence': (30, 50), 'magicDefence': (20, 50), 'combatLevel': (99, 97), 'attackStyles': (['Melee', 'Magic'], ['Magic', 'Slash'])}
+MONSTER Hydra / Standard -> Hydra {'attackLevel': (170, 1), 'strengthLevel': (170, 1), 'defenceLevel': (150, 100), 'magicLevel': (160, 210), 'rangedLevel': (170, 210), 'stabDefence': (40, 160), 'slashDefence': (60, 160), 'crushDefence': (60, 160), 'magicDefence': (40, 160), 'rangedDefence': (30, 0), 'attackSpeed': (4, 6), 'attackStyles': (['Ranged', 'Magic'], ['Magic', 'Ranged'])}
+MONSTER Kraken / Standard Boss -> Kraken [Kraken] {'defenceLevel': (250, 1), 'magicLevel': (130, 1), 'stabDefence': (150, 0), 'slashDefence': (150, 0), 'crushDefence': (150, 0), 'magicDefence': (0, 130), 'rangedDefence': (150, 300), 'attackStyles': (['Magic Water Spout'], ['Magic (100% prayer penetration)'])}
+MONSTER Rune Dragon / Lithkren Rune Dragon -> Rune dragon {'attackLevel': (310, 284), 'strengthLevel': (310, 284), 'defenceLevel': (286, 276), 'rangedLevel': (196, 246), 'stabDefence': (45, 20), 'crushDefence': (105, 90), 'magicDefence': (140, 30), 'attackStyles': (['Melee', 'Magic', 'Dragonfire', 'Lightning'], ['Slash', 'Ranged', 'Magic', 'Dragonfire'])}
+MONSTER Tekton / Chambers Tekton -> Tekton [Normal] {'crushDefence': (40, 105), 'magicDefence': (150, 0), 'rangedDefence': (150, 0), 'attackSpeed': (4, 3), 'npcId': (7542, 7540), 'attackStyles': (['Crush Melee', 'Meteor Magic'], ['Stab', 'Slash', 'Crush'])}
+MONSTER Great Olm / Great Olm (Head) -> Great Olm [Head (Normal)] {'defenceLevel': (175, 150), 'stabDefence': (50, 200), 'slashDefence': (50, 200), 'crushDefence': (50, 200), 'magicDefence': (50, 200), 'combatLevel': (1042, 1043), 'npcId': (7554, 7551), 'attackStyles': (['Ranged', 'Magic', 'Dragonfire Sphere'], ['Magic', 'Ranged'])}
+MONSTER Kephri / Kephri Scabarite -> Kephri [Shielded] {'hitpoints': (360, 150), 'attackLevel': (100, 0), 'strengthLevel': (100, 0), 'magicLevel': (100, 125), 'rangedLevel': (100, 0), 'slashDefence': (120, 300), 'crushDefence': (120, 100), 'rangedDefence': (150, 300), 'combatLevel': (450, 341), 'attackSpeed': (4, 6), 'attackStyles': (['Ranged Bomb', 'Swarm'], ['Magic'])}
+MONSTER Sand Crab / Hosidius Shore -> Sand Crab [Active] {'npcId': (7206, 5935), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER General Graardor / Bandos Stronghold -> General Graardor {'rangedLevel': (100, 350), 'attackStyles': (['Melee', 'Ranged'], ['Crush', 'Ranged'])}
+MONSTER Sarachnis / Forthos Lair -> Sarachnis {'hitpoints': (390, 400), 'attackLevel': (250, 200), 'strengthLevel': (200, 240), 'rangedLevel': (150, 300), 'stabDefence': (70, 60), 'slashDefence': (70, 40), 'magicDefence': (30, 150), 'rangedDefence': (80, 300)}
+MONSTER K'ril Tsutsaroth / Zamorak Fortress -> K'ril Tsutsaroth {'stabDefence': (80, 70), 'slashDefence': (85, 80), 'magicDefence': (130, 80), 'attackStyles': (['Melee', 'Magic'], ['Slash', 'Magic'])}
+MONSTER Commander Zilyana / Saradomin Encampment -> Commander Zilyana {'strengthLevel': (250, 196), 'magicDefence': (300, 100), 'attackSpeed': (5, 2), 'attackStyles': (['Melee', 'Magic'], ['Crush', 'Magic'])}
+MONSTER Phantom Muspah / Standard Encounter -> Phantom Muspah [Ranged] {'attackLevel': (250, 280), 'strengthLevel': (250, 280), 'defenceLevel': (150, 200), 'rangedLevel': (250, 280), 'stabDefence': (80, 185), 'slashDefence': (80, 134), 'crushDefence': (80, 120), 'magicDefence': (200, 437), 'rangedDefence': (60, 56), 'combatLevel': (742, 741), 'attackSpeed': (4, 6), 'attackStyles': (['Ranged', 'Magic', 'Melee'], ['Ranged', 'Magic'])}
+MONSTER King Black Dragon / KBD Lair -> King Black Dragon {'rangedLevel': (240, 1), 'stabDefence': (70, 40), 'attackStyles': (['Melee', 'Magic'], ['Stab', 'Dragonfire'])}
+MONSTER Giant Mole / Falador Tunnels -> Giant Mole {'magicLevel': (120, 200), 'rangedLevel': (100, 1), 'magicDefence': (100, 80), 'rangedDefence': (80, 60), 'attackStyles': (['Melee'], ['Crush'])}
+MONSTER Dagannoth Kings / Dagannoth Rex -> Dagannoth Rex {'npcId': (2265, 2267), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Spindel / Wilderness Lair -> Spindel {'hitpoints': (300, 515), 'attackLevel': (220, 200), 'strengthLevel': (200, 130), 'defenceLevel': (120, 225), 'magicLevel': (100, 235), 'rangedLevel': (100, 286), 'stabDefence': (80, 70), 'slashDefence': (80, 70), 'crushDefence': (-10, 10), 'magicDefence': (100, 205), 'rangedDefence': (120, 103), 'combatLevel': (244, 302), 'npcId': (11989, 11998), 'attackStyles': (['Melee', 'Magic'], ['Stab', 'Magic', 'Ranged'])}
+MONSTER Artio / Wilderness Lair -> Artio {'hitpoints': (300, 450), 'attackLevel': (240, 250), 'strengthLevel': (240, 270), 'defenceLevel': (160, 150), 'magicLevel': (100, 90), 'rangedLevel': (100, 120), 'stabDefence': (100, 125), 'slashDefence': (100, 110), 'crushDefence': (100, 110), 'magicDefence': (10, 0), 'rangedDefence': (120, 40), 'combatLevel': (260, 320), 'attackSpeed': (4, 5), 'npcId': (11988, 11992), 'attackStyles': (['Melee', 'Magic'], ['Crush', 'Magic', 'Ranged'])}
+MONSTER Barrows Brothers / Dharok the Wretched -> Dharok the Wretched {'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Barrows Brothers / Ahrim the Blighted -> Ahrim the Blighted {'attackLevel': (100, 1), 'strengthLevel': (100, 1), 'crushDefence': (None, 117), 'attackSpeed': (4, 6)}
+MONSTER Barrows Brothers / Karil the Tainted -> Karil the Tainted {'attackLevel': (100, 1), 'strengthLevel': (100, 1), 'crushDefence': (None, 90)}
+MONSTER Cerberus / Cerberus -> Cerberus {'magicDefence': (100, 65), 'attackSpeed': (4, 6), 'attackStyles': (['Melee', 'Magic', 'Ranged'], ['Stab', 'Ranged', 'Magic'])}
+MONSTER Alchemical Hydra / Alchemical Hydra -> Alchemical Hydra [Serpentine] {'stabDefence': (150, 75), 'attackStyles': (['Magic', 'Ranged'], ['Ranged', 'Magic'])}
+MONSTER Grotesque Guardians / Dusk -> Dusk [First form] {'attackLevel': (140, 200), 'defenceLevel': (120, 100), 'magicLevel': (120, 140), 'rangedLevel': (120, 140), 'stabDefence': (40, 0), 'slashDefence': (40, 0), 'crushDefence': (10, 0), 'magicDefence': (150, 0), 'rangedDefence': (100, 0), 'combatLevel': (243, 248), 'attackSpeed': (4, 6), 'npcId': (7882, 7851), 'attackStyles': (['Melee'], ['Slash'])}
+MONSTER Grotesque Guardians / Dawn -> Dawn {'rangedLevel': (100, 140), 'stabDefence': (100, 0), 'slashDefence': (100, 0), 'crushDefence': (80, 0), 'magicDefence': (100, 80), 'attackSpeed': (4, 6), 'npcId': (7884, 7852), 'attackStyles': (['Ranged'], ['Slash', 'Ranged', 'Magic (special)'])}
+MONSTER Duke Sucellus / Duke Sucellus -> Duke Sucellus [Post-quest, Awake] {'hitpoints': (850, 485), 'strengthLevel': (300, 345), 'defenceLevel': (235, 275), 'magicLevel': (250, 310), 'rangedLevel': (250, 0), 'stabDefence': (65, 255), 'slashDefence': (15, 45), 'crushDefence': (65, 190), 'magicDefence': (265, 440), 'rangedDefence': (265, 320), 'combatLevel': (504, 758), 'attackStyles': (['Melee', 'Magic'], ['Magic', 'Crush'])}
+MONSTER Vardorvis / Vardorvis -> Vardorvis [Post-quest] {'attackLevel': (270, 280), 'strengthLevel': (270, 0), 'defenceLevel': (215, 0), 'magicLevel': (180, 215), 'rangedLevel': (240, 0), 'stabDefence': (135, 215), 'slashDefence': (-15, 65), 'magicDefence': (220, 580), 'rangedDefence': (200, 580), 'combatLevel': (536, 784), 'attackSpeed': (4, 5), 'attackStyles': (['Melee', 'Ranged'], ['Slash'])}
+MONSTER The Whisperer / The Whisperer -> The Whisperer [Post-quest] {'attackLevel': (200, 280), 'strengthLevel': (200, 280), 'defenceLevel': (170, 250), 'magicLevel': (200, 180), 'rangedLevel': (200, 180), 'stabDefence': (200, 180), 'slashDefence': (200, 300), 'crushDefence': (200, 220), 'magicDefence': (0, 10), 'rangedDefence': (200, 300), 'combatLevel': (480, 791), 'attackSpeed': (5, 10), 'attackStyles': (['Magic', 'Ranged'], ['All'])}
+MONSTER The Leviathan / The Leviathan -> The Leviathan [Post-quest] {'attackLevel': (250, 300), 'strengthLevel': (250, 360), 'defenceLevel': (190, 250), 'magicLevel': (150, 160), 'rangedLevel': (260, 160), 'stabDefence': (160, 260), 'slashDefence': (160, 190), 'crushDefence': (160, 230), 'magicDefence': (150, 280), 'rangedDefence': (40, 50), 'combatLevel': (520, 798), 'attackStyles': (['Ranged', 'Magic', 'Melee'], ['Melee', 'Ranged', 'Magic'])}
+MONSTER Nex / Nex -> Nex {'attackLevel': (320, 315), 'strengthLevel': (320, 200), 'magicLevel': (270, 230), 'rangedLevel': (300, 350), 'crushDefence': (100, 35), 'magicDefence': (200, 300), 'rangedDefence': (140, 190), 'attackStyles': (['Magic', 'Ranged', 'Melee'], ['Magic', 'Ranged', 'Crush'])}
+MONSTER Kalphite Queen / Phase 1 (Crawling) -> Kalphite Queen [Crawling] {'rangedLevel': (150, 1), 'attackStyles': (['Melee', 'Magic', 'Ranged'], ['Stab', 'Ranged', 'Magic'])}
+MONSTER Kalphite Queen / Phase 2 (Airborne) -> Kalphite Queen [Airborne] {'rangedLevel': (150, 1), 'magicDefence': (100, 10), 'attackStyles': (['Magic', 'Ranged'], ['Stab', 'Ranged', 'Magic'])}
+MONSTER Abyssal Sire / Abyssal Sire -> Abyssal Sire [Phase 1] {'hitpoints': (400, 425), 'strengthLevel': (180, 136), 'rangedLevel': (200, 1), 'stabDefence': (60, 40), 'crushDefence': (40, 50), 'magicDefence': (150, 20), 'rangedDefence': (100, 60), 'attackSpeed': (6, 7), 'attackStyles': (['Melee', 'Magic'], ['Melee'])}
+MONSTER Corrupted Gauntlet (CG) / Corrupted Hunllef -> Corrupted Hunllef {'attackLevel': (220, 240), 'strengthLevel': (220, 240), 'magicLevel': (220, 240), 'rangedLevel': (220, 240), 'stabDefence': (60, 20), 'slashDefence': (60, 20), 'crushDefence': (60, 20), 'magicDefence': (60, 20), 'rangedDefence': (60, 20), 'combatLevel': (674, 894)}
+MONSTER Tombs of Amascut (ToA) / Wardens P3 -> Elidinis' Warden [Damaged] {'hitpoints': (1200, 880), 'attackLevel': (250, 150), 'strengthLevel': (250, 150), 'magicLevel': (250, 150), 'rangedLevel': (250, 150), 'stabDefence': (50, 40), 'slashDefence': (80, 40), 'crushDefence': (80, 20), 'magicDefence': (60, 20), 'rangedDefence': (40, 20), 'combatLevel': (1000, 544), 'attackSpeed': (5, 7), 'attackStyles': (['Magic', 'Ranged', 'Melee'], ['Melee', 'Ranged', 'Magic'])}
+MONSTER Chambers of Xeric (CoX) / Great Olm -> Great Olm [Head (Normal)] {'hitpoints': (1600, 800), 'attackLevel': (300, 250), 'strengthLevel': (300, 250), 'defenceLevel': (175, 150), 'stabDefence': (50, 200), 'slashDefence': (50, 200), 'crushDefence': (50, 200), 'magicDefence': (50, 200), 'npcId': (7554, 7551), 'attackStyles': (['Magic', 'Ranged', 'Melee'], ['Magic', 'Ranged'])}
+MONSTER Theatre of Blood (ToB) / Verzik Vitur P3 -> Verzik Vitur [Hard mode, Phase 1] {'attackLevel': (350, 400), 'strengthLevel': (350, 400), 'defenceLevel': (200, 20), 'magicLevel': (300, 400), 'rangedLevel': (300, 400), 'stabDefence': (70, 20), 'slashDefence': (60, 20), 'crushDefence': (70, 20), 'magicDefence': (100, 20), 'rangedDefence': (100, 20), 'attackSpeed': (4, 14), 'npcId': (8374, 10847), 'attackStyles': (['Magic', 'Ranged', 'Melee'], ['Magic'])}
+MONSTER Callisto / Callisto -> Callisto {'strengthLevel': (350, 300), 'defenceLevel': (250, 225), 'magicLevel': (200, 140), 'rangedLevel': (1, 200), 'stabDefence': (135, 150), 'slashDefence': (105, 130), 'crushDefence': (15, 125), 'magicDefence': (250, 0), 'rangedDefence': (250, 50), 'npcId': (6503, 6609), 'attackStyles': (['Melee', 'Magic'], ['Crush', 'Magic', 'Ranged'])}
+MONSTER Venenatis / Venenatis -> Venenatis {'hitpoints': (900, 850), 'attackLevel': (320, 300), 'strengthLevel': (320, 200), 'defenceLevel': (260, 321), 'magicLevel': (250, 300), 'rangedLevel': (250, 350), 'stabDefence': (150, 100), 'slashDefence': (120, 100), 'crushDefence': (20, 10), 'magicDefence': (250, 300), 'rangedDefence': (250, 150), 'npcId': (6504, 6610), 'attackStyles': (['Magic', 'Ranged'], ['Stab', 'Magic', 'Ranged'])}
+MONSTER Vet'ion / Vet'ion -> Vet'ion [Normal] {'hitpoints': (510, 255), 'attackLevel': (300, 430), 'strengthLevel': (300, 430), 'defenceLevel': (250, 395), 'magicLevel': (250, 300), 'stabDefence': (150, 201), 'slashDefence': (120, 200), 'rangedDefence': (250, 270), 'attackSpeed': (4, 6), 'attackStyles': (['Magic', 'Melee'], ['Slash', 'Magic'])}
+MONSTER Chaos Elemental / Chaos Elemental -> Chaos Elemental {'attackSpeed': (5, 4), 'attackStyles': (['Magic', 'Ranged', 'Melee'], ['Magic', 'Ranged', 'Melee (Crush?)'])}
+MONSTER Thermonuclear Smoke Devil / Thermonuclear Smoke Devil -> Thermonuclear smoke devil {'attackLevel': (200, 230), 'strengthLevel': (200, 220), 'defenceLevel': (180, 360), 'rangedLevel': (1, 310), 'stabDefence': (120, 11), 'slashDefence': (80, 4), 'crushDefence': (100, 9), 'magicDefence': (600, 800), 'rangedDefence': (600, 900), 'attackSpeed': (4, 2), 'attackStyles': (['Melee', 'Ranged'], ['Magical ranged (100% prayer penetration)'])}
+MONSTER Skotizo / Skotizo -> Skotizo {'attackLevel': (220, 240), 'strengthLevel': (220, 250), 'magicLevel': (220, 280), 'rangedLevel': (220, 1), 'magicDefence': (120, 80), 'rangedDefence': (80, 130), 'attackStyles': (['Melee', 'Magic'], ['Stab', 'Magic'])}

@@ -1,3 +1,11 @@
+# ---------------------------------------------------------------------------
+# WARNING: this script writes equipment.json from hand-typed numbers.
+# The stats in equipment.json are now synced from the OSRS Wiki's own
+# dps-calc dataset by tools/sync_wiki_data.py. If you re-run this script,
+# run the sync afterwards or you will put the old guessed numbers back:
+#     python3 tools/sync_wiki_data.py . ../osrs-dps-calc
+# See WIKI_DATA_FIX.md.
+# ---------------------------------------------------------------------------
 import json
 import os
 

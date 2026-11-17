@@ -25,6 +25,10 @@ public class MonsterVariant {
     // Combat attributes
     private final int attackSpeed;
     private final List<String> attackStyles;
+    /** Max hit exactly as the wiki states it, e.g. "25 (Melee)" or "27 / 28 / 29 (phase 4)". */
+    private final String maxHit;
+    /** Wiki monster attributes: dragon, demon, undead, kalphite, leafy, golem, fiery, spectral, xerician... */
+    private final List<String> attributes;
     private final boolean wilderness;
     private final boolean multiCombat;
     private final boolean cannonable;
@@ -50,6 +54,34 @@ public class MonsterVariant {
             boolean wilderness,
             boolean multiCombat,
             boolean cannonable) {
+        this(npcId, variantName, location, combatLevel, hitpoints, attackLevel, strengthLevel, defenceLevel,
+                magicLevel, rangedLevel, stabDefence, slashDefence, crushDefence, magicDefence, rangedDefence,
+                attackSpeed, attackStyles, wilderness, multiCombat, cannonable, null, null);
+    }
+
+    public MonsterVariant(
+            int npcId,
+            String variantName,
+            String location,
+            int combatLevel,
+            int hitpoints,
+            int attackLevel,
+            int strengthLevel,
+            int defenceLevel,
+            int magicLevel,
+            int rangedLevel,
+            int stabDefence,
+            int slashDefence,
+            int crushDefence,
+            int magicDefence,
+            int rangedDefence,
+            int attackSpeed,
+            List<String> attackStyles,
+            boolean wilderness,
+            boolean multiCombat,
+            boolean cannonable,
+            String maxHit,
+            List<String> attributes) {
         this.npcId = npcId;
         this.variantName = variantName != null ? variantName : "Standard";
         this.location = location != null ? location : "Various";
@@ -70,6 +102,8 @@ public class MonsterVariant {
         this.wilderness = wilderness;
         this.multiCombat = multiCombat;
         this.cannonable = cannonable;
+        this.maxHit = (maxHit != null && !maxHit.isEmpty()) ? maxHit : "Unknown";
+        this.attributes = attributes != null ? Collections.unmodifiableList(attributes) : Collections.emptyList();
     }
 
     public int getNpcId() { return npcId; }
@@ -92,6 +126,17 @@ public class MonsterVariant {
     public boolean isWilderness() { return wilderness; }
     public boolean isMultiCombat() { return multiCombat; }
     public boolean isCannonable() { return cannonable; }
+    public String getMaxHit() { return maxHit; }
+    public List<String> getAttributes() { return attributes; }
+
+    /** True if the wiki lists this attribute on the monster (dragon, demon, undead, leafy, ...). */
+    public boolean hasAttribute(String attribute) {
+        if (attribute == null) return false;
+        for (String a : attributes) {
+            if (a.equalsIgnoreCase(attribute)) return true;
+        }
+        return false;
+    }
 
     public int getDefenceBonusForStyle(CombatStyle style, EquipmentItem.AttackType attackType) {
         if (style == CombatStyle.RANGED) return rangedDefence;

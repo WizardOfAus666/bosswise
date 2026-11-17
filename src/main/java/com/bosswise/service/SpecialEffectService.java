@@ -93,12 +93,16 @@ public class SpecialEffectService {
             if (profile.isDemon() && weapon.isDemonbane()) {
                 if (weaponName.contains("emberlight")) {
                     accMult *= 1.70;
-                    dmgMult *= 1.36;
-                    notes.append("Emberlight active (+70% acc, +36% dmg). ");
+                    dmgMult *= 1.70;
+                    notes.append("Emberlight active (+70% acc, +70% dmg). ");
+                } else if (weaponName.contains("darklight")) {
+                    accMult *= 1.60;
+                    dmgMult *= 1.60;
+                    notes.append("Darklight active (+60% acc, +60% dmg). ");
                 } else {
                     accMult *= 1.70;
-                    dmgMult *= 1.30;
-                    notes.append("Arclight active (+70% acc, +30% dmg). ");
+                    dmgMult *= 1.70;
+                    notes.append("Arclight active (+70% acc, +70% dmg). ");
                 }
             }
 

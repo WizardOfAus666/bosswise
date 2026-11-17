@@ -84,6 +84,9 @@ public class PlayerAccount {
         return getRealLevel(skill);
     }
 
+    /** Quest names recorded as complete (from the client scan or a WikiSync lookup). */
+    public Set<String> getCompletedQuestNames() { return manualCompletedQuests; }
+
     public boolean hasCompletedQuest(String questName) {
         return isQuestCompleted(null, questName);
     }

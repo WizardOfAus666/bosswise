@@ -7,6 +7,7 @@ import com.bosswise.model.BossData;
 import com.bosswise.model.CombatStyle;
 import com.bosswise.model.MonsterCategory;
 import com.bosswise.model.MonsterData;
+import com.bosswise.model.MonsterVariant;
 import com.bosswise.model.PlayerAccount;
 import com.bosswise.model.strategy.MonsterStrategy;
 import com.bosswise.model.strategy.PersonalizedStrategyScore;
@@ -295,6 +296,25 @@ public class BossGuidePanel extends JPanel {
             info.append(" \u2022 Slayer ").append(strat.getSlayerLevel());
         }
         card.add(new WrapText(info.toString(), BossWiseDesign.getSmallFont(), BossWiseDesign.TEXT_SECONDARY));
+
+        // Max hit + what it actually attacks with, straight from the wiki monster data.
+        MonsterData md = (monsterDatabase != null) ? monsterDatabase.getMonster(strat.getMonsterId()) : null;
+        MonsterVariant mv = (md != null) ? md.getPrimaryVariant() : null;
+        if (mv != null) {
+            String maxHit = mv.getMaxHit();
+            if (maxHit != null && !maxHit.isEmpty() && !"Unknown".equals(maxHit)) {
+                card.add(new WrapText("Max hit: " + maxHit + "  (speed " + mv.getAttackSpeed() + " ticks)",
+                        BossWiseDesign.getSmallFont(), BossWiseDesign.STATUS_LOCKED));
+            }
+            if (mv.getAttackStyles() != null && !mv.getAttackStyles().isEmpty()) {
+                card.add(new WrapText("Attacks with: " + String.join(", ", mv.getAttackStyles()),
+                        BossWiseDesign.getSmallFont(), BossWiseDesign.TEXT_SECONDARY));
+            }
+            if (mv.getAttributes() != null && !mv.getAttributes().isEmpty()) {
+                card.add(new WrapText("Type: " + String.join(", ", mv.getAttributes()),
+                        BossWiseDesign.getSmallFont(), BossWiseDesign.TEXT_MUTED));
+            }
+        }
         card.add(Box.createVerticalStrut(4));
 
         // Overview

@@ -45,6 +45,7 @@ public class MonsterDatabase {
 
             Gson gson = new Gson();
             JsonArray array = gson.fromJson(new InputStreamReader(is, StandardCharsets.UTF_8), JsonArray.class);
+            Map<Integer, MonsterVariant> legacyVariants = new HashMap<>();
 
             for (JsonElement elem : array) {
                 JsonObject obj = elem.getAsJsonObject();
@@ -106,6 +107,14 @@ public class MonsterDatabase {
                 MonsterCombatProfile.Builder pBuilder = MonsterCombatProfile.builder(id, name, primaryStyle)
                         .classification(classification)
                         .elementalWeakness(elementalWeakness, elemPct);
+
+                if (obj.has("attributes")) {
+                    List<String> monsterAttrs = new ArrayList<>();
+                    for (JsonElement a : obj.getAsJsonArray("attributes")) {
+                        monsterAttrs.add(a.getAsString());
+                    }
+                    pBuilder.attributes(monsterAttrs);
+                }
 
                 // Special mechanic flags
                 String nameLower = name.toLowerCase();
@@ -182,6 +191,15 @@ public class MonsterDatabase {
                         boolean multi = vObj.has("multiCombat") && vObj.get("multiCombat").getAsBoolean();
                         boolean cannon = vObj.has("cannonable") && vObj.get("cannonable").getAsBoolean();
 
+                        String maxHit = vObj.has("maxHit") ? vObj.get("maxHit").getAsString() : null;
+
+                        List<String> attributes = new ArrayList<>();
+                        if (vObj.has("attributes")) {
+                            for (JsonElement a : vObj.getAsJsonArray("attributes")) {
+                                attributes.add(a.getAsString());
+                            }
+                        }
+
                         List<String> styles = new ArrayList<>();
                         if (vObj.has("attackStyles")) {
                             for (JsonElement s : vObj.getAsJsonArray("attackStyles")) {
@@ -192,17 +210,26 @@ public class MonsterDatabase {
                         MonsterVariant variant = new MonsterVariant(
                                 npcId, vName, loc, cLvl, hp, atk, str, def, mag, rng,
                                 stabDef, slashDef, crushDef, magDef, rngDef, spd, styles,
-                                wildy, multi, cannon
+                                wildy, multi, cannon, maxHit, attributes
                         );
                         mBuilder.addVariant(variant);
                         if (npcId > 0) {
                             variantsByNpcId.put(npcId, variant);
+                        }
+                        if (vObj.has("legacyNpcId")) {
+                            int legacyId = vObj.get("legacyNpcId").getAsInt();
+                            if (legacyId > 0) {
+                                legacyVariants.putIfAbsent(legacyId, variant);
+                            }
                         }
                     }
                 }
 
                 MonsterData monster = mBuilder.build();
                 monsters.put(monster.getId().toLowerCase(), monster);
+            }
+            for (Map.Entry<Integer, MonsterVariant> entry : legacyVariants.entrySet()) {
+                variantsByNpcId.putIfAbsent(entry.getKey(), entry.getValue());
             }
             log.info("[BossWise] Loaded {} universal OSRS monsters ({} variants indexed)", monsters.size(), variantsByNpcId.size());
         } catch (Exception e) {

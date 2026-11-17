@@ -1,8 +1,10 @@
 package com.bosswise.model;
 
 import com.bosswise.model.EquipmentItem.AttackType;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumSet;
+import java.util.HashSet;
 import java.util.Set;
 
 public class MonsterCombatProfile {
@@ -12,6 +14,7 @@ public class MonsterCombatProfile {
     private final Set<CombatStyle> allowedStyles;
     private final AttackType favoredAttackType;
     private final MonsterClassification classification;
+    private final Set<String> attributes;
     private final ElementalWeakness elementalWeakness;
     private final int elementalWeaknessPercent;
 
@@ -52,6 +55,7 @@ public class MonsterCombatProfile {
         this.allowedStyles = Collections.unmodifiableSet(builder.allowedStyles);
         this.favoredAttackType = builder.favoredAttackType;
         this.classification = builder.classification;
+        this.attributes = Collections.unmodifiableSet(new HashSet<>(builder.attributes));
         this.elementalWeakness = builder.elementalWeakness;
         this.elementalWeaknessPercent = builder.elementalWeaknessPercent;
 
@@ -113,13 +117,14 @@ public class MonsterCombatProfile {
     public boolean isFavorsVoid() { return favorsVoid; }
     public boolean isWilderness() { return wilderness; }
 
-    public boolean isDragon() { return classification == MonsterClassification.DRAGON; }
-    public boolean isDemon() { return classification == MonsterClassification.DEMON; }
-    public boolean isUndead() { return classification == MonsterClassification.UNDEAD; }
-    public boolean isKalphite() { return classification == MonsterClassification.KALPHITE; }
-    public boolean isRat() { return classification == MonsterClassification.RAT; }
-    public boolean isGiant() { return classification == MonsterClassification.GIANT; }
-    public boolean isVampyre() { return classification == MonsterClassification.VAMPYRE; }
+    public boolean isDragon() { return classification == MonsterClassification.DRAGON || attributes.contains("dragon"); }
+    public boolean isDemon() { return classification == MonsterClassification.DEMON || attributes.contains("demon"); }
+    public boolean isUndead() { return classification == MonsterClassification.UNDEAD || attributes.contains("undead"); }
+    public boolean isKalphite() { return classification == MonsterClassification.KALPHITE || attributes.contains("kalphite"); }
+    public boolean isRat() { return classification == MonsterClassification.RAT || attributes.contains("rat"); }
+    public boolean isGiant() { return classification == MonsterClassification.GIANT || attributes.contains("giant"); }
+    public boolean isVampyre() { return classification == MonsterClassification.VAMPYRE || attributes.contains("vampyre"); }
+    public Set<String> getAttributes() { return attributes; }
 
     public String getSlayerCategory() { return slayerCategory; }
     public int getRequiredSlayerLevel() { return requiredSlayerLevel; }
@@ -151,6 +156,7 @@ public class MonsterCombatProfile {
         private Set<CombatStyle> allowedStyles = EnumSet.of(CombatStyle.MELEE, CombatStyle.RANGED, CombatStyle.MAGIC);
         private AttackType favoredAttackType = AttackType.NONE;
         private MonsterClassification classification = MonsterClassification.NONE;
+        private Set<String> attributes = new HashSet<>();
         private ElementalWeakness elementalWeakness = ElementalWeakness.NONE;
         private int elementalWeaknessPercent = 0;
 
@@ -201,6 +207,16 @@ public class MonsterCombatProfile {
 
         public Builder favoredAttackType(AttackType type) { this.favoredAttackType = type; return this; }
         public Builder classification(MonsterClassification c) { this.classification = c; return this; }
+        public Builder attributes(Collection<String> attrs) {
+            if (attrs != null) {
+                for (String a : attrs) {
+                    if (a != null && !a.trim().isEmpty()) {
+                        this.attributes.add(a.trim().toLowerCase());
+                    }
+                }
+            }
+            return this;
+        }
         public Builder dragon() { this.classification = MonsterClassification.DRAGON; return this; }
         public Builder demon() { this.classification = MonsterClassification.DEMON; return this; }
         public Builder undead() { this.classification = MonsterClassification.UNDEAD; return this; }

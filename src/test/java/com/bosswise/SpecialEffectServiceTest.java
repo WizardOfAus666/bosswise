@@ -52,7 +52,7 @@ public class SpecialEffectServiceTest {
 
         CombatMultipliers mult = effectService.getMeleeMultipliers(gear, demon, false);
         assertEquals(1.70, mult.getAccuracyMultiplier(), 0.001);
-        assertEquals(1.36, mult.getDamageMultiplier(), 0.001);
+        assertEquals(1.70, mult.getDamageMultiplier(), 0.001);
     }
 
     @Test

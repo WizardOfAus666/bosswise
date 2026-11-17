@@ -781,8 +781,18 @@ public class GearOptimizerService {
         enforceCompatibility(chosenGear, candidatesBySlot, combatStyle, profile, budget);
         enforceBudgetLimit(chosenGear, candidatesBySlot, combatStyle, profile, budget);
 
-        // Perform genuine OSRS Combat Calculations
         MonsterCombatProfile monsterProfile = (monster != null) ? monster.getCombatProfile() : null;
+
+        // Stop guessing: re-pick every slot against the real combat maths for THIS
+        // target, then re-apply the compatibility and budget rules on the result.
+        // Keep Budget tier cost-bounded by its baseline so Budget <= Best Value holds.
+        long refineBudget = isBudget ? calculateTotalCost(chosenGear) : (budget > 0 ? budget : -1L);
+        refineByMeasuredDps(chosenGear, slotOrder, candidatesBySlot, combatStyle, profile,
+                refineBudget, variant, monsterProfile, account, onSlayerTask);
+        enforceCompatibility(chosenGear, candidatesBySlot, combatStyle, profile, budget);
+        enforceBudgetLimit(chosenGear, candidatesBySlot, combatStyle, profile, budget);
+
+        // Perform genuine OSRS Combat Calculations
         CombatResult combatResult = calculationService.calculateCombat(
                 chosenGear,
                 variant,
@@ -1406,6 +1416,9 @@ public class GearOptimizerService {
 
     private boolean isBossMechanicCompatible(EquipmentItem item, EquipmentSlot slot, BossCombatProfile profile) {
         if (slot == EquipmentSlot.WEAPON) {
+            if ((profile.isRequiresMirrorShield() || profile.isRequiresWyvernShield()) && item.isTwoHanded()) {
+                return false;
+            }
             // Ratbane weapons (Bone mace, Bone bow, Bone shortbow, Bone staff) are only for rats (Scurrius)
             if ((item.isRatbane() || item.getName().toLowerCase().contains("bone ")) && !profile.isRat()) {
                 return false;
@@ -1540,6 +1553,116 @@ public class GearOptimizerService {
         if (curAtk - altAtk > 0) return "-" + (curAtk - altAtk) + " Accuracy";
 
         return "-" + Math.max(1, current.getTier() - alt.getTier()) + " Tier Power";
+    }
+
+    // =========================================================================
+    // DPS-MEASURED SLOT SELECTION
+    //
+    // calculateItemScore() is a heuristic: it ranks items by stat bonuses and a
+    // pile of name checks, which is why it used to hand out gear that loses DPS
+    // against a specific monster's defences. These methods keep the heuristic as
+    // the starting point and then test every legal candidate with the same combat
+    // maths the DPS readout uses, keeping only swaps that actually measure higher.
+    // =========================================================================
+
+    /** Runs the real combat calculation for a gear map and returns its DPS (0 if it cannot be scored). */
+    private double measureDps(
+            Map<EquipmentSlot, EquipmentItem> gear,
+            MonsterVariant variant,
+            MonsterCombatProfile monsterProfile,
+            PlayerAccount account,
+            CombatStyle combatStyle,
+            boolean onSlayerTask) {
+
+        if (gear == null || gear.get(EquipmentSlot.WEAPON) == null) return 0.0;
+        try {
+            CombatResult result = calculationService.calculateCombat(
+                    gear, variant, monsterProfile, account, combatStyle, onSlayerTask);
+            if (result == null) return 0.0;
+            double dps = result.getDps();
+            return (Double.isNaN(dps) || Double.isInfinite(dps) || dps < 0) ? 0.0 : dps;
+        } catch (Exception e) {
+            return 0.0;
+        }
+    }
+
+    /** Copy of the gear map with one slot swapped, respecting two-handed weapons. Null when the swap is illegal. */
+    private Map<EquipmentSlot, EquipmentItem> gearWith(
+            Map<EquipmentSlot, EquipmentItem> gear,
+            EquipmentSlot slot,
+            EquipmentItem item,
+            CombatStyle combatStyle) {
+
+        Map<EquipmentSlot, EquipmentItem> trial = new EnumMap<>(gear);
+        if (slot == EquipmentSlot.SHIELD) {
+            EquipmentItem weapon = trial.get(EquipmentSlot.WEAPON);
+            if (weapon != null && weapon.isTwoHanded()) return null;
+        }
+        if (slot == EquipmentSlot.AMMO) {
+            EquipmentItem weapon = trial.get(EquipmentSlot.WEAPON);
+            if (combatStyle != CombatStyle.RANGED || weapon == null) return null;
+            if (item.getAmmoType() == null || item.getAmmoType() != weapon.getAmmoType()) return null;
+            boolean dragonCapable = weapon.getName().contains("Dragon")
+                    || weapon.getName().contains("Armadyl")
+                    || weapon.getName().contains("hunter");
+            if (!dragonCapable && item.getName().toLowerCase().contains("dragon")) return null;
+        }
+        trial.put(slot, item);
+        if (slot == EquipmentSlot.WEAPON && item.isTwoHanded()) {
+            trial.remove(EquipmentSlot.SHIELD);
+        }
+        return trial;
+    }
+
+    /**
+     * Re-picks each slot by measured DPS instead of heuristic score. Two passes, so
+     * slots that depend on each other (two-hander vs shield, bow vs ammo) settle.
+     * Only swaps that stay inside the budget and raise DPS are kept, so the
+     * heuristic setup is the floor, never the ceiling.
+     */
+    private void refineByMeasuredDps(
+            Map<EquipmentSlot, EquipmentItem> chosenGear,
+            EquipmentSlot[] slotOrder,
+            Map<EquipmentSlot, List<EquipmentItem>> candidatesBySlot,
+            CombatStyle combatStyle,
+            BossCombatProfile profile,
+            long budget,
+            MonsterVariant variant,
+            MonsterCombatProfile monsterProfile,
+            PlayerAccount account,
+            boolean onSlayerTask) {
+
+        if (variant == null || chosenGear.isEmpty()) return;
+
+        double bestDps = measureDps(chosenGear, variant, monsterProfile, account, combatStyle, onSlayerTask);
+        if (bestDps <= 0) return;
+
+        for (int pass = 0; pass < 2; pass++) {
+            boolean improved = false;
+            for (EquipmentSlot slot : slotOrder) {
+                if (slot == EquipmentSlot.SPEC_WEAPON) continue;
+
+                List<EquipmentItem> candidates = candidatesBySlot.getOrDefault(slot, Collections.emptyList());
+                if (candidates.isEmpty()) continue;
+
+                for (EquipmentItem candidate : candidates) {
+                    if (candidate == null || candidate == chosenGear.get(slot)) continue;
+
+                    Map<EquipmentSlot, EquipmentItem> trial = gearWith(chosenGear, slot, candidate, combatStyle);
+                    if (trial == null) continue;
+                    if (budget >= 0 && calculateTotalCost(trial) > budget) continue;
+
+                    double dps = measureDps(trial, variant, monsterProfile, account, combatStyle, onSlayerTask);
+                    if (dps > bestDps + 0.0005) {
+                        bestDps = dps;
+                        chosenGear.clear();
+                        chosenGear.putAll(trial);
+                        improved = true;
+                    }
+                }
+            }
+            if (!improved) break;
+        }
     }
 
     private long calculateTotalCost(Map<EquipmentSlot, EquipmentItem> gear) {
