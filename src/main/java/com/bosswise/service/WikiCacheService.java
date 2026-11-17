@@ -3,7 +3,6 @@ package com.bosswise.service;
 import com.bosswise.model.WikiMetadata;
 import com.bosswise.model.WikiMetadata.VerificationStatus;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import java.io.File;
@@ -25,7 +24,7 @@ public class WikiCacheService {
 
     private final Map<String, CacheEntry> memoryCache = new ConcurrentHashMap<>();
     private final File diskCacheDir;
-    private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    private final Gson gson;
 
     private final AtomicInteger cacheHits = new AtomicInteger(0);
     private final AtomicInteger cacheMisses = new AtomicInteger(0);
@@ -57,7 +56,8 @@ public class WikiCacheService {
     }
 
     @Inject
-    public WikiCacheService() {
+    public WikiCacheService(Gson gson) {
+        this.gson = gson != null ? gson.newBuilder().setPrettyPrinting().create() : null;
         File home = new File(System.getProperty("user.home", "."));
         File rl = new File(home, ".runelite");
         File bw = new File(rl, "bosswise");
@@ -72,7 +72,8 @@ public class WikiCacheService {
         }
     }
 
-    public WikiCacheService(File cacheDir) {
+    public WikiCacheService(File cacheDir, Gson gson) {
+        this.gson = gson != null ? gson.newBuilder().setPrettyPrinting().create() : null;
         this.diskCacheDir = cacheDir;
         try {
             if (!diskCacheDir.exists()) {
@@ -99,7 +100,7 @@ public class WikiCacheService {
         }
 
         // 2. Check disk cache
-        if (diskCacheDir != null && diskCacheDir.exists()) {
+        if (gson != null && diskCacheDir != null && diskCacheDir.exists()) {
             File file = new File(diskCacheDir, key + ".json");
             if (file.exists() && file.isFile()) {
                 try (FileReader reader = new FileReader(file, StandardCharsets.UTF_8)) {
@@ -128,7 +129,7 @@ public class WikiCacheService {
 
         memoryCache.put(key, entry);
 
-        if (diskCacheDir != null && diskCacheDir.exists()) {
+        if (gson != null && diskCacheDir != null && diskCacheDir.exists()) {
             try {
                 File file = new File(diskCacheDir, key + ".json");
                 try (FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8)) {
@@ -158,7 +159,7 @@ public class WikiCacheService {
 
     public void clear() {
         memoryCache.clear();
-        if (diskCacheDir != null && diskCacheDir.exists()) {
+        if (gson != null && diskCacheDir != null && diskCacheDir.exists()) {
             File[] files = diskCacheDir.listFiles((dir, name) -> name.endsWith(".json"));
             if (files != null) {
                 for (File f : files) {

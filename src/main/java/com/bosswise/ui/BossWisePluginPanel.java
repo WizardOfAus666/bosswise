@@ -127,6 +127,37 @@ public class BossWisePluginPanel extends PluginPanel {
             BankCheckerService bankChecker,
             ExportService exportService,
             BossWiseConfig config) {
+        this(accountScanner, bossDatabase, monsterDatabase, recommendationEngine, optimizerService, upgradeAdvisor,
+                inventoryService, progressionService, combatCalculationService, combatStyleEvaluator,
+                currentGearScanner, dpsLabService, slayerTaskService, lootTrackerService, monsterProfitService,
+                dropRateCalculatorService, gearRoadmapService, combatAchievementService, collectionLogService,
+                bankChecker, exportService, null, config);
+    }
+
+    public BossWisePluginPanel(
+            AccountScannerService accountScanner,
+            BossDatabase bossDatabase,
+            MonsterDatabase monsterDatabase,
+            BossRecommendationEngine recommendationEngine,
+            GearOptimizerService optimizerService,
+            GearUpgradeAdvisor upgradeAdvisor,
+            InventoryBuilderService inventoryService,
+            ProgressionService progressionService,
+            CombatCalculationService combatCalculationService,
+            CombatStyleEvaluator combatStyleEvaluator,
+            CurrentGearScannerService currentGearScanner,
+            DpsLabService dpsLabService,
+            SlayerTaskService slayerTaskService,
+            LootTrackerService lootTrackerService,
+            MonsterProfitService monsterProfitService,
+            DropRateCalculatorService dropRateCalculatorService,
+            GearRoadmapService gearRoadmapService,
+            CombatAchievementService combatAchievementService,
+            CollectionLogService collectionLogService,
+            BankCheckerService bankChecker,
+            ExportService exportService,
+            com.bosswise.service.WikiSyncService wikiSyncService,
+            BossWiseConfig config) {
 
         super(false);
         setLayout(new BorderLayout());
@@ -253,7 +284,7 @@ public class BossWisePluginPanel extends PluginPanel {
                 boss -> openGearOptimizer(boss),
                 boss -> openInventory(boss)
         );
-        this.settingsPanel = new SettingsPanel(config, accountScanner, () -> refreshAll());
+        this.settingsPanel = new SettingsPanel(config, accountScanner, wikiSyncService, () -> refreshAll());
 
         // Register panels in CardLayout
         mainContainer.add(dashboardPanel, "DASHBOARD");

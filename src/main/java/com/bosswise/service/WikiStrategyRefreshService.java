@@ -37,13 +37,9 @@ public class WikiStrategyRefreshService {
             OkHttpClient httpClient,
             WikiCacheService cacheService,
             MonsterStrategyDatabase strategyDatabase) {
-        this.httpClient = httpClient != null ? httpClient : new OkHttpClient();
-        this.cacheService = cacheService != null ? cacheService : new WikiCacheService();
+        this.httpClient = httpClient;
+        this.cacheService = cacheService;
         this.strategyDatabase = strategyDatabase;
-    }
-
-    public WikiStrategyRefreshService(WikiCacheService cacheService, MonsterStrategyDatabase strategyDatabase) {
-        this(new OkHttpClient(), cacheService, strategyDatabase);
     }
 
     /**

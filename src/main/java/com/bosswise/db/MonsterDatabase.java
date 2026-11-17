@@ -9,10 +9,10 @@ import com.bosswise.model.MonsterClassification;
 import com.bosswise.model.MonsterCombatProfile;
 import com.bosswise.model.MonsterData;
 import com.bosswise.model.MonsterVariant;
-import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -43,8 +43,9 @@ public class MonsterDatabase {
                 return;
             }
 
-            Gson gson = new Gson();
-            JsonArray array = gson.fromJson(new InputStreamReader(is, StandardCharsets.UTF_8), JsonArray.class);
+            JsonElement parsed = new JsonParser().parse(new InputStreamReader(is, StandardCharsets.UTF_8));
+            JsonArray array = (parsed != null && parsed.isJsonArray()) ? parsed.getAsJsonArray() : null;
+            if (array == null) return;
             Map<Integer, MonsterVariant> legacyVariants = new HashMap<>();
 
             for (JsonElement elem : array) {

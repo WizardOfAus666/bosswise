@@ -15,10 +15,10 @@ import com.bosswise.model.strategy.StrategyCombatMechanic;
 import com.bosswise.model.strategy.StrategyConfidence;
 import com.bosswise.model.strategy.StrategyMethod;
 import com.bosswise.model.strategy.StrategyTier;
-import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -62,8 +62,8 @@ public class MonsterStrategyDatabase {
                 return;
             }
 
-            Gson gson = new Gson();
-            JsonArray array = gson.fromJson(new InputStreamReader(is, StandardCharsets.UTF_8), JsonArray.class);
+            JsonElement parsed = new JsonParser().parse(new InputStreamReader(is, StandardCharsets.UTF_8));
+            JsonArray array = (parsed != null && parsed.isJsonArray()) ? parsed.getAsJsonArray() : null;
             if (array == null) return;
 
             for (JsonElement elem : array) {

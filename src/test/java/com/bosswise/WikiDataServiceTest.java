@@ -7,8 +7,10 @@ import com.bosswise.model.WikiMetadata;
 import com.bosswise.model.WikiMetadata.VerificationStatus;
 import com.bosswise.service.WikiCacheService;
 import com.bosswise.service.WikiDataService;
+import com.google.gson.Gson;
 import java.io.File;
 import java.util.concurrent.CompletableFuture;
+import okhttp3.OkHttpClient;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,10 +28,10 @@ public class WikiDataServiceTest {
     public void setUp() {
         tempCacheDir = new File(System.getProperty("java.io.tmpdir"), "bosswise_test_wiki_cache_" + System.currentTimeMillis());
         tempCacheDir.mkdirs();
-        cacheService = new WikiCacheService(tempCacheDir);
+        cacheService = new WikiCacheService(tempCacheDir, new Gson());
         EquipmentDatabase eqDb = new EquipmentDatabase();
         MonsterDatabase mDb = new MonsterDatabase();
-        wikiDataService = new WikiDataService(cacheService, eqDb, mDb);
+        wikiDataService = new WikiDataService(new OkHttpClient(), cacheService, eqDb, mDb);
     }
 
     @After

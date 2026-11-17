@@ -26,6 +26,7 @@ import com.bosswise.service.LootTrackerService;
 import com.bosswise.service.MonsterProfitService;
 import com.bosswise.service.ProgressionService;
 import com.bosswise.service.SlayerTaskService;
+import com.bosswise.service.WikiSyncService;
 import com.bosswise.ui.BossWisePluginPanel;
 import com.google.inject.Provides;
 import java.awt.image.BufferedImage;
@@ -151,6 +152,9 @@ public class BossWisePlugin extends Plugin {
     @Inject
     private ExportService exportService;
 
+    @Inject
+    private WikiSyncService wikiSyncService;
+
     private BossWisePluginPanel panel;
     private NavigationButton navButton;
 
@@ -185,6 +189,7 @@ public class BossWisePlugin extends Plugin {
                 collectionLogService,
                 bankChecker,
                 exportService,
+                wikiSyncService,
                 config
         );
 

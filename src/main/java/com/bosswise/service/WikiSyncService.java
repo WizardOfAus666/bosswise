@@ -62,24 +62,17 @@ public class WikiSyncService {
 
     private final Map<String, CacheEntry> cache = new HashMap<>();
 
-    /** RuneLite's shared client when injected; otherwise one is created on first lookup. */
-    private OkHttpClient httpClient;
+    /** RuneLite's shared client when injected; null only in offline unit tests. */
+    private final OkHttpClient httpClient;
 
     @Inject
     public WikiSyncService(OkHttpClient httpClient) {
         this.httpClient = httpClient;
     }
 
-    /** Standalone / test constructor. No client is built until a lookup actually runs. */
+    /** Standalone / test constructor (parseProfile and input validation only). */
     public WikiSyncService() {
         this.httpClient = null;
-    }
-
-    private synchronized OkHttpClient client() {
-        if (httpClient == null) {
-            httpClient = new OkHttpClient();
-        }
-        return httpClient;
     }
 
     /** Outcome of a lookup. {@link #account} is only set when {@link #success} is true. */
@@ -132,6 +125,11 @@ public class WikiSyncService {
             return;
         }
 
+        if (httpClient == null) {
+            callback.accept(new Result(false, "HTTP client unavailable.", null));
+            return;
+        }
+
         Request request = new Request.Builder()
                 .url(ENDPOINT + URLEncoder.encode(username, StandardCharsets.UTF_8) + PROFILE)
                 .header("User-Agent", USER_AGENT)
@@ -139,7 +137,7 @@ public class WikiSyncService {
                 .build();
 
         try {
-            client().newCall(request).enqueue(new Callback() {
+            httpClient.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
                     log.debug("[BossWise] WikiSync lookup failed for {}: {}", username, e.getMessage());

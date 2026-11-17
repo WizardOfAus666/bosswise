@@ -51,15 +51,10 @@ public class WikiDataService {
             WikiCacheService cacheService,
             EquipmentDatabase equipmentDatabase,
             MonsterDatabase monsterDatabase) {
-        this.httpClient = httpClient != null ? httpClient : new OkHttpClient();
+        this.httpClient = httpClient;
         this.cacheService = cacheService;
         this.equipmentDatabase = equipmentDatabase;
         this.monsterDatabase = monsterDatabase;
-    }
-
-    // Constructor for standalone testing
-    public WikiDataService(WikiCacheService cacheService, EquipmentDatabase equipmentDatabase, MonsterDatabase monsterDatabase) {
-        this(new OkHttpClient(), cacheService, equipmentDatabase, monsterDatabase);
     }
 
     /**
