@@ -24,14 +24,7 @@ Engineered strictly for official **RuneLite Plugin Hub** submission, BossWise op
   - [8. In-Depth Boss Strategy Guides](#8-in-depth-boss-strategy-guides)
   - [9. Account Progression Roadmap](#9-account-progression-roadmap)
 - [Plugin Hub Compliance & Fair Play](#plugin-hub-compliance--fair-play)
-- [User Interface Design](#user-interface-design)
-- [Technical Architecture](#technical-architecture)
 - [Building & Testing](#building--testing)
-  - [Prerequisites](#prerequisites)
-  - [Automated Verification](#automated-verification)
-  - [Launching in RuneLite Dev Mode](#launching-in-runelite-dev-mode)
-  - [Launching Standalone UI Preview](#launching-standalone-ui-preview)
-- [Project Directory Structure](#project-directory-structure)
 - [License](#license)
 
 ---
@@ -126,110 +119,13 @@ BossWise is built strictly in accordance with [RuneLite's Plugin Hub Rules](http
 
 ---
 
-## User Interface Design
-
-Crafted to match modern commercial RuneLite plugin design standards:
-- **Matte Black Aesthetic**: `#121212` background with `#1E1E1E` dark charcoal card containers.
-- **Subtle OSRS Gold Accents**: Clean `#D4AF37` highlights and borders.
-- **Typography**: Native RuneLite fonts (`FontManager.getRunescapeBoldFont`, `FontManager.getRunescapeFont`).
-- **Compact Layout**: Formatted for standard RuneLite sidebar widths (225px to 270px) with responsive card stacking.
-- **Status Pills**: Vivid Green (`#43A047`), Amber (`#FB8C00`), and Red (`#E53935`) indicators.
-
----
-
-## Technical Architecture
-
-```
-com.bosswise
-├── BossWisePlugin.java          # Lifecycle, Guice injection, RuneLite event bus subscriptions
-├── config
-│   └── BossWiseConfig.java      # RuneLite config group ("bosswise") with settings & defaults
-├── model
-│   ├── BossCategory.java        # Beginner, Intermediate, Advanced, Endgame, Slayer, Raids...
-│   ├── BossData.java            # Boss model, requirements, mechanics, drop tables, inventory presets
-│   ├── BossDifficulty.java      # Beginner, Intermediate, Advanced, Master, Grandmaster
-│   ├── BossEligibility.java     # Computed readiness status, score (0-100), and missing requirements
-│   ├── BossEligibilityStatus.java # READY, ALMOST_READY, LOCKED
-│   ├── CombatStyle.java         # Melee, Ranged, Magic, Hybrid, Tribrid
-│   ├── EquipmentItem.java       # Stats, requirements, slot, special effects, pricing, tier
-│   ├── EquipmentSlot.java       # Head, Cape, Neck, Weapon, Body, Shield, Legs, Gloves, Boots, Ring...
-│   ├── GearUpgradeRecommendation.java # Slot upgrade delta, price gap, stat delta, budget fit
-│   ├── InventoryItem.java       # Item ID, name, quantity, category, unit price, mandatory flag
-│   ├── InventorySetup.java      # Preset loadout tier with total supply cost
-│   ├── OptimizedGearSetup.java  # Output loadout, total cost, remaining GP, stat totals, slot reasons
-│   ├── PlayerAccount.java       # Scanned stats (real & boosted), combat level, quest completion set
-│   ├── ProgressionGoal.java     # Skill, Quest, Gear milestone goals with progress calculation
-│   ├── QuestRequirement.java    # Quest enum, quest name, mandatory flag, notes
-│   └── SkillRequirement.java    # Skill enum, required level, boostable flag, boost method
-├── scanner
-│   ├── AccountScannerService.java # Reads player stats, combat level, total level via Client APIs
-│   ├── QuestInfo.java           # Quest metadata, skill requirements, prerequisites, unlocked bosses
-│   └── QuestScannerService.java # Scans Quest.getState(client) and maintains quest unlocks database
-├── db
-│   ├── BossDatabase.java        # 30+ comprehensive, verified OSRS bosses
-│   └── EquipmentDatabase.java   # Rich equipment database across Melee, Ranged, and Magic
-├── service
-│   ├── BossRecommendationEngine.java # Intelligent scoring & eligibility evaluation
-│   ├── GePriceService.java      # RuneLite ItemManager integration + caching & offline fallbacks
-│   ├── GearOptimizerService.java # Knapsack budget optimizer across 12 equipment slots
-│   ├── GearUpgradeAdvisor.java  # Upgrade recommendations based on current gear
-│   ├── InventoryBuilderService.java # Supply calculator with live GE pricing
-│   └── ProgressionService.java  # Account progression roadmap generator
-└── ui
-    ├── BossWiseDesign.java      # Design system: palette, borders, fonts, spacing
-    ├── BossWisePluginPanel.java # Master PluginPanel container with tab bar navigation
-    ├── DashboardPanel.java      # Account stats, metrics, top boss, top upgrade, roadmap preview
-    ├── BossFinderPanel.java     # Filterable, sortable, searchable boss card directory
-    ├── GearOptimizerPanel.java  # Budget selector, 3 tier setups, slot table, upgrade advisor
-    ├── BossGuidePanel.java      # Strategy guides, mechanics, checklists, pro tips, drops
-    ├── InventoryBuilderPanel.java # Supplies table, quantities, cost calculation
-    ├── ProgressionPanel.java    # Account milestones roadmap with progress bars
-    ├── SettingsPanel.java       # In-panel settings & manual account scan trigger
-    └── components
-        ├── BossCard.java        # Interactive boss card with status pill, score, actions
-        ├── EquipmentSlotRow.java # Slot row with item name, price tag, stats, and upgrade hint
-        ├── GoldButton.java      # Styled OSRS button with hover & click animations
-        ├── StatProgressBar.java # Custom progress bar with percentage indicator
-        └── StatusBadge.java     # Rounded pill badge for READY, ALMOST READY, LOCKED
-```
-
----
-
 ## Building & Testing
 
-### Prerequisites
-- JDK 11, JDK 17, or JDK 21 (Eclipse Adoptium Temurin recommended)
-- RuneLite client dependencies (automatically resolved from Gradle cache)
+Requires JDK 11 or 17:
 
-### Automated Verification
-Run the included verification build script to compile sources, execute unit tests, and package the distribution JAR:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\build.ps1 verify
-```
-
-Expected output:
-```
-[INFO] Compiled 43 source files to target\classes
-[INFO] Compiled 11 test files to target\test-classes
-[INFO] Executing tests: com.bosswise.BossEligibilityTest, com.bosswise.GearBudgetOptimizerTest, ...
-OK (15 tests)
-[INFO] Built jar: target\bosswise-1.0.0.jar
-[INFO] BUILD SUCCESS
-```
-
-### Launching in RuneLite Dev Mode
-To launch RuneLite with BossWise loaded as an active plugin:
-
-```cmd
-run-bosswise.bat
-```
-
-### Launching Standalone UI Preview
-To inspect and test the UI layout and features in a standalone desktop preview window without starting the full RuneLite client:
-
-```cmd
-run-preview.bat
+```bash
+./gradlew test   # Run unit tests
+./gradlew run    # Launch RuneLite in developer mode with BossWise loaded
 ```
 
 ---
