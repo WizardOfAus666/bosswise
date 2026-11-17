@@ -8,8 +8,8 @@ import com.google.gson.JsonParser;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import okhttp3.OkHttpClient;
@@ -27,19 +27,21 @@ public class WikiStrategyRefreshService {
     private final OkHttpClient httpClient;
     private final WikiCacheService cacheService;
     private final MonsterStrategyDatabase strategyDatabase;
-    private final ExecutorService executor = Executors.newSingleThreadExecutor();
+    private final ScheduledExecutorService scheduler;
 
-    private long lastRequestTime = 0L;
+    private long nextRequestTime = 0L;
     private static final long MIN_REQUEST_INTERVAL_MS = 500L;
 
     @Inject
     public WikiStrategyRefreshService(
             OkHttpClient httpClient,
             WikiCacheService cacheService,
-            MonsterStrategyDatabase strategyDatabase) {
+            MonsterStrategyDatabase strategyDatabase,
+            ScheduledExecutorService scheduler) {
         this.httpClient = httpClient;
         this.cacheService = cacheService;
         this.strategyDatabase = strategyDatabase;
+        this.scheduler = scheduler;
     }
 
     /**
@@ -63,9 +65,13 @@ public class WikiStrategyRefreshService {
             return future;
         }
 
-        executor.submit(() -> {
+        if (scheduler == null || httpClient == null) {
+            future.complete(local);
+            return future;
+        }
+        long delayMs = reserveDelayMs();
+        scheduler.schedule(() -> {
             try {
-                throttle();
                 String pageTitle = monsterName.replace(" ", "_") + "/Strategies";
                 String url = WIKI_API_ENDPOINT + "?action=parse&prop=wikitext&page="
                         + URLEncoder.encode(pageTitle, StandardCharsets.UTF_8)
@@ -107,19 +113,15 @@ public class WikiStrategyRefreshService {
                 log.debug("[BossWise] Exception during wiki strategy refresh: {}", e.getMessage());
                 future.complete(local);
             }
-        });
+        }, delayMs, TimeUnit.MILLISECONDS);
 
         return future;
     }
 
-    private synchronized void throttle() {
+    private synchronized long reserveDelayMs() {
         long now = System.currentTimeMillis();
-        long diff = now - lastRequestTime;
-        if (diff < MIN_REQUEST_INTERVAL_MS) {
-            try {
-                Thread.sleep(MIN_REQUEST_INTERVAL_MS - diff);
-            } catch (InterruptedException ignored) {}
-        }
-        lastRequestTime = System.currentTimeMillis();
+        long scheduledAt = Math.max(now, nextRequestTime);
+        nextRequestTime = scheduledAt + MIN_REQUEST_INTERVAL_MS;
+        return scheduledAt - now;
     }
 }

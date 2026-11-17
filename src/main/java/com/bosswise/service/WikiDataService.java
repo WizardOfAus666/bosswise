@@ -15,9 +15,8 @@ import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.inject.Inject;
@@ -40,9 +39,9 @@ public class WikiDataService {
     private final WikiCacheService cacheService;
     private final EquipmentDatabase equipmentDatabase;
     private final MonsterDatabase monsterDatabase;
-    private final ExecutorService executor = Executors.newSingleThreadExecutor();
+    private final ScheduledExecutorService scheduler;
 
-    private long lastRequestTime = 0L;
+    private long nextRequestTime = 0L;
     private static final long MIN_REQUEST_INTERVAL_MS = 500L; // 2 requests per second maximum
 
     @Inject
@@ -50,11 +49,13 @@ public class WikiDataService {
             OkHttpClient httpClient,
             WikiCacheService cacheService,
             EquipmentDatabase equipmentDatabase,
-            MonsterDatabase monsterDatabase) {
+            MonsterDatabase monsterDatabase,
+            ScheduledExecutorService scheduler) {
         this.httpClient = httpClient;
         this.cacheService = cacheService;
         this.equipmentDatabase = equipmentDatabase;
         this.monsterDatabase = monsterDatabase;
+        this.scheduler = scheduler;
     }
 
     /**
@@ -80,10 +81,14 @@ public class WikiDataService {
             }
         }
 
-        // 2. Fetch asynchronously
-        executor.submit(() -> {
+        // 2. Fetch asynchronously via ScheduledExecutorService (rate-limited without blocking)
+        if (scheduler == null || httpClient == null) {
+            future.complete(getFallbackMonsterProfile(monsterName));
+            return future;
+        }
+        long delayMs = reserveDelayMs();
+        scheduler.schedule(() -> {
             try {
-                throttle();
                 String url = WIKI_API_ENDPOINT + "?action=parse&prop=wikitext&page="
                         + URLEncoder.encode(monsterName, StandardCharsets.UTF_8)
                         + "&format=json";
@@ -141,7 +146,7 @@ public class WikiDataService {
                 log.debug("[BossWise] Execution error fetching {}: {}", monsterName, ex.getMessage());
                 future.complete(getFallbackMonsterProfile(monsterName));
             }
-        });
+        }, delayMs, TimeUnit.MILLISECONDS);
 
         return future;
     }
@@ -209,14 +214,10 @@ public class WikiDataService {
         return defaultValue;
     }
 
-    private synchronized void throttle() {
+    private synchronized long reserveDelayMs() {
         long now = System.currentTimeMillis();
-        long diff = now - lastRequestTime;
-        if (diff < MIN_REQUEST_INTERVAL_MS) {
-            try {
-                Thread.sleep(MIN_REQUEST_INTERVAL_MS - diff);
-            } catch (InterruptedException ignored) {}
-        }
-        lastRequestTime = System.currentTimeMillis();
+        long scheduledAt = Math.max(now, nextRequestTime);
+        nextRequestTime = scheduledAt + MIN_REQUEST_INTERVAL_MS;
+        return scheduledAt - now;
     }
 }

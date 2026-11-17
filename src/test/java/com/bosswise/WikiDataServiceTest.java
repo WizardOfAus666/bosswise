@@ -10,6 +10,7 @@ import com.bosswise.service.WikiDataService;
 import com.google.gson.Gson;
 import java.io.File;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executors;
 import okhttp3.OkHttpClient;
 import org.junit.After;
 import org.junit.Before;
@@ -31,7 +32,13 @@ public class WikiDataServiceTest {
         cacheService = new WikiCacheService(tempCacheDir, new Gson());
         EquipmentDatabase eqDb = new EquipmentDatabase();
         MonsterDatabase mDb = new MonsterDatabase();
-        wikiDataService = new WikiDataService(new OkHttpClient(), cacheService, eqDb, mDb);
+        wikiDataService = new WikiDataService(
+                new OkHttpClient(),
+                cacheService,
+                eqDb,
+                mDb,
+                Executors.newSingleThreadScheduledExecutor()
+        );
     }
 
     @After
