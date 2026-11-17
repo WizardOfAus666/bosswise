@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import java.io.File;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executors;
+import net.runelite.client.util.Filepath;
 import okhttp3.OkHttpClient;
 import org.junit.After;
 import org.junit.Before;
@@ -29,7 +30,7 @@ public class WikiDataServiceTest {
     public void setUp() {
         tempCacheDir = new File(System.getProperty("java.io.tmpdir"), "bosswise_test_wiki_cache_" + System.currentTimeMillis());
         tempCacheDir.mkdirs();
-        cacheService = new WikiCacheService(tempCacheDir, new Gson());
+        cacheService = new WikiCacheService(Filepath.Unchecked.getRooted(tempCacheDir.toPath()), new Gson());
         EquipmentDatabase eqDb = new EquipmentDatabase();
         MonsterDatabase mDb = new MonsterDatabase();
         wikiDataService = new WikiDataService(

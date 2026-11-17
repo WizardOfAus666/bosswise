@@ -3,17 +3,16 @@ package com.bosswise.service;
 import com.bosswise.model.WikiMetadata;
 import com.bosswise.model.WikiMetadata.VerificationStatus;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.nio.charset.StandardCharsets;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.Writer;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import net.runelite.client.util.Filepath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,7 +22,7 @@ public class WikiCacheService {
     private static final long DEFAULT_TTL_MS = 7L * 24 * 60 * 60 * 1000L; // 7 days
 
     private final Map<String, CacheEntry> memoryCache = new ConcurrentHashMap<>();
-    private final File diskCacheDir;
+    private volatile Filepath diskCacheDir;
     private final Gson gson;
 
     private final AtomicInteger cacheHits = new AtomicInteger(0);
@@ -58,29 +57,23 @@ public class WikiCacheService {
     @Inject
     public WikiCacheService(Gson gson) {
         this.gson = gson != null ? gson.newBuilder().setPrettyPrinting().create() : null;
-        File home = new File(System.getProperty("user.home", "."));
-        File rl = new File(home, ".runelite");
-        File bw = new File(rl, "bosswise");
-        this.diskCacheDir = new File(bw, "wiki_cache");
-
-        try {
-            if (!diskCacheDir.exists()) {
-                diskCacheDir.mkdirs();
-            }
-        } catch (Exception ex) {
-            log.warn("[BossWise] Could not create wiki cache dir: {}", ex.getMessage());
-        }
     }
 
-    public WikiCacheService(File cacheDir, Gson gson) {
+    public WikiCacheService(Filepath cacheDir, Gson gson) {
         this.gson = gson != null ? gson.newBuilder().setPrettyPrinting().create() : null;
+        setCacheDir(cacheDir);
+    }
+
+    public void setCacheDir(Filepath cacheDir) {
         this.diskCacheDir = cacheDir;
-        try {
-            if (!diskCacheDir.exists()) {
-                diskCacheDir.mkdirs();
+        if (cacheDir != null) {
+            try {
+                if (!cacheDir.exists()) {
+                    cacheDir.createDirectories();
+                }
+            } catch (Exception ex) {
+                log.warn("[BossWise] Could not create wiki cache dir: {}", ex.getMessage());
             }
-        } catch (Exception ex) {
-            log.warn("[BossWise] Could not create custom wiki cache dir: {}", ex.getMessage());
         }
     }
 
@@ -100,17 +93,18 @@ public class WikiCacheService {
         }
 
         // 2. Check disk cache
-        if (gson != null && diskCacheDir != null && diskCacheDir.exists()) {
-            File file = new File(diskCacheDir, key + ".json");
+        Filepath dir = diskCacheDir;
+        if (gson != null && dir != null && dir.exists()) {
+            Filepath file = dir.joinSegment(key + ".json");
             if (file.exists() && file.isFile()) {
-                try (FileReader reader = new FileReader(file, StandardCharsets.UTF_8)) {
+                try (Reader reader = file.openReader()) {
                     CacheEntry diskEntry = gson.fromJson(reader, CacheEntry.class);
                     if (diskEntry != null && !diskEntry.isExpired()) {
                         memoryCache.put(key, diskEntry);
                         cacheHits.incrementAndGet();
                         return diskEntry.content;
-                    } else if (file.exists()) {
-                        file.delete();
+                    } else {
+                        file.deleteIfExists();
                     }
                 } catch (Exception ex) {
                     log.debug("[BossWise] Error reading disk cache for {}: {}", key, ex.getMessage());
@@ -129,10 +123,11 @@ public class WikiCacheService {
 
         memoryCache.put(key, entry);
 
-        if (gson != null && diskCacheDir != null && diskCacheDir.exists()) {
+        Filepath dir = diskCacheDir;
+        if (gson != null && dir != null && dir.exists()) {
             try {
-                File file = new File(diskCacheDir, key + ".json");
-                try (FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8)) {
+                Filepath file = dir.joinSegment(key + ".json");
+                try (Writer writer = file.openWriter()) {
                     gson.toJson(entry, writer);
                 }
             } catch (Exception ex) {
@@ -159,12 +154,17 @@ public class WikiCacheService {
 
     public void clear() {
         memoryCache.clear();
-        if (gson != null && diskCacheDir != null && diskCacheDir.exists()) {
-            File[] files = diskCacheDir.listFiles((dir, name) -> name.endsWith(".json"));
-            if (files != null) {
-                for (File f : files) {
-                    f.delete();
-                }
+        Filepath dir = diskCacheDir;
+        if (dir != null && dir.exists()) {
+            try (Stream<Filepath> entries = dir.walk(1)) {
+                entries.filter(p -> p.isFile() && p.getFileName().endsWith(".json"))
+                        .forEach(p -> {
+                            try {
+                                p.deleteIfExists();
+                            } catch (IOException ignored) {}
+                        });
+            } catch (IOException ex) {
+                log.debug("[BossWise] Error clearing disk cache: {}", ex.getMessage());
             }
         }
     }

@@ -26,6 +26,7 @@ import com.bosswise.service.LootTrackerService;
 import com.bosswise.service.MonsterProfitService;
 import com.bosswise.service.ProgressionService;
 import com.bosswise.service.SlayerTaskService;
+import com.bosswise.service.WikiCacheService;
 import com.bosswise.service.WikiSyncService;
 import com.bosswise.ui.BossWisePluginPanel;
 import com.google.inject.Provides;
@@ -57,6 +58,7 @@ import org.slf4j.LoggerFactory;
 
 @PluginDescriptor(
         name = "BossWise",
+        internalName = "bosswise",
         description = "The ultimate OSRS bossing assistant: real account scanning, gear optimizer, budget calculator, boss recommendations, and strategy guides",
         tags = {"boss", "bossing", "pvm", "pve", "gear", "budget", "optimizer", "vorkath", "zulrah", "raids", "guides"},
         configName = "bosswise",
@@ -155,6 +157,9 @@ public class BossWisePlugin extends Plugin {
     @Inject
     private WikiSyncService wikiSyncService;
 
+    @Inject
+    private WikiCacheService wikiCacheService;
+
     private BossWisePluginPanel panel;
     private NavigationButton navButton;
 
@@ -166,6 +171,12 @@ public class BossWisePlugin extends Plugin {
     @Override
     protected void startUp() throws Exception {
         log.info("[BossWise] Plugin starting up...");
+
+        try {
+            wikiCacheService.setCacheDir(getPluginDirectory().joinSegment("wiki_cache"));
+        } catch (Exception ex) {
+            log.warn("[BossWise] Could not initialize wiki cache directory: {}", ex.getMessage());
+        }
 
         panel = new BossWisePluginPanel(
                 accountScanner,
