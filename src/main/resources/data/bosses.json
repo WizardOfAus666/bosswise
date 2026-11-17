@@ -1,0 +1,3755 @@
+[
+  {
+    "id": "scurrius",
+    "name": "Scurrius",
+    "category": "BEGINNER",
+    "difficulty": "BEGINNER",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 60,
+    "suggestedGearBudget": 150000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 15000,
+    "estimatedGpHour": 450000,
+    "weakness": "Rat bone weapons (+10 max hit), Crush melee",
+    "overheadPrayer": "Protect from Missiles / Magic / Melee (Telegraphed overheads)",
+    "offensivePrayer": "Piety / Ultimate Strength",
+    "howToGetThere": "Varrock Sewers via manhole near the palace or south of the east bank.",
+    "fightStrategy": "React to Scurrius\u0027s telegraphed attacks. When he throws debris from the ceiling, dodge the falling shadows immediately. Switch overhead prayer when he rears back for ranged or magic. Kill giant rat adds quickly or ignore if using bone mace/bow.",
+    "mechanicsSummary": "1. Ceiling Debris: Shadows appear on ground - move 1-2 tiles away.\n2. Overhead Prayer Switches: Orange projectile \u003d Protect from Missiles, Blue wave \u003d Protect from Magic, Swipe \u003d Protect from Melee.\n3. Food Pile Healing: When below 80% and 30% HP, eats from food pile; deal damage to disrupt.",
+    "phaseChanges": "Phase 1: Normal attacks and ceiling collapse.\nPhase 2 (sub 80% \u0026 sub 30%): Rushes to food pile to heal and summons giant rats.",
+    "importantWarnings": "Do not stand still when ceiling debris shadows appear; falling rocks hit up to 15+ multiple times.",
+    "beginnerTips": "Craft a Bone Mace, Bone Bow, or Bone Staff as soon as you get a Scurrius spine drop for enormous DPS.",
+    "advancedTips": "Turn on game sounds to hear attack telegraphs.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 40
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 40
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 40
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 60,
+      "STRENGTH": 65,
+      "PRAYER": 43
+    },
+    "quests": [],
+    "prerequisites": [],
+    "checklist": [
+      "Bring Prayer potions and food (Sharks/Karambwans)",
+      "Watch for overhead projectile colors: Orange \u003d Ranged, Blue \u003d Magic",
+      "Move immediately off ceiling shadow tiles"
+    ],
+    "drops": [
+      "Scurrius\u0027 spine (1/33 solo)",
+      "Scurry (pet 1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 14,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Primary food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": false,
+          "note": "Combo food"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Maintain overheads"
+        },
+        {
+          "itemId": 2436,
+          "name": "Super attack(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 1200,
+          "mandatory": false,
+          "note": "Attack boost"
+        },
+        {
+          "itemId": 2440,
+          "name": "Super strength(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2800,
+          "mandatory": false,
+          "note": "Strength boost"
+        },
+        {
+          "itemId": 8007,
+          "name": "Varrock teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 500,
+          "mandatory": true,
+          "note": "Emergency exit"
+        }
+      ]
+    }
+  },
+  {
+    "id": "giant_mole",
+    "name": "Giant Mole",
+    "category": "BEGINNER",
+    "difficulty": "BEGINNER",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 70,
+    "suggestedGearBudget": 250000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 25000,
+    "estimatedGpHour": 800000,
+    "weakness": "Dharok\u0027s Greataxe (low HP), Fang, Bowfa",
+    "overheadPrayer": "Protect from Melee (Mole only uses melee)",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Spade dig on the mole hills inside Falador Park. Require light source (Bullseye lantern or Kandarin headgear).",
+    "fightStrategy": "Turn on Protect from Melee continuously. Hit the mole until it burrows. When it digs away, look at your minimap (Falador Shield 3/4 points directly to it) and chase it down. If using Dharok\u0027s, keep HP low with locator orb or rock cake.",
+    "mechanicsSummary": "1. Burrowing: At random damage intervals below 50% HP, digs and reappears across the cavern.\n2. Darkness: Without a light source, cavern goes completely black and insects extinguish lanterns.",
+    "phaseChanges": "Single phase. Digs more frequently as HP decreases.",
+    "importantWarnings": "DO NOT forget a Bullseye Lantern or light source! Open flame lanterns can explode if swamp gas ignites!",
+    "beginnerTips": "Falador Hard Diary grants Falador Shield 3, which tracks the mole\u0027s burrow location with an arrow on the minimap.",
+    "advancedTips": "Stamina potions are essential because of constant running.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 60
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 60
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 70,
+      "STRENGTH": 75,
+      "PRAYER": 70
+    },
+    "quests": [],
+    "prerequisites": [],
+    "checklist": [
+      "Bring light source (Bullseye lantern or Kandarin headgear)",
+      "Bring a Spade to enter the lair",
+      "Equip Falador Shield 3/4 if unlocked",
+      "Keep Protect from Melee active at all times"
+    ],
+    "drops": [
+      "Baby mole (pet 1/3,000)",
+      "Mole skin \u0026 Mole claw (traded for bird nests)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 954,
+          "name": "Spade",
+          "quantity": 1,
+          "category": "Special Item",
+          "unitPrice": 10,
+          "mandatory": true,
+          "note": "Required to dig into lair"
+        },
+        {
+          "itemId": 4550,
+          "name": "Bullseye lantern",
+          "quantity": 1,
+          "category": "Special Item",
+          "unitPrice": 200,
+          "mandatory": true,
+          "note": "Required light source"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 12625,
+          "name": "Stamina potion(4)",
+          "quantity": 2,
+          "category": "Utility",
+          "unitPrice": 8000,
+          "mandatory": true,
+          "note": "Run energy for chasing"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Melee protection"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 8,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": false,
+          "note": "Emergency healing"
+        },
+        {
+          "itemId": 8007,
+          "name": "Falador teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 500,
+          "mandatory": true,
+          "note": "Bank return"
+        }
+      ]
+    }
+  },
+  {
+    "id": "barrows",
+    "name": "Barrows Brothers",
+    "category": "BEGINNER",
+    "difficulty": "BEGINNER",
+    "primaryStyle": "MAGIC",
+    "recommendedCombatLevel": 70,
+    "suggestedGearBudget": 500000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 60000,
+    "estimatedGpHour": 1200000,
+    "weakness": "Magic (Iban\u0027s / Trident) for 5 brothers; Ranged for Ahrim; Melee/Magic for Karil",
+    "overheadPrayer": "Protect from Melee (Dharok, Verac, Torag, Guthan), Protect from Missiles (Karil), Protect from Magic (Ahrim)",
+    "offensivePrayer": "Mystic Might / Augury",
+    "howToGetThere": "Barrows teleport tablet directly to the mounds, or Fairy ring BKR / Mort\u0027ton minigame teleport.",
+    "fightStrategy": "Kill Dharok first while prayer is high! Dharok hits over 50+ at low HP. Then kill Karil (use Magic or Ranged) and Ahrim (use Ranged with blowpipe/dhide). The remaining brothers (Guthan, Torag, Verac) have very low magic defence and melt to Iban Blast or Trident. Enter the crypt tunnel on the remaining brother and loot the chest.",
+    "mechanicsSummary": "1. Dharok\u0027s Set Effect: Hits higher the lower his hitpoints are. ALWAYS pray melee!\n2. Crypt Prayer Drain: Every 15-18 seconds inside the crypt, your prayer is drained by 8 + (brothers alive).\n3. Optimal Reward Potential: Kill 6 brothers + 2 Skeletons + 1 Bloodworm (880 reward points / 86.2% max runes and zero bolt racks).",
+    "phaseChanges": "6 crypts, each housing one brother. 1 crypt leads to the underground tunnel maze.",
+    "importantWarnings": "NEVER fight Dharok without Protect from Melee active! He can one-shot players with 55+ damage.",
+    "beginnerTips": "Iban\u0027s staff (u) or Trident of the Seas ignores the melee brothers\u0027 heavy plate armour.",
+    "advancedTips": "Use Barrows teleport tablets for fast runs.",
+    "minSkills": [
+      {
+        "skill": "MAGIC",
+        "level": 50
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 40
+      }
+    ],
+    "recSkills": {
+      "RANGED": 70,
+      "MAGIC": 75,
+      "PRAYER": 50
+    },
+    "quests": [
+      {
+        "questEnum": "PRIEST_IN_PERIL",
+        "questName": "Priest in Peril",
+        "mandatory": true,
+        "notes": "Access to Morytania"
+      }
+    ],
+    "prerequisites": [],
+    "checklist": [
+      "Bring a Spade to dig into mounds",
+      "Prioritize Dharok -\u003e Karil -\u003e Ahrim while Prayer points are full",
+      "Kill 2 Skeletons + 1 Bloodworm in tunnel for 86% reward potential (max runes)"
+    ],
+    "drops": [
+      "Barrows equipment pieces (1/14.5 per chest with 6 brothers killed)",
+      "Blood runes, Death runes, Chaos runes"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 954,
+          "name": "Spade",
+          "quantity": 1,
+          "category": "Special Item",
+          "unitPrice": 10,
+          "mandatory": true,
+          "note": "Dig into mounds"
+        },
+        {
+          "itemId": 19629,
+          "name": "Barrows teleport",
+          "quantity": 3,
+          "category": "Teleport",
+          "unitPrice": 3000,
+          "mandatory": true,
+          "note": "Quick travel"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 2,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Maintain overheads"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Sustenance"
+        },
+        {
+          "itemId": 2444,
+          "name": "Ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2000,
+          "mandatory": false,
+          "note": "Speed up Ahrim"
+        },
+        {
+          "itemId": 11978,
+          "name": "Graceful outfit / Tank top",
+          "quantity": 1,
+          "category": "Armour",
+          "unitPrice": 0,
+          "mandatory": false,
+          "note": "Weight reduction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "kbd",
+    "name": "King Black Dragon",
+    "category": "BEGINNER",
+    "difficulty": "INTERMEDIATE",
+    "primaryStyle": "RANGED",
+    "recommendedCombatLevel": 80,
+    "suggestedGearBudget": 1000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 22000,
+    "estimatedGpHour": 750000,
+    "weakness": "Dragonbane weapons (Dragon Hunter Crossbow / Lance), Stab, Ranged (Diamond bolts e)",
+    "overheadPrayer": "Protect from Melee (if in melee range) or Protect from Missiles",
+    "offensivePrayer": "Rigour / Eagle Eye",
+    "howToGetThere": "Ghorrock teleport (Ancient spellbook) or Burning Amulet to Lava Maze (level 41 Wilderness). Pull lever to enter KBD lair (safe instance).",
+    "fightStrategy": "Drink Antifire potion and equip Anti-Dragon shield before entering! Stand in melee distance while praying Protect from Melee; this prevents his unblockable dragonfire breaths from triggering continuously and forces him to hit your melee protection.",
+    "mechanicsSummary": "1. Dragonfire Breaths: Fire (standard), Ice (freezes), Poison (poisons), Shock (drains all combat stats by 2).\n2. Wilderness Passage: The entrance lever is in 41 Wilderness; carry only 3-4 valuable items while travelling.",
+    "phaseChanges": "Single phase.",
+    "importantWarnings": "Do not run through Wilderness with your cash stack! Drink extended antifire BEFORE pulling the lever.",
+    "beginnerTips": "Melee distance with Protect from Melee active significantly reduces total damage taken.",
+    "advancedTips": "Diamond bolts (e) punch through his high Defence.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 70
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      },
+      {
+        "skill": "HITPOINTS",
+        "level": 65
+      }
+    ],
+    "recSkills": {
+      "RANGED": 80,
+      "PRAYER": 70
+    },
+    "quests": [
+      {
+        "questEnum": "DRAGON_SLAYER_I",
+        "questName": "Dragon Slayer I",
+        "mandatory": true,
+        "notes": "Anti-dragon shield"
+      }
+    ],
+    "prerequisites": [
+      "Anti-dragon shield or Dragonfire shield + Antifire potion"
+    ],
+    "checklist": [
+      "Drink Extended Antifire potion before entering",
+      "Equip Anti-dragon shield / Dragonfire shield",
+      "Bring Antidote++ / Anti-venom for poison breath"
+    ],
+    "drops": [
+      "Prince black dragon (pet 1/3,000)",
+      "Draconic visage (1/5,000)",
+      "Dragon pickaxe (1/1,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 11951,
+          "name": "Extended antifire(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 7500,
+          "mandatory": true,
+          "note": "Mandatory fire protection"
+        },
+        {
+          "itemId": 5952,
+          "name": "Antidote++(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Cures poison breath"
+        },
+        {
+          "itemId": 2444,
+          "name": "Ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Overhead prayer"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 14,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 11972,
+          "name": "Burning amulet(5)",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 3000,
+          "mandatory": true,
+          "note": "Wilderness travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sarachnis",
+    "name": "Sarachnis",
+    "category": "INTERMEDIATE",
+    "difficulty": "INTERMEDIATE",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 80,
+    "suggestedGearBudget": 1500000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 35000,
+    "estimatedGpHour": 1100000,
+    "weakness": "Crush melee weapons (Sarachnis Cudgel, Inquisitor\u0027s Mace, Abyssal Bludgeon, Zombie Axe)",
+    "overheadPrayer": "Protect from Melee (when adjacent) / Protect from Missiles (when webbed)",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Kourend Woodland fairy ring CIP, or Xeric\u0027s Honour to Mount Quidamortem and run south to Forthos Dungeon.",
+    "fightStrategy": "Attack with a Crush weapon. Every 4 attacks, Sarachnis wraps you in webbing and runs to a corner to shoot Ranged attacks. Immediately swap to Protect from Missiles when webbed. Once free, run back and swap to Protect from Melee. Kill or ignore the spawned spiderlings.",
+    "mechanicsSummary": "1. Web Trap: Entangles you for 3 seconds every 4th attack and retreats.\n2. Spider Spawns: At 66% and 33% HP, summons Spawn of Sarachnis (Mage spider) and minor melee spiders.\n3. Healing: If Sarachnis hits an unprotected player with Melee, she heals 5-10 HP.",
+    "phaseChanges": "Phase 1 (100%-66%): Basic attack rotation.\nPhase 2 (66%-33%): Spawns first wave of spiderlings.\nPhase 3 (33%-0%): Spawns second wave; attack speed increases.",
+    "importantWarnings": "Never let Sarachnis melee you without Protect from Melee active - she heals off your unblocked damage!",
+    "beginnerTips": "Zombie Axe or Sarachnis Cudgel on Crush mode gives immense accuracy.",
+    "advancedTips": "Step under or away from mage spider to minimize magic chip damage.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 65
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 70
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 75,
+      "STRENGTH": 80,
+      "PRAYER": 70
+    },
+    "quests": [],
+    "prerequisites": [],
+    "checklist": [
+      "Use a weapon set to CRUSH style",
+      "Pray Melee when adjacent; Pray Missiles immediately when webbed",
+      "Kill the mage spiderling quickly during spawns"
+    ],
+    "drops": [
+      "Sraracha (pet 1/3,000)",
+      "Sarachnis cudgel (1/384)",
+      "Giant egg sac (full)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 14,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Primary healing"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": false,
+          "note": "Combo healing"
+        },
+        {
+          "itemId": 13393,
+          "name": "Xeric\u0027s talisman",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Forthos travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dagannoth_kings",
+    "name": "Dagannoth Kings",
+    "category": "INTERMEDIATE",
+    "difficulty": "INTERMEDIATE",
+    "primaryStyle": "TRIBRID",
+    "recommendedCombatLevel": 85,
+    "suggestedGearBudget": 2000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 45000,
+    "estimatedGpHour": 1800000,
+    "weakness": "Dagannoth Rex: Magic (Iban/Trident). Dagannoth Prime: Ranged (Blowpipe/Crossbow). Dagannoth Supreme: Melee (Whip/Fang/Tentacle).",
+    "overheadPrayer": "Protect from Melee (Rex), Protect from Magic (Prime), Protect from Missiles (Supreme)",
+    "offensivePrayer": "Piety / Rigour / Augury",
+    "howToGetThere": "Ferry to Waterbirth Island from Rellekka, descend deep into Waterbirth Dungeon to the lowest chamber.",
+    "fightStrategy": "Beginners should start with Solo Rex: lure Rex to the south-east safe spot without aggroing Prime or Supreme, and cast Magic across the water safely. For full tribrid: maintain the cycle Rex -\u003e Prime -\u003e Supreme, ensuring you only fight one King at a time.",
+    "mechanicsSummary": "1. Combat Triangle: Rex is immune to Ranged/Melee (only weak to Magic). Prime has massive Magic/Melee def (only weak to Ranged). Supreme has high Magic/Ranged def (only weak to Melee).\n2. Spinolyps: Spitter bugs around the outer water pool that deal constant chip damage and poison.",
+    "phaseChanges": "Independent respawn cycles (90 seconds each). Kill order in rotation: Rex -\u003e Prime -\u003e Supreme.",
+    "importantWarnings": "Do not run into the centre of the room when entering! All 3 kings will stack you simultaneously for lethal damage.",
+    "beginnerTips": "Bring Blood Barrage or a Guthan\u0027s set to heal to full HP off the Spinolyps between King kills.",
+    "advancedTips": "Fremennik Elite Diary drops all noted bones.",
+    "minSkills": [
+      {
+        "skill": "MAGIC",
+        "level": 60
+      },
+      {
+        "skill": "RANGED",
+        "level": 70
+      },
+      {
+        "skill": "ATTACK",
+        "level": 70
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "RANGED": 80,
+      "MAGIC": 75,
+      "ATTACK": 80,
+      "PRAYER": 70
+    },
+    "quests": [
+      {
+        "questEnum": "HORROR_FROM_THE_DEEP",
+        "questName": "Horror from the Deep",
+        "mandatory": false,
+        "notes": "God books \u0026 Waterbirth lore"
+      }
+    ],
+    "prerequisites": [
+      "Pet Rock \u0026 Rune/Throwing axe to enter Waterbirth Dungeon solo"
+    ],
+    "checklist": [
+      "Bring Pet Rock and Throwing axe (or a partner) for door entry",
+      "Lure Rex south without getting line-of-sight from Prime",
+      "Bring Antidote++ for Spinolyp poison"
+    ],
+    "drops": [
+      "Berserker ring (1/128 from Rex)",
+      "Archers ring (1/128 from Supreme)",
+      "Seers ring (1/128 from Prime)",
+      "Dragon axe (1/128)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 5952,
+          "name": "Antidote++(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Cures poison"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 2444,
+          "name": "Ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Range boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 6,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 560,
+          "name": "Death rune",
+          "quantity": 100,
+          "category": "Rune",
+          "unitPrice": 200,
+          "mandatory": true,
+          "note": "Iban / Magic spells"
+        },
+        {
+          "itemId": 8010,
+          "name": "Waterbirth teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1200,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "vorkath",
+    "name": "Vorkath",
+    "category": "ADVANCED",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "RANGED",
+    "recommendedCombatLevel": 90,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 135000,
+    "estimatedGpHour": 3400000,
+    "weakness": "Dragonbane weapons (Dragon Hunter Crossbow, Dragon Hunter Lance), Salve Amulet (ei), Diamond / Ruby Dragon bolts (e)",
+    "overheadPrayer": "Protect from Magic (if wearing anti-dragon shield) or Protect from Missiles (if using 2H crossbow with super antifire)",
+    "offensivePrayer": "Rigour / Eagle Eye",
+    "howToGetThere": "Rellekka dock boat to Ungael, jump the ice barriers to Vorkath\u0027s arena.",
+    "fightStrategy": "Every 6 basic attacks, Vorkath performs 1 of 2 special attacks:\n1. Zombified Spawn: Freezes you in place. Cast Crumble Undead immediately on the spawn to one-hit kill it before it explodes on you.\n2. Acid Pool / Rapid Fire: Spits acid pools across the floor and fires rapid fireballs. Turn off run and walk back and forth in a straight line (\u0027woox walk\u0027 or standard walk) continuously until fire stops.",
+    "mechanicsSummary": "1. White Dragonfire (Freeze): Followed by Zombified spawn; must use Crumble Undead spell.\n2. Pink Fireball: Disables all active overhead prayers. Immediately turn Rigour and Protect back on.\n3. Vertical Fireball: Giant slow fireball launched into the air. If you stand on that tile, it deals 115+ damage (instant death). Move 2 tiles away.\n4. Acid Phase: Never stand still on green acid or fire tiles.",
+    "phaseChanges": "Cycles every 6 attacks between Acid Phase and Spawn Phase continuously until defeated.",
+    "importantWarnings": "NEVER forget Crumble Undead runes (Chaos, Earth, Air). If the zombified spawn touches you, it explodes for up to 60+ damage!",
+    "beginnerTips": "Equip Salve amulet (ei) - its 20% accuracy and damage bonus stacks with Void Knight armour.",
+    "advancedTips": "Turn run OFF during the acid phase so you never accidentally sprint onto an acid pool.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 75
+      },
+      {
+        "skill": "PRAYER",
+        "level": 44
+      },
+      {
+        "skill": "HITPOINTS",
+        "level": 75
+      }
+    ],
+    "recSkills": {
+      "RANGED": 85,
+      "DEFENCE": 75,
+      "PRAYER": 74
+    },
+    "quests": [
+      {
+        "questEnum": "DRAGON_SLAYER_II",
+        "questName": "Dragon Slayer II",
+        "mandatory": true,
+        "notes": "Access to Ungael \u0026 Vorkath"
+      }
+    ],
+    "prerequisites": [
+      "Salve amulet (ei) (+20% damage/accuracy vs undead), Dragonfire protection, Anti-venom+"
+    ],
+    "checklist": [
+      "Equip Salve amulet (ei) (Mandatory for optimal DPS)",
+      "Bring runes for Crumble Undead (Air, Earth, Chaos in Rune Pouch)",
+      "Drink Extended Super Antifire + Anti-venom+ before waking Vorkath",
+      "Move 2 tiles away when giant orange fireball is launched into air"
+    ],
+    "drops": [
+      "Vorkath\u0027s head (Guaranteed at 50 kc for Ava\u0027s Assembler)",
+      "Draconic visage (1/5,000)",
+      "Skeletal visage (1/5,000)",
+      "Dragonbone necklace (1/1,000)",
+      "Vorki (pet 1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 22209,
+          "name": "Extended super antifire(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 14000,
+          "mandatory": true,
+          "note": "Dragonfire immunity"
+        },
+        {
+          "itemId": 12913,
+          "name": "Anti-venom+(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Venom immunity"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Max range boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 12791,
+          "name": "Rune pouch (Chaos, Earth, Air)",
+          "quantity": 1,
+          "category": "Rune",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Crumble Undead"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        },
+        {
+          "itemId": 19625,
+          "name": "Fremennik boots 4 / Rellekka teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1000,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "zulrah",
+    "name": "Zulrah",
+    "category": "ADVANCED",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "HYBRID",
+    "recommendedCombatLevel": 85,
+    "suggestedGearBudget": 3000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 110000,
+    "estimatedGpHour": 2600000,
+    "weakness": "Green (Ranged) Phase: Weak to Magic. Red (Melee) Phase: Weak to Magic. Blue (Tanzanite) Phase: Weak to Ranged.",
+    "overheadPrayer": "Protect from Missiles (Green Phase), Protect from Magic (Blue Phase), Step back from tail swipe (Red Phase)",
+    "offensivePrayer": "Mystic Might / Eagle Eye / Rigour / Augury",
+    "howToGetThere": "Zul-Andra teleport scroll directly to the dock, or Charter ship to Port Tyras and run south.",
+    "fightStrategy": "Zulrah follows 4 set rotation patterns (Rotation 1, 2, 3, 4). Memorize or use a rotation side guide:\n1. Green Phase (Ranged): Cast Magic, pray Protect from Missiles.\n2. Blue Phase (Magic): Shoot Ranged, pray Protect from Magic (watch out: can randomly fire ranged attacks).\n3. Red Phase (Melee): Stand safe, cast Magic; step 2 tiles aside when she rears back to strike with her tail.\n4. Jad Phase: Alternates every attack between Ranged and Magic. Switch overhead prayer every time Zulrah dips her head.",
+    "mechanicsSummary": "1. Venom Clouds: Toxic clouds cover parts of the shrine. Never stand in the venom clouds.\n2. Snakelings: Small adds that deal melee/magic damage and inflict venom. Ring of Recoil / Suffering reflects damage to kill them.\n3. Jad Phase: Predictable rapid alternation between Magic and Ranged attacks.",
+    "phaseChanges": "4 distinct rotations: Alpha (Green north), Beta (Green east), Gamma (Red north), Delta (Green north with melee).",
+    "importantWarnings": "Always wear a Ring of Recoil or Ring of Suffering (i)! Without recoil damage, snakelings will overwhelm you.",
+    "beginnerTips": "Trident of the Swamp + Toxic Blowpipe is the classic effective budget hybrid setup.",
+    "advancedTips": "During the Jad phase, switch your prayer as soon as the attack animation begins, not when the projectile hits.",
+    "minSkills": [
+      {
+        "skill": "MAGIC",
+        "level": 75
+      },
+      {
+        "skill": "RANGED",
+        "level": 75
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "RANGED": 85,
+      "MAGIC": 85,
+      "PRAYER": 74
+    },
+    "quests": [
+      {
+        "questEnum": "REGICIDE",
+        "questName": "Regicide",
+        "mandatory": true,
+        "notes": "Access to Tirannwn / Zul-Andra"
+      }
+    ],
+    "prerequisites": [
+      "Anti-venom+ or Serpentine helm, Rings of Recoil / Ring of Suffering"
+    ],
+    "checklist": [
+      "Ensure Ring of Recoil has full charges or equip Ring of Suffering",
+      "Drink Anti-venom+ and Extended Antifire before boarding the boat",
+      "During Blue (Tanzanite) phase, eat up to full HP in case of random ranged attacks",
+      "Move to the opposite side of the island when venom clouds engulf your quadrant"
+    ],
+    "drops": [
+      "Tanzanite fang (Toxic blowpipe 1/512)",
+      "Magic fang (Trident of the swamp 1/512)",
+      "Serpentine visage (1/512)",
+      "Uncut onyx (1/512)",
+      "Pet snakeling (1/4,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12913,
+          "name": "Anti-venom+(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Prevents envenomation"
+        },
+        {
+          "itemId": 11951,
+          "name": "Extended antifire(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 7500,
+          "mandatory": true,
+          "note": "Fire protection"
+        },
+        {
+          "itemId": 2444,
+          "name": "Ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Range boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 2550,
+          "name": "Ring of recoil",
+          "quantity": 2,
+          "category": "Special Item",
+          "unitPrice": 1000,
+          "mandatory": true,
+          "note": "Kill snakelings"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        },
+        {
+          "itemId": 12938,
+          "name": "Zul-andra teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 8000,
+          "mandatory": true,
+          "note": "Direct travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "phantom_muspah",
+    "name": "Phantom Muspah",
+    "category": "ADVANCED",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "HYBRID",
+    "recommendedCombatLevel": 95,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 120000,
+    "estimatedGpHour": 3000000,
+    "weakness": "Melee form: Freeze with Ice Barrage and hit with Magic (Shadow/Trident). Ranged form: Hit with Ranged (Bowfa/Crossbow). Shield phase: Sapphire bolts (e) or Smite.",
+    "overheadPrayer": "Protect from Magic (Ranged phase), Protect from Melee (if in melee reach)",
+    "offensivePrayer": "Rigour / Augury",
+    "howToGetThere": "Icy basalt to Weiss, climb down salt mine, enter ancient cavern.",
+    "fightStrategy": "Step back and cast Ice Barrage whenever Muspah enters Melee Form to root it in place. Kite around while casting Magic. When in Ranged Form, switch to Ranged gear and pray Magic. During the final Shield Phase, switch on Smite and fire Sapphire Dragon Bolts (e) to rip through the prayer shield.",
+    "mechanicsSummary": "1. Form Swapping: Alternates between Melee Form (green spiky) and Ranged Form (grey winged).\n2. Spikes: Muspah erupts dark spikes from the ground. Hide behind charged spikes to block the homing blast.\n3. Prayer Shield Phase: Final phase grants a purple shield that requires Prayer draining (Smite + Sapphire bolt procs).",
+    "phaseChanges": "Form cycle throughout HP pool, culminating in Prayer Shield final stand at 15% HP.",
+    "importantWarnings": "Do not let the Melee Form hit you while unfrozen! Hits over 60+ through Protect from Melee if close.",
+    "beginnerTips": "Sapphire bolts (e) proc drains the shield directly for huge chunks of damage.",
+    "advancedTips": "Greater Corruption (Arceuus) speeds up the shield phase dramatically.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 80
+      },
+      {
+        "skill": "MAGIC",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "RANGED": 88,
+      "MAGIC": 85
+    },
+    "quests": [
+      {
+        "questEnum": "SECRETS_OF_THE_NORTH",
+        "questName": "Secrets of the North",
+        "mandatory": true,
+        "notes": "Access to Weiss caverns"
+      }
+    ],
+    "prerequisites": [
+      "Sapphire bolts (e) / Crossbow for Prayer Shield phase, Freeze spells (Ice Barrage/Blitz)"
+    ],
+    "checklist": [
+      "Equip crossbow with Sapphire bolts (e) for the shield phase",
+      "Bring Ice Barrage runes or freezes for the Melee form",
+      "Activate Smite prayer when the purple shield appears"
+    ],
+    "drops": [
+      "Venator shard (1/100, 5 make Venator bow)",
+      "Muphin (pet 1/2,500)",
+      "Ancient icon (1/50)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 9240,
+          "name": "Sapphire dragon bolts (e)",
+          "quantity": 50,
+          "category": "Ammo",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Mandatory for shield"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": false,
+          "note": "Melee if used"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 5,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 12791,
+          "name": "Rune pouch (Blood, Death, Water)",
+          "quantity": 1,
+          "category": "Rune",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Ice Barrage"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "corrupted_gauntlet",
+    "name": "Corrupted Gauntlet (CG)",
+    "category": "ENDGAME",
+    "difficulty": "GRANDMASTER",
+    "primaryStyle": "TRIBRID",
+    "recommendedCombatLevel": 90,
+    "suggestedGearBudget": 0,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 200000,
+    "estimatedGpHour": 4500000,
+    "weakness": "Hunllef switches overhead prayers every 6 attacks you deal. Craft two Tier 3 perfected weapons (Bow, Staff, or Halberd).",
+    "overheadPrayer": "Protect from Missiles / Protect from Magic (Hunllef alternates every 4 attacks). Rigour / Augury / Piety.",
+    "offensivePrayer": "Offensive prayers",
+    "howToGetThere": "Prifddinas, enter the Gauntlet portal in the north-east district.",
+    "fightStrategy": "You have 7:30 to explore, gather resources, craft Tier 1 or Tier 2 armor, craft two Tier 3 weapons (Bow + Staff recommended), make potions, and catch 16-24 paddlefish. During the Hunllef fight: count Hunllef\u0027s attacks (every 4 attacks it switches between Ranged and Magic). Count your own attacks (every 6 attacks it switches its overhead prayer). Never step on orange floor tiles. Keep moving when chasing tornadoes.",
+    "mechanicsSummary": "1. Hunllef Attack Count: Fires 4 ranged attacks, then 4 magic attacks. 4th attack has a sound cue.\n2. Prayer Disabling Orb: A purple magic attack disables your overhead prayer. Turn it back on immediately!\n3. Chasing Tornadoes: Summons glowing tornadoes that chase you. If they touch you, they stack heavy damage.\n4. Shifting Floor: Floor tiles light up orange. Standing on orange tiles deals rapid 15-20 damage.",
+    "phaseChanges": "Phase 1 (100%-66%): 1 tornado, slow floor.\nPhase 2 (66%-33%): 2 tornadoes, faster floor.\nPhase 3 (33%-0%): 4 tornadoes, fast shifting floor patterns.",
+    "importantWarnings": "Do not run corners into tornadoes; diagonally path through safe tiles while eating.",
+    "beginnerTips": "Staff max hit does not scale with Magic level; staff hits maximum damage even at level 80 Magic.",
+    "advancedTips": "T2 armour prep is vastly safer for learners than T1 armour.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 80
+      },
+      {
+        "skill": "MAGIC",
+        "level": 80
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 75
+      },
+      {
+        "skill": "PRAYER",
+        "level": 74
+      }
+    ],
+    "recSkills": {
+      "RANGED": 90,
+      "MAGIC": 90,
+      "PRAYER": 77
+    },
+    "quests": [
+      {
+        "questEnum": "SONG_OF_THE_ELVES",
+        "questName": "Song of the Elves",
+        "mandatory": true,
+        "notes": "Access to Prifddinas"
+      }
+    ],
+    "prerequisites": [
+      "No outside items allowed; all weapons and armour are crafted inside."
+    ],
+    "checklist": [
+      "Craft Tier 3 Bow + Tier 3 Staff",
+      "Craft Tier 1 or Tier 2 Corrupted Armour",
+      "Cook 16-24 Paddlefish and brew 2-3 Egniol potions",
+      "Count Hunllef attacks (swap prayer every 4 attacks)",
+      "Run continuously when tornadoes spawn"
+    ],
+    "drops": [
+      "Enhanced crystal weapon seed (Bow of Faerdhinen / Blade of Saeldor 1/400)",
+      "Crystal armour seed (1/50)",
+      "Youngllef (pet 1/800)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 23834,
+          "name": "Corrupted paddlefish",
+          "quantity": 20,
+          "category": "Food",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Crafted food inside"
+        },
+        {
+          "itemId": 23842,
+          "name": "Egniol potion(4)",
+          "quantity": 3,
+          "category": "Combat Potion",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Prayer + Stamina inside"
+        }
+      ]
+    }
+  },
+  {
+    "id": "general_graardor",
+    "name": "General Graardor",
+    "category": "ENDGAME",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 120000,
+    "estimatedGpHour": 2800000,
+    "weakness": "Slash melee (Scythe, Blade of Saeldor, Tentacle), Stab (Fang), Ranged kite (Bowfa / Shadow 6:0 or 7:0)",
+    "overheadPrayer": "Protect from Melee (for melee tank) or Protect from Missiles (when 6:0 kiting)",
+    "offensivePrayer": "Piety / Rigour",
+    "howToGetThere": "God Wars Dungeon (Trollheim teleport or Stony basalt). Enter the south Bandos stronghold.",
+    "fightStrategy": "In groups: Tank stands on Graardor with Protect from Melee and high defence gear (Justiciar / Torags) while attackers use Piety and high DPS weapons. In solo: use the 6:0 altar-door or red-click method with Bowfa / Shadow to kite Graardor around the room taking zero melee damage while praying Protect from Missiles against the ranged minion.",
+    "mechanicsSummary": "1. Heavy Melee: Graardor slams for up to 60+ melee damage if unprotected.\n2. Ranged Slam: Earth-shattering punch that hits everyone in the room for ranged damage.\n3. Minions: Sergeant Strongstack (Melee), Sergeant Steelwill (Magic), Sergeant Grimspike (Ranged).",
+    "phaseChanges": "Boss + 3 bodyguard minions.",
+    "importantWarnings": "Graardor\u0027s melee attack can easily combo with minions for 80+ damage in a single tick.",
+    "beginnerTips": "Equip at least one Bandos item (e.g. Bandos blessing or boots) and one Zamorak item to avoid aggro in GWD lobby.",
+    "advancedTips": "Solo Bowfa 6:0 altar-door method allows 25+ kill trips without taking melee hits.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      },
+      {
+        "skill": "HITPOINTS",
+        "level": 85
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 90,
+      "STRENGTH": 95,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "70 Strength to enter Bandos Stronghold, Hammer to bang door, 40 Bandos killcount"
+    ],
+    "checklist": [
+      "Get 40 Bandos Killcount (kill Goblins in stronghold)",
+      "Bring a Hammer to bang the entry door",
+      "Equip Bandos and Zamorak god items in GWD entrance"
+    ],
+    "drops": [
+      "Bandos tassets (1/381)",
+      "Bandos chestplate (1/381)",
+      "Bandos hilt (1/508)",
+      "Pet general graardor (1/5,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 2347,
+          "name": "Hammer",
+          "quantity": 1,
+          "category": "Special Item",
+          "unitPrice": 100,
+          "mandatory": true,
+          "note": "Mandatory for Bandos door"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 6,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 2,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Stat restoration"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        },
+        {
+          "itemId": 8011,
+          "name": "Trollheim teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "GWD travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "commander_zilyana",
+    "name": "Commander Zilyana",
+    "category": "ENDGAME",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "RANGED",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 115000,
+    "estimatedGpHour": 2500000,
+    "weakness": "Ranged (Bowfa, Twisted Bow, Armadyl Crossbow), Magic (Shadow). High melee speed.",
+    "overheadPrayer": "Protect from Magic (Zilyana fires powerful magic attacks; minion Bree also hits ranged)",
+    "offensivePrayer": "Rigour",
+    "howToGetThere": "God Wars Dungeon, traverse the icy waters to the south-east rock climb (70 Agility).",
+    "fightStrategy": "Never let Zilyana touch you! She runs at double movement speed. Run clockwise or counter-clockwise around the perimeter of the room, firing your crossbow or bow at corners and straightaways. Keep Protect from Magic active to block her lightning attacks. Drink Stamina potions constantly.",
+    "mechanicsSummary": "1. Extreme Sprint Speed: Runs faster than normal monsters; must keep running without stopping.\n2. Melee Strike: If she catches up to you, she slashes for up to 31 melee damage.\n3. Lightning Magic: Shouts \u0027All praise Saradomin!\u0027 and calls down magic lightning.\n4. Bodyguards: Starlight (Melee), Bree (Ranged), Growler (Magic).",
+    "phaseChanges": "Continuous run-and-shoot rotation.",
+    "importantWarnings": "Do not run out of run energy! Without Stamina active, Zilyana will immediately catch you and kill you.",
+    "beginnerTips": "Equip high range defence armor or crystal armor with Bowfa for massive DPS while sprinting.",
+    "advancedTips": "Starlight can be frozen with ice spells to keep him out of the path.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 80
+      },
+      {
+        "skill": "AGILITY",
+        "level": 70,
+        "boostable": true,
+        "note": "Summer pie (+5)"
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "RANGED": 90,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "70 Agility to enter Saradomin Encampment (boostable with Summer pie), Rope, 40 Saradomin killcount"
+    ],
+    "checklist": [
+      "Bring 70 Agility or Summer Pie for the rock climb",
+      "Bring 2 Ropes for the GWD entrance and Saradomin hole",
+      "Bring 4-5 Stamina Potions (Mandatory for running)",
+      "Keep Protect from Magic active while running perimeter"
+    ],
+    "drops": [
+      "Armadyl crossbow (1/508)",
+      "Saradomin hilt (1/508)",
+      "Saradomin sword (1/127)",
+      "Pet zilyana (1/5,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12625,
+          "name": "Stamina potion(4)",
+          "quantity": 4,
+          "category": "Utility",
+          "unitPrice": 8000,
+          "mandatory": true,
+          "note": "Mandatory for running"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 6,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 954,
+          "name": "Rope",
+          "quantity": 1,
+          "category": "Special Item",
+          "unitPrice": 50,
+          "mandatory": true,
+          "note": "Saradomin hole entrance"
+        },
+        {
+          "itemId": 8011,
+          "name": "Trollheim teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "kril_tsutsaroth",
+    "name": "K\u0027ril Tsutsaroth",
+    "category": "ENDGAME",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 90000,
+    "estimatedGpHour": 2200000,
+    "weakness": "Demonbane weapons (Arclight, Emberlight), Slash (Fang, Scythe), Bowfa 8:0 / 5:0 method",
+    "overheadPrayer": "Protect from Melee (when tanking) / Protect from Magic",
+    "offensivePrayer": "Piety / Rigour",
+    "howToGetThere": "God Wars Dungeon, cross the frozen northern river (70 Hitpoints).",
+    "fightStrategy": "In Melee: Use Arclight or Emberlight with Defender on Slash. Stand toe-to-toe and pray Protect from Melee. If K\u0027ril shouts \u0027YARRRRR!\u0027, he performs his special slam which pierces Protect from Melee and drains half your prayer points. Drink Antidote++ for severe poison. In Ranged: Bowfa 8:0 door-altar prevents slam completely.",
+    "mechanicsSummary": "1. Yarrr Slam: Pierces prayer, dealing up to 49 damage and draining 50% current prayer.\n2. Poison Breath: Inflicts severe poison starting at 16 damage per tick.\n3. Bodyguards: Balfrug Kreeyath (Magic), Tstanon Karlak (Melee), Zakl\u0027n Grit (Ranged).",
+    "phaseChanges": "Boss + 3 bodyguard demons.",
+    "importantWarnings": "Do not enter without Antidote++ or Sanfew Serum! K\u0027ril\u0027s poison hits 16 and rapidly drains health.",
+    "beginnerTips": "Arclight or Emberlight deals +70% accuracy and +25-35% damage against K\u0027ril (demon).",
+    "advancedTips": "Keep hitpoints above 65 at all times to survive the Yarr slam.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "HITPOINTS",
+        "level": 70
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 90,
+      "STRENGTH": 95,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "70 Hitpoints to cross icy bridge, 40 Zamorak killcount"
+    ],
+    "checklist": [
+      "Ensure 70 Hitpoints to cross the northern ice bridge",
+      "Bring Antidote++ or Anti-venom+ (Mandatory for 16-tick poison)",
+      "Use Arclight or Emberlight on Slash"
+    ],
+    "drops": [
+      "Zamorakian spear (1/127)",
+      "Staff of the dead (1/508)",
+      "Zamorak hilt (1/508)",
+      "Pet k\u0027ril tsutsaroth (1/5,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 5952,
+          "name": "Antidote++(4)",
+          "quantity": 2,
+          "category": "Protection",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Cures 16 poison"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 6,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 2,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Restores prayer after Yarr slam"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 8011,
+          "name": "Trollheim teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "kreearra",
+    "name": "Kree\u0027arra",
+    "category": "ENDGAME",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "RANGED",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 130000,
+    "estimatedGpHour": 2900000,
+    "weakness": "Ranged (Chinchompas targeted at minion, Bowfa, Twisted Bow, Crossbow with Diamond bolts)",
+    "overheadPrayer": "Protect from Missiles",
+    "offensivePrayer": "Rigour / Eagle Eye",
+    "howToGetThere": "God Wars Dungeon, grapple across the southern gap (70 Ranged).",
+    "fightStrategy": "Kree\u0027arra cannot be attacked with Melee. If you are not actively attacking Kree\u0027arra with Ranged/Magic, she performs a devastating melee whirlwind attack that knocks you back across the room for 26+ damage. Always keep attacking. The Chinning method: throw Black or Red Chinchompas at the Melee minion (Flight Kilisa) while Kree\u0027arra is stacked next to it to splash massive damage onto Kree\u0027arra without her high ranged defence resisting.",
+    "mechanicsSummary": "1. Knockback Whirlwind: Hits for heavy melee if player is in melee distance and not attacking.\n2. Multi-Target Tornado: Magic and Ranged attacks hit all players in the room simultaneously.\n3. Bodyguards: Wingman Skree (Magic), Flockleader Geerin (Ranged), Flight Kilisa (Melee).",
+    "phaseChanges": "Boss + 3 avian bodyguards.",
+    "importantWarnings": "Wear high magic/range defence armour (Karils or Armadyl). Never step into melee range unprovoked.",
+    "beginnerTips": "Black chinchompas on Longrange or Medium fuse thrown at Kilisa provide the highest DPS in the game at Kree\u0027arra.",
+    "advancedTips": "Bring blood spells to heal off minions after Kree dies.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 75
+      }
+    ],
+    "recSkills": {
+      "RANGED": 90,
+      "DEFENCE": 85,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "70 Ranged to cross the southern chasm, 40 Armadyl killcount"
+    ],
+    "checklist": [
+      "Ensure 70 Ranged to cross the southern chasm",
+      "Keep Protect from Missiles active throughout the fight",
+      "Throw Chinchompas at the melee minion while standing in corner"
+    ],
+    "drops": [
+      "Armadyl hilt (1/508)",
+      "Armadyl chestplate (1/381)",
+      "Armadyl chainskirt (1/381)",
+      "Armadyl helmet (1/381)",
+      "Pet kree\u0027arra (1/5,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 11959,
+          "name": "Black chinchompa",
+          "quantity": 150,
+          "category": "Ammo",
+          "unitPrice": 2500,
+          "mandatory": true,
+          "note": "AoE DPS weapon"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 6,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 6685,
+          "name": "Saradomin brew(4)",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 6000,
+          "mandatory": true,
+          "note": "High defence healing"
+        },
+        {
+          "itemId": 8011,
+          "name": "Trollheim teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cerberus",
+    "name": "Cerberus",
+    "category": "SLAYER",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 95,
+    "suggestedGearBudget": 4000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 85000,
+    "estimatedGpHour": 2400000,
+    "weakness": "Crush (Inquisitor\u0027s Mace, Bludgeon, Sarachnis Cudgel), Arclight / Emberlight (demon), Fang (Stab)",
+    "overheadPrayer": "Protect from Magic / Melee",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Taverley Dungeon, descend to Key Master\u0027s cavern using Key master teleport scroll or 80 Agility shortcut.",
+    "fightStrategy": "Attack with high crush or demonbane weapon. At under 400 HP (66%), Cerberus howls \u0027Aaarrrooooo!\u0027 and summons 3 Summoned Souls (Ghosts). Check the order of ghosts:\n- Blue Ghost: Magic\n- Red Ghost: Melee\n- Green Ghost: Ranged\nPray against each ghost in exact sequential order from left to right as their projectiles fly at you. Each blocked ghost drains 30 Prayer points (unblocked hits 30 damage!). At under 200 HP, she spits \u0027Grrrrr\u0027 triple lava pools - immediately run away.",
+    "mechanicsSummary": "1. Summoned Souls (Ghosts): 3 spirits appear on north ridge. Block with Magic/Melee/Ranged in sequence.\n2. Lava Pools: Shouts \u0027Grrrrrr\u0027 and spawns 3 lava puddles beneath your feet. Move away immediately.\n3. Triple Attack: Spits Magic, Ranged, then Melee in rapid succession.",
+    "phaseChanges": "Phase 1 (100%-66%): Standard attacks.\nPhase 2 (66%-33%): Summoned souls every 45 seconds.\nPhase 3 (33%-0%): Souls + Lava pools.",
+    "importantWarnings": "Never let your Prayer drop below 30 during the Ghost phase! Unblocked ghost hits 30 pure damage.",
+    "beginnerTips": "Spectral Spirit Shield reduces prayer drain from ghost hits by 50% (from 30 to 15 per ghost).",
+    "advancedTips": "Drink a dose of Prayer potion right before the ghost attack hits so you don\u0027t get smited.",
+    "minSkills": [
+      {
+        "skill": "SLAYER",
+        "level": 91
+      },
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 88,
+      "STRENGTH": 92,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "Level 91 Slayer, on a Hellhound or Cerberus Slayer task"
+    ],
+    "checklist": [
+      "Must be on a Hellhound Slayer task (Level 91 Slayer)",
+      "Spectral Spirit Shield equipped for Ghost phase if owned",
+      "Pray Ghost order: Blue\u003dMagic, Red\u003dMelee, Green\u003dRanged",
+      "Step away when \u0027Grrrrrr\u0027 appears in chat (Lava pools)"
+    ],
+    "drops": [
+      "Primordial crystal (1/512)",
+      "Pegasian crystal (1/512)",
+      "Eternal crystal (1/512)",
+      "Smouldering stone (1/512)",
+      "Hellpuppy (pet 1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 6,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "High prayer restore for ghosts"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        },
+        {
+          "itemId": 13249,
+          "name": "Key master teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 5000,
+          "mandatory": true,
+          "note": "Taverley travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "alchemical_hydra",
+    "name": "Alchemical Hydra",
+    "category": "SLAYER",
+    "difficulty": "MASTER",
+    "primaryStyle": "RANGED",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 150000,
+    "estimatedGpHour": 3800000,
+    "weakness": "Dragonbane weapons (Dragon Hunter Crossbow, Dragon Hunter Lance), Twisted Bow, Bowfa",
+    "overheadPrayer": "Protect from Magic / Protect from Missiles (Counts in 3s: 3 Magic, then 3 Ranged)",
+    "offensivePrayer": "Rigour",
+    "howToGetThere": "Karuulm Slayer Dungeon, lower elevator (Boots of stone / brimstone required unless Kourend Elite complete).",
+    "fightStrategy": "Hydra\u0027s attacks follow strict counts of 3: 3 Magic projectiles, then 3 Ranged projectiles. Switch overhead prayers on every 3rd attack.\nLure Hydra onto chemical vent grates to strip its shield:\n- Green Phase (Poison): Lure onto Red Vent.\n- Blue Phase (Lightning): Lure onto Green Vent.\n- Red Phase (Fire): Lure onto Blue Vent.\n- Enraged Phase (Jad): Switches prayer every single attack!",
+    "mechanicsSummary": "1. Chemical Vents: Hydra has 75% damage reduction until lured onto the correct colored vent.\n2. Phase 1 Poison: Spits 4 pools of acid. Stand clear.\n3. Phase 2 Lightning: Summons 4 lightning balls. Walk north along wall to avoid.\n4. Phase 3 Fire: Traps you in a wall of fire. Path around the flame ring.\n5. Phase 4 Enraged: Spits acid, then switches between Ranged and Magic every single attack.",
+    "phaseChanges": "Poison (100%-75%) -\u003e Lightning (75%-50%) -\u003e Fire (50%-25%) -\u003e Enraged (25%-0%).",
+    "importantWarnings": "Do not forget Boots of Stone / Brimstone or you will take 20+ heat damage every tick inside Karuulm dungeon!",
+    "beginnerTips": "Counting out loud \u00271, 2, 3 - SWITCH\u0027 makes Hydra completely mechanical and effortless.",
+    "advancedTips": "On phase transitions, Hydra loses 1 attack from its count, skipping straight to the other style.",
+    "minSkills": [
+      {
+        "skill": "SLAYER",
+        "level": 95
+      },
+      {
+        "skill": "RANGED",
+        "level": 85
+      },
+      {
+        "skill": "PRAYER",
+        "level": 74
+      }
+    ],
+    "recSkills": {
+      "RANGED": 92,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "Level 95 Slayer, on a Hydra Slayer task, Boots of Stone/Brimstone/Granite (or Kourend Elite Diary)"
+    ],
+    "checklist": [
+      "Level 95 Slayer + Hydra Task required",
+      "Equip Boots of Stone/Brimstone or complete Kourend Elite Diary",
+      "Count in 3s: 3 Magic -\u003e 3 Ranged -\u003e 3 Magic",
+      "Lure Hydra onto the matching colored chemical vent at the start of each phase"
+    ],
+    "drops": [
+      "Hydra\u0027s claw (Ferocious gloves 1/1,001)",
+      "Hydra leather (1/514)",
+      "Hydra tail (1/514)",
+      "Ikkle hydra (pet 1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 23041,
+          "name": "Boots of stone",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 1000,
+          "mandatory": true,
+          "note": "Protects from dungeon heat"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 6,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        },
+        {
+          "itemId": 22949,
+          "name": "Rada\u0027s blessing 4 / Teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Karuulm travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "kraken",
+    "name": "Kraken",
+    "category": "SLAYER",
+    "difficulty": "BEGINNER",
+    "primaryStyle": "MAGIC",
+    "recommendedCombatLevel": 80,
+    "suggestedGearBudget": 1000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 30000,
+    "estimatedGpHour": 950000,
+    "weakness": "Magic (Trident of the Seas / Swamp, Sanguinesti Staff, Shadow)",
+    "overheadPrayer": "Protect from Magic / Mystic Might / Augury",
+    "offensivePrayer": "Augury",
+    "howToGetThere": "Kraken Cove south of Piscatoris Fishing Colony (Fairy ring AKQ).",
+    "fightStrategy": "Throw a Fishing Explosive into the large whirlpool to wake the main Kraken and tentacles simultaneously. Stand back and cast Trident on the Kraken. Wear high Magic Defence gear (Karil\u0027s armour / Blessed d\u0027hide) rather than Magic Attack gear, because Kraken has 0 Magic Defence and you need defence against its magic projectiles.",
+    "mechanicsSummary": "1. Whirlpools: Must wake 4 small whirlpools and 1 large whirlpool (fishing explosive does all at once).\n2. Magic Attack: Kraken shoots magic projectiles that roll against player magic defence.",
+    "phaseChanges": "Single phase.",
+    "importantWarnings": "Do not bring expensive magic robes (Ahrim/Ancestral); bring Karils or D\u0027hide for Magic Defence!",
+    "beginnerTips": "Equip Sanguinesti staff or Blood Barrage for infinite trips without needing food.",
+    "advancedTips": "Drop fishing explosives in your inventory to wake all tentacles in 1 tick.",
+    "minSkills": [
+      {
+        "skill": "SLAYER",
+        "level": 87
+      },
+      {
+        "skill": "MAGIC",
+        "level": 75
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "DEFENCE": 80,
+      "MAGIC": 85
+    },
+    "quests": [],
+    "prerequisites": [
+      "Level 87 Slayer, on a Cave Kraken Slayer task, Fishing explosive to wake up"
+    ],
+    "checklist": [
+      "Level 87 Slayer + Cave Kraken Task required",
+      "Bring Fishing Explosives (bought from Slayer Masters)",
+      "Wear high Magic Defence armor (Karil\u0027s or Black D\u0027hide)"
+    ],
+    "drops": [
+      "Kraken tentacle (1/512)",
+      "Trident of the seas (full 1/512)",
+      "Pet kraken (1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 6664,
+          "name": "Fishing explosive",
+          "quantity": 30,
+          "category": "Special Item",
+          "unitPrice": 60,
+          "mandatory": true,
+          "note": "Wakes whirlpools"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 2,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 16,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Healing"
+        },
+        {
+          "itemId": 8009,
+          "name": "Teleport to house",
+          "quantity": 2,
+          "category": "Teleport",
+          "unitPrice": 800,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "grotesque_guardians",
+    "name": "Grotesque Guardians",
+    "category": "SLAYER",
+    "difficulty": "INTERMEDIATE",
+    "primaryStyle": "HYBRID",
+    "recommendedCombatLevel": 85,
+    "suggestedGearBudget": 2000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 45000,
+    "estimatedGpHour": 1300000,
+    "weakness": "Dusk: Crush / Slash melee. Dawn: Ranged (Blowpipe / Bowfa).",
+    "overheadPrayer": "Protect from Missiles (against Dawn) / Protect from Melee (against Dusk)",
+    "offensivePrayer": "Piety / Rigour",
+    "howToGetThere": "Slayer Tower in Canifis, climb to the rooftop.",
+    "fightStrategy": "Phase 1: Attack Dawn with Ranged until 50% HP while dodging rockfall shadows.\nPhase 2: Attack Dusk with Melee until 50% HP, dodging his lightning attack.\nPhase 3: Both fly away; Dawn summons purple healing orbs. Walk over all 3 orbs to absorb them so Dawn cannot heal.\nPhase 4: Finish Dawn with Ranged, then Dusk enrages with a flame prison. Path out of the prison square and kill Dusk with Melee.",
+    "mechanicsSummary": "1. Rockfall: Shadows on ground indicate falling rubble; step aside.\n2. Purple Energy Orbs: Absorb them before Dawn eats them to prevent 90+ healing.\n3. Dusk Flame Prison: Traps you in a 3x3 fire ring; step through the gap before it explodes.",
+    "phaseChanges": "Dawn Ranged (P1) -\u003e Dusk Melee (P2) -\u003e Orb Absorption (P3) -\u003e Enraged Dusk (P4).",
+    "importantWarnings": "Do not forget your Rock Hammer or Granitic Hammer to smash them when they reach 0 HP!",
+    "beginnerTips": "Auto-smash perk from Slayer rewards works automatically without clicking hammer.",
+    "advancedTips": "Walk through the gap in Dusk\u0027s flame box immediately to avoid massive fire damage.",
+    "minSkills": [
+      {
+        "skill": "SLAYER",
+        "level": 75
+      },
+      {
+        "skill": "ATTACK",
+        "level": 75
+      },
+      {
+        "skill": "RANGED",
+        "level": 75
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "RANGED": 85,
+      "ATTACK": 80,
+      "PRAYER": 70
+    },
+    "quests": [],
+    "prerequisites": [
+      "Level 75 Slayer, on a Gargoyle Slayer task, Brittle key to unlock roof, Rock hammer / Granitic hammer"
+    ],
+    "checklist": [
+      "Ensure Gargoyle Slayer task active (Level 75 Slayer)",
+      "Bring Rock Hammer / Granitic Hammer",
+      "Absorb the 3 purple energy orbs during Phase 3"
+    ],
+    "drops": [
+      "Black tourmaline core (Guardian boots 1/1,000)",
+      "Granite hammer (1/750)",
+      "Noon (pet 1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 4162,
+          "name": "Rock hammer",
+          "quantity": 1,
+          "category": "Special Item",
+          "unitPrice": 500,
+          "mandatory": true,
+          "note": "Smashes gargoyles"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 2444,
+          "name": "Ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Range boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 14,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 11978,
+          "name": "Slayer ring(8)",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 500,
+          "mandatory": true,
+          "note": "Slayer tower travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "duke_sucellus",
+    "name": "Duke Sucellus",
+    "category": "ENDGAME",
+    "difficulty": "MASTER",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 140000,
+    "estimatedGpHour": 3500000,
+    "weakness": "Slash melee. Susceptible to demonbane bonus (Arclight / Emberlight).",
+    "overheadPrayer": "Protect from Melee",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Ancient prison beneath Weiss (Desert Treasure II).",
+    "fightStrategy": "Awakening Phase: Collect mushroom mushrooms and arder powder, crush and ferment two sleep potions, and feed Duke to awaken him.\nCombat Phase: Duke wakes with 600 HP. Stand 1 tile in front of Duke. Attack with Slash weapon on a 5-tick rhythm. When he charges his gaze eye attack, duck behind the large pillar to break line-of-sight. When black gas/acid erupts from vents, step aside. At 150 HP (25%), Duke goes berserk - his attack speed doubles. Stay in rhythm and execute him.",
+    "mechanicsSummary": "1. Gaze Attack: Duke\u0027s central eye glows white. Hide behind a pillar or take 80+ damage.\n2. Vent Gas: Dark shadows appear on floor tiles; step onto safe tiles.\n3. Enrage (sub 25%): Attack speed doubles from 5 ticks to 2.5 ticks; stay calm and maintain pillar hides.",
+    "phaseChanges": "Awakening (potions) -\u003e Main combat -\u003e Enrage (sub 25%).",
+    "importantWarnings": "Do not be in Duke\u0027s line of sight when his gaze explodes! Hide behind the pillar.",
+    "beginnerTips": "Arclight / Emberlight deals massive bonus damage because Duke is classified as a Demon.",
+    "advancedTips": "Pre-craft potions quickly to reduce fight downtime.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 90,
+      "STRENGTH": 95,
+      "PRAYER": 77
+    },
+    "quests": [
+      {
+        "questName": "Desert Treasure II",
+        "mandatory": true,
+        "notes": "Access to Duke\u0027s prison in Weiss"
+      }
+    ],
+    "prerequisites": [
+      "Slash melee weapon (Soulreaper axe, Scythe of vitur, Bellator ring, Arclight/Fang)"
+    ],
+    "checklist": [
+      "Bring Slash weapon (Arclight / Emberlight / Soulreaper / Fang)",
+      "Hide behind pillar when white eye gaze charges",
+      "Dodge floor vents when black miasma erupts"
+    ],
+    "drops": [
+      "Magus vestige (1/720 roll)",
+      "Eye of the duke (Soulreaper axe piece)",
+      "Virtus robe pieces",
+      "Baron (pet 1/2,500)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 5,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "vardorvis",
+    "name": "Vardorvis",
+    "category": "ENDGAME",
+    "difficulty": "MASTER",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 150000,
+    "estimatedGpHour": 3800000,
+    "weakness": "Slash melee. High susceptibility to Blood fury healing.",
+    "overheadPrayer": "Protect from Melee (Primary), Protect from Missiles (when green head fires)",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "The Stranglewood (Kourend south-east jungle).",
+    "fightStrategy": "Fast-paced reaction fight! Stand in the centre of the arena with Protect from Melee. Four whirring flying axes spawn from corners and fly inward in straight lines; dodge the axes by stepping onto open tiles. When a green severed head appears in a corner, switch prayer to Protect from Missiles for 1 tick to block the dart, then switch back to Melee. When tentacle spikes sprout from the ground, move off them immediately.",
+    "mechanicsSummary": "1. Flying Axes: 4 spinning axes spawn on the arena perimeter and cross the arena; getting clipped deals 30+ damage and inflicts bleeding.\n2. Strangle Spikes: Ground entangles you; click the tentacles to free yourself.\n3. Severed Head Projectile: Green projectile fired from corner; requires instant Protect from Missiles switch.\n4. Berserk Speed: Attack speed and axe speed ramp up as HP decreases.",
+    "phaseChanges": "Single continuous encounter; speed increases proportionally to missing HP.",
+    "importantWarnings": "Do not panic eat! Eating during axe passes slows movement and causes you to get clipped by flying axes.",
+    "beginnerTips": "Amulet of Blood Fury heals you continuously throughout the relentless chip damage.",
+    "advancedTips": "Stay near the center column so you have maximum view of incoming axes.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 90,
+      "STRENGTH": 95,
+      "PRAYER": 77
+    },
+    "quests": [
+      {
+        "questName": "Desert Treasure II",
+        "mandatory": true,
+        "notes": "Access to Stranglewood"
+      }
+    ],
+    "prerequisites": [
+      "Slash melee weapon (Soulreaper Axe, Blade of Saeldor, Abyssal Tentacle, Fang)"
+    ],
+    "checklist": [
+      "Equip high Slash weapon (Blade of Saeldor / Tentacle / Soulreaper)",
+      "Amulet of Blood Fury highly recommended",
+      "Dodge spinning axes across perimeter",
+      "Flick Protect from Missiles when green head projectile flies"
+    ],
+    "drops": [
+      "Ultor vestige (1/720 roll)",
+      "Executioner\u0027s axe head (Soulreaper piece)",
+      "Virtus robe pieces",
+      "Butch (pet 1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 5,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the_whisperer",
+    "name": "The Whisperer",
+    "category": "ENDGAME",
+    "difficulty": "MASTER",
+    "primaryStyle": "MAGIC",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 160000,
+    "estimatedGpHour": 4000000,
+    "weakness": "Magic damage (Shadow / Sanguinesti / Trident). Shadow spells freeze her.",
+    "overheadPrayer": "Protect from Missiles / Magic (Counts in 3s like Hydra, alternating styles)",
+    "offensivePrayer": "Augury",
+    "howToGetThere": "Lassar Undercity / Camdoalza temple (Desert Treasure II).",
+    "fightStrategy": "Rhythm based encounter. Whisperer fires attacks in sets of 3 (3 Ranged, then 3 Magic, or vice versa). Switch prayer after every 3rd projectile. Special attacks trigger between phases:\n1. Corrupted Seeds: Step onto safe glowing pillars.\n2. Shadow Realm: Jump into the shadow realm to hit soul pillars or bind the lost souls.\n3. Sanity Management: Sanity drains when making mistakes; maintain sanity to prevent insanity hallucination damage. Enrage phase at 20%: Rapid 1-tick attack rhythm while dodging tentacles.",
+    "mechanicsSummary": "1. 3-Attack Rhythm: 3 Ranged spikes -\u003e 3 Magic tendrils. Switch overhead prayer every 3 hits.\n2. Sanity Meter: Taking hits drains sanity; below 0% triggers hallucinations.\n3. Shadow Realm: Dark rift portals to solve puzzle minigames.\n4. Enrage Phase: Rushes into melee distance and fires 1-tick attacks while tentacles sweep the floor.",
+    "phaseChanges": "Phase 1 -\u003e Special 1 -\u003e Phase 2 -\u003e Special 2 -\u003e Phase 3 -\u003e Enrage (sub 20%).",
+    "importantWarnings": "Do not lose your attack count rhythm during tentacle waves; stay in cadence.",
+    "beginnerTips": "Cast Shadow Barrage to freeze Whisperer in place during the enrage phase to safely cast spells from distance.",
+    "advancedTips": "Practice counting: \u00271, 2, 3 - SWITCH\u0027.",
+    "minSkills": [
+      {
+        "skill": "MAGIC",
+        "level": 85
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 75
+      },
+      {
+        "skill": "PRAYER",
+        "level": 74
+      }
+    ],
+    "recSkills": {
+      "MAGIC": 92,
+      "PRAYER": 77
+    },
+    "quests": [
+      {
+        "questName": "Desert Treasure II",
+        "mandatory": true,
+        "notes": "Access to Lassar Undercity"
+      }
+    ],
+    "prerequisites": [
+      "Powered magic staff (Shadow, Sang staff, Trident of the swamp)"
+    ],
+    "checklist": [
+      "Bring powered staff (Shadow / Sang / Trident)",
+      "Count in 3s: 3 Ranged -\u003e 3 Magic",
+      "Enter Shadow Realm when special attack prompts"
+    ],
+    "drops": [
+      "Bellator vestige (1/720 roll)",
+      "Sirenic soul (Soulreaper piece)",
+      "Virtus robe pieces",
+      "Wisp (pet 1/2,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 5,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 2,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Restore sanity drain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the_leviathan",
+    "name": "The Leviathan",
+    "category": "ENDGAME",
+    "difficulty": "MASTER",
+    "primaryStyle": "RANGED",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 150000,
+    "estimatedGpHour": 3900000,
+    "weakness": "Ranged attacks. Shadow spells (Shadow Burst / Blitz / Barrage) stun its mouth.",
+    "overheadPrayer": "Protect from Missiles / Magic / Melee (Reactions to incoming projectiles)",
+    "offensivePrayer": "Rigour",
+    "howToGetThere": "The Scar (Beneath Temple of the Eye).",
+    "fightStrategy": "The Leviathan fires Ranged, Magic, and Melee projectiles at an accelerating speed. Look at the projectile shape:\n- Blue Orb: Pray Magic\n- Green Spike: Pray Missiles\n- Orange Boulder: Pray Melee\nAs attack speed accelerates to blistering speed, cast Shadow Barrage / Blitz into its open mouth to stun it. When stunned, run behind it and attack the glowing white weak point on its back for guaranteed massive damage. Enrage at 20%: Leviathan enters feeding frenzy; follow the moving abyssal orb in a circle around the arena while attacking.",
+    "mechanicsSummary": "1. Accelerating Fire: Starts at 5-tick speed and speeds up to 1-tick machine-gun speed until stunned.\n2. Shadow Stun: Casting a Shadow spell stuns Leviathan and exposes the back weak point.\n3. Debris \u0026 Lightning: Rocks fall from ceiling, electricity sweeps floor tiles.\n4. Enrage Phase: A blue eye orb circles the room; stand inside the orb aura to deal damage without taking fatal chip damage.",
+    "phaseChanges": "Speed-up cycles until stunned -\u003e Enrage at 20% HP.",
+    "importantWarnings": "Do not miss the stun timing! If Leviathan reaches maximum speed without a stun, you will be overwhelmed.",
+    "beginnerTips": "Smoke / Shadow spells from Ancient Magicks are mandatory to stun the boss.",
+    "advancedTips": "Web weaver bow or Zaryte crossbow special attack deals enormous damage to the back weak spot.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 85
+      },
+      {
+        "skill": "PRAYER",
+        "level": 74
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 75
+      }
+    ],
+    "recSkills": {
+      "RANGED": 92,
+      "PRAYER": 77
+    },
+    "quests": [
+      {
+        "questName": "Desert Treasure II",
+        "mandatory": true,
+        "notes": "Access to Scar"
+      }
+    ],
+    "prerequisites": [
+      "Ranged weapon (Bowfa, Zaryte crossbow, Twisted bow, Blowpipe), Shadow spells to stun"
+    ],
+    "checklist": [
+      "Bring Shadow spells to stun Leviathan",
+      "React to projectile colors: Blue\u003dMage, Green\u003dRange, Orange\u003dMelee",
+      "Run behind Leviathan to strike weak spot when stunned"
+    ],
+    "drops": [
+      "Venator vestige (1/720 roll)",
+      "Leviathan\u0027s lure (Soulreaper piece)",
+      "Virtus robe pieces",
+      "Lil\u0027viathan (pet 1/2,500)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 5,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 12791,
+          "name": "Rune pouch (Shadow spell runes)",
+          "quantity": 1,
+          "category": "Rune",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Mandatory stun"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tombs_of_amascut",
+    "name": "Tombs of Amascut (ToA)",
+    "category": "RAID",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "TRIBRID",
+    "recommendedCombatLevel": 90,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 250000,
+    "estimatedGpHour": 5500000,
+    "weakness": "Kephri: Keris Partisan (Kalphite). Zebak: Ranged (Bowfa/Crossbow). Ba-Ba: Melee (Fang). Akkha: Tribrid rotation. Wardens: Tribrid.",
+    "overheadPrayer": "Flexible overhead prayers per room. Protect from Magic / Missiles / Melee.",
+    "offensivePrayer": "Piety / Rigour / Augury",
+    "howToGetThere": "Necropolis in Kharidian Desert (Fairy ring AKP or Pharaoh\u0027s sceptre).",
+    "fightStrategy": "ToA is the most accessible raid in OSRS thanks to its Invocation system (Entry Mode 0-145, Normal Mode 150-295, Expert Mode 300+). Conquer 4 demi-boss paths:\n1. Scabaras (Kephri): Kalphite queen; use Keris Partisan, avoid dung and flies.\n2. Crondis (Zebak): Giant crocodile; use Ranged, solve water puzzle, hide behind rocks during roar.\n3. Apep (Ba-Ba): Baboon boss; pray Melee, dodge rolling boulders with Blowpipe.\n4. Het (Akkha): Switches overheads and attacks every 80 damage. Fight with combat triangle counter. Final Wardens encounter: Obelisk -\u003e P2 robot -\u003e P3 final stand.",
+    "mechanicsSummary": "1. Invocations: Customize difficulty, monster health, and mechanics to set raid level.\n2. Supply Chest: Helpful spirit gives Ambrosia (instant 100% HP \u0026 Prayer), Nectar, and Tears between rooms.\n3. Wardens Phase 3: Skulls appear on floor; attack skulls with melee/range before countdown ends.",
+    "phaseChanges": "4 Demi-boss paths in chosen order -\u003e Wardens P1, P2, P3.",
+    "importantWarnings": "Do not fail the Wardens skull phase! Missing a single skull causes an instant raid wipe.",
+    "beginnerTips": "Keris Partisan is completely free from Beneath Cursed Sands and out-damages expensive weapons at Kephri.",
+    "advancedTips": "Start at 50 invocation entry mode to learn room layouts safely.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 75
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 80
+      },
+      {
+        "skill": "RANGED",
+        "level": 80
+      },
+      {
+        "skill": "MAGIC",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "RANGED": 90,
+      "MAGIC": 90,
+      "ATTACK": 85,
+      "STRENGTH": 90,
+      "PRAYER": 77
+    },
+    "quests": [
+      {
+        "questEnum": "BENEATH_CURSED_SANDS",
+        "questName": "Beneath Cursed Sands",
+        "mandatory": true,
+        "notes": "Access to Necropolis \u0026 ToA"
+      }
+    ],
+    "prerequisites": [
+      "Keris partisan (huge damage vs Kephri), Stab weapon (Fang/Hasta), Blowpipe, Trident/Shadow"
+    ],
+    "checklist": [
+      "Complete Beneath Cursed Sands for entry",
+      "Bring Keris Partisan for Kephri",
+      "Bring Melee (Fang/Hasta), Ranged (Blowpipe/Bowfa), and Magic (Trident) gear"
+    ],
+    "drops": [
+      "Tumeken\u0027s shadow (1/24 in 300 inv)",
+      "Osmumten\u0027s fang (1/3.4 purple)",
+      "Elidinis\u0027 ward",
+      "Masori armour pieces",
+      "Elidinis\u0027 guardian (pet 1/1,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 25985,
+          "name": "Keris partisan",
+          "quantity": 1,
+          "category": "Weapon",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Mandatory for Kephri"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 8,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "chambers_of_xeric",
+    "name": "Chambers of Xeric (CoX)",
+    "category": "RAID",
+    "difficulty": "MASTER",
+    "primaryStyle": "TRIBRID",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 10000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 300000,
+    "estimatedGpHour": 4800000,
+    "weakness": "Tekton: Crush. Vasa: Stab / Ranged. Muttadiles: Slash / Ranged. Olm: Magic (Right hand), Melee (Left hand), Ranged (Head).",
+    "overheadPrayer": "Overhead prayers per monster room. Olm: Protect from Magic (Mage hand), Missiles (Range attacks).",
+    "offensivePrayer": "Piety / Rigour / Augury",
+    "howToGetThere": "Mount Quidamortem in Kourend (Xeric\u0027s Talisman teleport to Xeric\u0027s Honour).",
+    "fightStrategy": "Raid through procedural puzzle and boss rooms (Tekton, Shamans, Vasa, Guardians, Mystics, Muttadile). Harvest herbs and mushrooms to craft Overloads and Xeric\u0027s Aid. Face the Great Olm:\n- Mage Hand (Right Hand): Cast Magic while running back and forth along the wall (\u0027running the head\u0027).\n- Melee Hand (Left Hand): Switch to Melee and execute 4:1 or 3:1 rotation.\n- Head Phase: Olm shoots lightning, falling crystals, and acid pools. Burn down the head with Ranged.",
+    "mechanicsSummary": "1. Olm Head Turning: Olm attacks the sector he is facing; running across turns his head and cancels attacks.\n2. Crystal Bombs: Small crystal shards tick down to a devastating 50+ explosion; step far away.\n3. Lightning Wall: Sparks travel in straight lines across the floor; do not step into the electricity.\n4. Teleport Pairs: Portals appear beneath you; stand on matching paired portal to negate 40+ damage.",
+    "phaseChanges": "Scouting rooms -\u003e Olm Phase 1, 2, 3 -\u003e Final Head Stand.",
+    "importantWarnings": "Do not stand near glowing crystal bombs! Explodes for 60+ damage.",
+    "beginnerTips": "Level 78 Herblore allows you to brew Overload (-) inside the raid; 90 Herblore allows Overload (+).",
+    "advancedTips": "Dragon Warhammer or Bandos Godsword special attacks are vital to strip Olm\u0027s Defence.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "RANGED",
+        "level": 85
+      },
+      {
+        "skill": "MAGIC",
+        "level": 85
+      },
+      {
+        "skill": "HERBLORE",
+        "level": 78,
+        "boostable": true,
+        "note": "Botanist (+4) / Overload (+12)"
+      }
+    ],
+    "recSkills": {
+      "HERBLORE": 90,
+      "RANGED": 92,
+      "MAGIC": 90
+    },
+    "quests": [],
+    "prerequisites": [
+      "78+ Herblore to brew internal potions (Overload / Revitalisation), Lockpick, Salve (ei)"
+    ],
+    "checklist": [
+      "Ensure 78+ Herblore (or pie boost) to brew raid overloads",
+      "Bring Defence-draining spec weapon (Dragon Warhammer or BGS)",
+      "Bring Tribrid gear: Melee (Fang/Lance), Ranged (Blowpipe/Bowfa), Magic (Trident/Shadow)"
+    ],
+    "drops": [
+      "Twisted bow (1/34.5 purples)",
+      "Dexterous prayer scroll (Rigour 1/3.4)",
+      "Arcane prayer scroll (Augury 1/3.4)",
+      "Ancestral robe pieces",
+      "Olmlet (pet 1/53 raids)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 11802,
+          "name": "Armadyl godsword / BGS",
+          "quantity": 1,
+          "category": "Special Attack",
+          "unitPrice": 15000000,
+          "mandatory": true,
+          "note": "Defence reduction"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Stat restoration"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 6,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Raid start food"
+        },
+        {
+          "itemId": 13393,
+          "name": "Xeric\u0027s talisman",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "theatre_of_blood",
+    "name": "Theatre of Blood (ToB)",
+    "category": "RAID",
+    "difficulty": "GRANDMASTER",
+    "primaryStyle": "TRIBRID",
+    "recommendedCombatLevel": 110,
+    "suggestedGearBudget": 15000000,
+    "solo": false,
+    "group": true,
+    "estimatedGpPerKill": 400000,
+    "estimatedGpHour": 6000000,
+    "weakness": "Maiden: Slash / Ice Barrage blood spawns. Bloat: Slash melee. Nylocas: Tribrid. Sotetseg: Slash. Xarpus: Ranged / Melee stepback. Verzik: Slash.",
+    "overheadPrayer": "High level prayer switches: Piety, Rigour, Augury. Overheads per room.",
+    "offensivePrayer": "Piety / Rigour",
+    "howToGetThere": "Ver Sinhaza in Darkmeyer (Drakan\u0027s medallion directly to ToB).",
+    "fightStrategy": "6 brutal boss rooms:\n1. The Maiden of Suginti: Freeze red blood spawns before they reach Maiden; kite blood trails.\n2. Pestilent Bloat: Walk behind Bloat while he patrols; attack during down phase; hide behind pillars during flies.\n3. Nylocas: Aggressive wave defense matching combat triangle colors (White\u003dMelee, Green\u003dRange, Blue\u003dMage).\n4. Sotetseg: Maze phase requires running on illuminated path tiles without falling.\n5. Xarpus: Screech phase; step back 1 tile on attack rhythm to avoid poison reflections.\n6. Lady Verzik Vitur: P1 shield pillar hide -\u003e P2 bouncing cabbage walk -\u003e P3 green ball tank, web running, and tornado kiting.",
+    "mechanicsSummary": "1. Wipe Penalty: Total team wipe ends the raid and forfeits 100k GP fee.\n2. Verzik P2 Bounce: Stepping adjacent to Verzik off-tick causes her to stomp players into the wall for 60+.\n3. Sotetseg Maze: 1 player sees the safe path in the shadow realm and must guide the team across.",
+    "phaseChanges": "6 distinct rooms: Maiden -\u003e Bloat -\u003e Nylocas -\u003e Sotetseg -\u003e Xarpus -\u003e Verzik.",
+    "importantWarnings": "ToB is strictly cooperative high-mechanic PvM. One mistake during Verzik P2 or Bloat can instantly wipe the party.",
+    "beginnerTips": "Entry Mode is available to practice all 6 boss mechanics with infinite lives.",
+    "advancedTips": "Blade of Saeldor, Tentacle whip, or Scythe of Vitur on Slash is the primary damage source.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 85
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 90
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 80
+      },
+      {
+        "skill": "RANGED",
+        "level": 85
+      },
+      {
+        "skill": "MAGIC",
+        "level": 85
+      },
+      {
+        "skill": "PRAYER",
+        "level": 77
+      }
+    ],
+    "recSkills": {
+      "RANGED": 95,
+      "MAGIC": 95,
+      "ATTACK": 95,
+      "STRENGTH": 99
+    },
+    "quests": [
+      {
+        "questEnum": "PRIEST_IN_PERIL",
+        "questName": "Priest in Peril",
+        "mandatory": true,
+        "notes": "Access to Morytania"
+      }
+    ],
+    "prerequisites": [
+      "Scythe of vitur / Blade / Tentacle on Slash, Chinchompas, Freeze spells for Maiden, Poison weapon for Nylo"
+    ],
+    "checklist": [
+      "Bring Drakan\u0027s Medallion for instant Ver Sinhaza teleport",
+      "Bring Ice Barrage runes for Maiden blood spawns",
+      "Bring Chinchompas for Nylocas waves"
+    ],
+    "drops": [
+      "Scythe of vitur (1/19 purples)",
+      "Ghrazi rapier",
+      "Sanguinesti staff",
+      "Justiciar armour pieces",
+      "Lil\u0027 zik (pet 1/650)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 6685,
+          "name": "Saradomin brew(4)",
+          "quantity": 6,
+          "category": "Food",
+          "unitPrice": 6000,
+          "mandatory": true,
+          "note": "High healing for mistakes"
+        },
+        {
+          "itemId": 22400,
+          "name": "Drakan\u0027s medallion",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "nex",
+    "name": "Nex",
+    "category": "ENDGAME",
+    "difficulty": "GRANDMASTER",
+    "primaryStyle": "RANGED",
+    "recommendedCombatLevel": 110,
+    "suggestedGearBudget": 10000000,
+    "solo": false,
+    "group": true,
+    "estimatedGpPerKill": 280000,
+    "estimatedGpHour": 5200000,
+    "weakness": "Ranged attacks (Zaryte Crossbow with Ruby bolts, Twisted Bow, Fang on stab for minions).",
+    "overheadPrayer": "Protect from Magic / Protect from Missiles (Depends on phase)",
+    "offensivePrayer": "Rigour",
+    "howToGetThere": "Ancient Prison below God Wars Dungeon (use Frozen key on the south-east door).",
+    "fightStrategy": "Nex moves through 5 distinct elemental phases, summoning 1 minion after each phase:\n1. Smoke Phase: Shouts \u0027Fumus, don\u0027t fail me!\u0027. Spreads cough disease. Kill Fumus.\n2. Shadow Phase: Shouts \u0027Umbra, don\u0027t fail me!\u0027. Shadow traps appear on floor; move 2 tiles away. Kill Umbra.\n3. Blood Phase: Shouts \u0027Cruor, don\u0027t fail me!\u0027. Nex Siphon heals her if you attack during her red wings stance. Kill Blood Reavers. Kill Cruor.\n4. Ice Phase: Shouts \u0027Glacies, don\u0027t fail me!\u0027. Traps player in ice prison (team must break ice). Kill Glacies.\n5. Zaros Phase: Deflects damage, activates wrath on death.",
+    "mechanicsSummary": "1. Blood Siphon: When Nex shields herself in red wings, DO NOT ATTACK! Every hit heals her.\n2. Ice Prison: Traps target in ice spikes dealing 75 damage unless teammates attack the ice stalagmites.\n3. Shadow Traps: Black shadows appear beneath player feet; step 1 tile away to avoid 50+ damage.\n4. Blood Sacrifices: Targeted player\u0027s cape turns red; run away from Nex until pink aura fades.",
+    "phaseChanges": "Smoke -\u003e Shadow -\u003e Blood -\u003e Ice -\u003e Zaros.",
+    "importantWarnings": "NEVER hit Nex while she is siphoning (wings wrapped in blood)! You will reset minutes of team progress.",
+    "beginnerTips": "Ruby dragon bolts (e) are overwhelmingly the best ammunition due to Nex\u0027s gigantic 3,400 HP pool.",
+    "advancedTips": "Keep your distance from teammates during Smoke Phase to avoid spreading cough.",
+    "minSkills": [
+      {
+        "skill": "RANGED",
+        "level": 85
+      },
+      {
+        "skill": "DEFENCE",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 74
+      }
+    ],
+    "recSkills": {
+      "RANGED": 95,
+      "DEFENCE": 90,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "Frozen key (4 key pieces from GWD bosses), Ecumenical key or 40 Ancient killcount"
+    ],
+    "checklist": [
+      "Assemble the Frozen Key to open Ancient Prison",
+      "Bring Ruby Dragon Bolts (e) and Diamond Dragon Bolts (e)",
+      "Cease attacking during Blood Siphon",
+      "Free imprisoned teammates during Ice Phase"
+    ],
+    "drops": [
+      "Torva full helm (1/258)",
+      "Torva platebody (1/258)",
+      "Torva platelegs (1/258)",
+      "Zaryte crossbow (1/258)",
+      "Zaryte vambraces (1/172)",
+      "Nexling (pet 1/500)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 21905,
+          "name": "Ruby dragon bolts (e)",
+          "quantity": 150,
+          "category": "Ammo",
+          "unitPrice": 1800,
+          "mandatory": true,
+          "note": "Max damage vs high HP"
+        },
+        {
+          "itemId": 21932,
+          "name": "Diamond dragon bolts (e)",
+          "quantity": 100,
+          "category": "Ammo",
+          "unitPrice": 2200,
+          "mandatory": true,
+          "note": "Zaros phase finish"
+        },
+        {
+          "itemId": 2444,
+          "name": "Divine ranging potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Ranged boost"
+        },
+        {
+          "itemId": 6685,
+          "name": "Saradomin brew(4)",
+          "quantity": 8,
+          "category": "Food",
+          "unitPrice": 6000,
+          "mandatory": true,
+          "note": "Sustained high healing"
+        },
+        {
+          "itemId": 3024,
+          "name": "Super restore(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 11000,
+          "mandatory": true,
+          "note": "Restore brew stats"
+        },
+        {
+          "itemId": 8011,
+          "name": "Trollheim teleport",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "corporeal_beast",
+    "name": "Corporeal Beast (Corp)",
+    "category": "ENDGAME",
+    "difficulty": "MASTER",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 100,
+    "suggestedGearBudget": 5000000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 80000,
+    "estimatedGpHour": 2400000,
+    "weakness": "Spears and Halberds (Zamorakian spear), Osmumten\u0027s Fang. Special attacks (DWH, Arclight, BGS) to drain stats.",
+    "overheadPrayer": "Protect from Magic",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Games necklace to Corporeal Beast lair.",
+    "fightStrategy": "Damage Reduction Trait: Non-spear weapons suffer a 50% damage penalty! Always use a Zamorakian Spear or Fang on Stab.\nSpec Drain Solo Strategy (POH teleport method):\n1. 3 successful Dragon Warhammer specs (reduce defence to zero).\n2. 20 successful Arclight specs (reduce attack, strength, and defence to zero).\n3. 200+ Bandos Godsword spec damage (reduce magic level to zero).\nOnce fully drained, Corp becomes a giant punching bag that cannot hit through your armour!",
+    "mechanicsSummary": "1. Dark Energy Core: A shadowy ball spawns and bounces onto players, draining HP and healing Corp. Step 1 tile when it bounces to dodge it.\n2. Magic Splash: Fires magic bombs that splash into smaller clusters.\n3. Stomp: Deals heavy crush damage if player stands directly underneath.",
+    "phaseChanges": "Single phase.",
+    "importantWarnings": "Do not bring bladed swords, bows, or whips - non-spear weapons have their damage cut in HALF!",
+    "beginnerTips": "POH with Ornate Rejuvenation Pool + Desert Amulet 4 / Games necklace makes solo spec-draining effortless.",
+    "advancedTips": "Step 1 tile whenever the dark energy core jumps to avoid getting leached.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 90,
+      "STRENGTH": 95,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "Zamorakian spear or Osmumten\u0027s Fang (spears/stabs deal 100% damage; all other weapons deal 50% reduced damage!)"
+    ],
+    "checklist": [
+      "Equip Zamorakian Spear or Fang on Stab (Mandatory)",
+      "Bring DWH, Arclight, and BGS if performing spec drains",
+      "Keep Protect from Magic active"
+    ],
+    "drops": [
+      "Elysian sigil (1/4,095)",
+      "Arcane sigil (1/1,365)",
+      "Spectral sigil (1/1,365)",
+      "Pet dark core (1/5,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 11889,
+          "name": "Zamorakian spear",
+          "quantity": 1,
+          "category": "Weapon",
+          "unitPrice": 3500000,
+          "mandatory": true,
+          "note": "Mandatory spear weapon"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 2,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        },
+        {
+          "itemId": 3853,
+          "name": "Games necklace(8)",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 1000,
+          "mandatory": true,
+          "note": "Direct travel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "calvarion",
+    "name": "Calvar\u0027ion",
+    "category": "WILDERNESS",
+    "difficulty": "INTERMEDIATE",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 75,
+    "suggestedGearBudget": 300000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 45000,
+    "estimatedGpHour": 1900000,
+    "weakness": "Crush melee (+100% damage from Wilderness weapons; +20% damage from Salve amulet vs undead)",
+    "overheadPrayer": "Protect from Missiles / Melee",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Level 21 Wilderness graveyard cave (Cemetery teleport or Annakarl). Sub-30 Wilderness allows instant teleport!",
+    "fightStrategy": "Calvar\u0027ion is the solo variant of Vet\u0027ion in sub-30 Wilderness. Stand and attack with a Crush weapon and Salve amulet. When Calvar\u0027ion slams the ground, orange shockwaves spread in a grid - dodge the orange tiles. When lightning strikes, avoid the glowing ground rings. At half HP in both phases, he summons 2 undead skeletal hellhounds; kill the hounds before resuming damage.",
+    "mechanicsSummary": "1. Shield Phase: Cannot be damaged while skeletal hellhounds are alive.\n2. Shockwave Grid: Orange explosion crosses the room in a cross or diagonal; step 1 tile aside.\n3. Wilderness Risk: Pkers can enter the cave. Keep Player Indicators on and one-click teleport ready.",
+    "phaseChanges": "Phase 1 (Skeletal) -\u003e Hounds -\u003e Phase 2 (Enraged orange) -\u003e Hounds -\u003e Dead.",
+    "importantWarnings": "Do not risk items you aren\u0027t willing to lose! Keep Protect Item on if carrying a +1.",
+    "beginnerTips": "Dragon mace or Zombie axe with Salve amulet (e) shreds Calvar\u0027ion for almost zero risk.",
+    "advancedTips": "Royal Seed Pod or Amulet of Glory allows instant escape below 30 Wilderness.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 60
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 65
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 75,
+      "STRENGTH": 80,
+      "PRAYER": 70
+    },
+    "quests": [],
+    "prerequisites": [
+      "Crush melee weapon (Ursine chainmace, Dragon mace, Zombie axe, Viggora\u0027s chainmace), Salve amulet (e/ei)"
+    ],
+    "checklist": [
+      "Bring Salve Amulet (e) or (ei) (+20% damage vs undead)",
+      "Use a weapon with CRUSH style",
+      "Bring one-click teleport for level 21 Wilderness"
+    ],
+    "drops": [
+      "Voidwaker blade (1/912)",
+      "Skull of vet\u0027ion (1/618)",
+      "Ring of the gods (1/716)",
+      "Vet\u0027ion jr. (pet 1/2,800)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 10581,
+          "name": "Salve amulet (e)",
+          "quantity": 1,
+          "category": "Armour",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Mandatory damage boost"
+        },
+        {
+          "itemId": 1434,
+          "name": "Dragon mace",
+          "quantity": 1,
+          "category": "Weapon",
+          "unitPrice": 35000,
+          "mandatory": true,
+          "note": "Low risk crush weapon"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 19564,
+          "name": "Royal seed pod",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "One-click sub-30 escape"
+        }
+      ]
+    }
+  },
+  {
+    "id": "spindel",
+    "name": "Spindel",
+    "category": "WILDERNESS",
+    "difficulty": "INTERMEDIATE",
+    "primaryStyle": "MELEE",
+    "recommendedCombatLevel": 75,
+    "suggestedGearBudget": 300000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 45000,
+    "estimatedGpHour": 1850000,
+    "weakness": "Crush melee. Heavy damage from Wilderness weapons.",
+    "overheadPrayer": "Protect from Magic",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Level 28 Wilderness cave near Spider Hill. Sub-30 Wilderness allows instant teleport!",
+    "fightStrategy": "Enter the cave and attack with a Crush weapon while praying Protect from Magic. When Spindel spits white webs across the floor, never step into the webs (they drain run energy and deal continuous damage). Kill or ignore the spawned spiderlings. At 50% HP, Spindel summons a large spider add that shoots draining attacks - kill it quickly.",
+    "mechanicsSummary": "1. Web Spitting: Creates lines of sticky webs; stepping on them deals damage and drains run.\n2. Venom Spit: Inflicts severe venom; require Anti-venom+.\n3. Teleport Escape: Below 30 Wilderness; keep your one-click teleport handy.",
+    "phaseChanges": "Phase 1 -\u003e Spiderling spawn at 50% -\u003e Phase 2.",
+    "importantWarnings": "Keep Protect from Magic active to block her high-damage projectile.",
+    "beginnerTips": "Ursine chainmace / Dragon mace on Crush mode rips through her Defence.",
+    "advancedTips": "Keep Antidote++ or Anti-venom active to prevent venom damage.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 65
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 70
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 75,
+      "STRENGTH": 80,
+      "PRAYER": 70
+    },
+    "quests": [],
+    "prerequisites": [
+      "Crush melee weapon (Dragon mace, Zombie axe, Ursine chainmace), Anti-venom or Antidote++"
+    ],
+    "checklist": [
+      "Bring Antidote++ or Anti-venom+",
+      "Use a weapon set to CRUSH style",
+      "Keep Protect from Magic active"
+    ],
+    "drops": [
+      "Voidwaker gem (1/912)",
+      "Fangs of venenatis (1/618)",
+      "Treasonous ring (1/716)",
+      "Venenatis spiderling (pet 1/2,800)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 5952,
+          "name": "Antidote++(4)",
+          "quantity": 1,
+          "category": "Protection",
+          "unitPrice": 1500,
+          "mandatory": true,
+          "note": "Cures venom"
+        },
+        {
+          "itemId": 1434,
+          "name": "Dragon mace",
+          "quantity": 1,
+          "category": "Weapon",
+          "unitPrice": 35000,
+          "mandatory": true,
+          "note": "Crush weapon"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 19564,
+          "name": "Royal seed pod",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Escape"
+        }
+      ]
+    }
+  },
+  {
+    "id": "artio",
+    "name": "Artio",
+    "category": "WILDERNESS",
+    "difficulty": "INTERMEDIATE",
+    "primaryStyle": "MAGIC",
+    "recommendedCombatLevel": 75,
+    "suggestedGearBudget": 300000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 45000,
+    "estimatedGpHour": 1900000,
+    "weakness": "Magic damage (Very low Magic Defence; highly susceptible to Ice spells and freezes)",
+    "overheadPrayer": "Protect from Missiles",
+    "offensivePrayer": "Mystic Might / Augury",
+    "howToGetThere": "Level 21 Wilderness cave near Bandit Camp. Sub-30 Wilderness allows instant teleport!",
+    "fightStrategy": "Artio deals devastating melee knockback damage if he reaches you! Immediately cast Ice Barrage / Blitz or Entangle upon entering to freeze him in place. Stand at maximum distance and cast Magic spells while praying Protect from Missiles to block his roar projectiles. Re-freeze him every time he thaws before he can walk over to you. Dodge bear traps spawned on the ground.",
+    "mechanicsSummary": "1. Freezing: Artio MUST be kept frozen; melee knockback hits 50+ through prayer.\n2. Roar Attack: White shockwave projectile; block with Protect from Missiles.\n3. Bear Traps: Ground traps that snap onto players, dealing 20 damage and immobilizing them.",
+    "phaseChanges": "Continuous freeze-kite encounter.",
+    "importantWarnings": "NEVER let Artio reach melee distance! His paw swipe hits 55+ and throws you across the room.",
+    "beginnerTips": "Accursed Sceptre or Blood bark armour with Ice Barrage gives free, effortless kills without taking damage.",
+    "advancedTips": "Step 2 tiles away from snapping bear traps.",
+    "minSkills": [
+      {
+        "skill": "MAGIC",
+        "level": 70
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "MAGIC": 80,
+      "PRAYER": 70
+    },
+    "quests": [],
+    "prerequisites": [
+      "Freeze spells (Ice Barrage / Ice Blitz / Entangle), Magic weapon (Accursed sceptre / Trident / Ancient staff)"
+    ],
+    "checklist": [
+      "Bring Ice Barrage / Blitz runes (Air, Water, Blood, Death)",
+      "Keep Artio permanently frozen",
+      "Pray Protect from Missiles for his ranged roar"
+    ],
+    "drops": [
+      "Voidwaker hilt (1/912)",
+      "Claws of callisto (1/618)",
+      "Tyrannical ring (1/716)",
+      "Callisto cub (pet 1/2,800)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12791,
+          "name": "Rune pouch (Ice Barrage runes)",
+          "quantity": 1,
+          "category": "Rune",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Mandatory freezes"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 3,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 19564,
+          "name": "Royal seed pod",
+          "quantity": 1,
+          "category": "Teleport",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Sub-30 escape"
+        }
+      ]
+    }
+  },
+  {
+    "id": "kalphite_queen",
+    "name": "Kalphite Queen",
+    "category": "INTERMEDIATE",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "HYBRID",
+    "recommendedCombatLevel": 90,
+    "suggestedGearBudget": 2500000,
+    "solo": true,
+    "group": true,
+    "estimatedGpPerKill": 45000,
+    "estimatedGpHour": 1400000,
+    "weakness": "Phase 1: Protects from Magic and Ranged (Use Crush Melee like Keris Partisan/Fang). Phase 2 (Wasp): Protects from Melee (Use Ranged like Blowpipe/Bowfa).",
+    "overheadPrayer": "Protect from Missiles / Protect from Magic",
+    "offensivePrayer": "Piety / Rigour",
+    "howToGetThere": "Kalphite Lair in Kharidian Desert (Fairy ring BIQ or Shantay Pass magic carpet).",
+    "fightStrategy": "KQ\u0027s 100% accurate attacks pierce normal player defence! Phase 1 (Crawler): KQ uses Protect from Magic \u0026 Ranged overheads; attack with Keris Partisan or Fang on Crush. When Phase 1 dies, the Queen metamorphoses into a flying wasp (Phase 2) which uses Protect from Melee overhead; switch to Ranged (Toxic Blowpipe or Bowfa) to shoot her down. Step under her when eating to disrupt her attack cycle.",
+    "mechanicsSummary": "1. 100% Accuracy: KQ rolls 100% accuracy on magic/ranged attacks; you WILL take chip damage every single tick.\n2. Phase Transformation: Transforms from Crawler (Melee weak) into Flying Wasp (Ranged weak).",
+    "phaseChanges": "Phase 1: Beetle Crawler (weak to Crush) -\u003e Phase 2: Flying Wasp (weak to Ranged).",
+    "importantWarnings": "Do not forget 2 Ropes! One for the desert entrance, one for the queen\u0027s pit hole.",
+    "beginnerTips": "Step under KQ between your attack ticks (\u0027flinching / step-under\u0027) to cut incoming damage in half.",
+    "advancedTips": "Desert Elite Diary unlocks the shortcut tunnel and permanent ropes.",
+    "minSkills": [
+      {
+        "skill": "ATTACK",
+        "level": 75
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 80
+      },
+      {
+        "skill": "RANGED",
+        "level": 80
+      },
+      {
+        "skill": "PRAYER",
+        "level": 43
+      }
+    ],
+    "recSkills": {
+      "RANGED": 88,
+      "ATTACK": 85,
+      "STRENGTH": 90,
+      "PRAYER": 70
+    },
+    "quests": [],
+    "prerequisites": [
+      "2 Ropes to enter lair (unless Desert Elite diary completed), Keris partisan on Crush, Verac\u0027s or Fang, Blowpipe"
+    ],
+    "checklist": [
+      "Bring 2 Ropes for the lair entrance",
+      "Phase 1: Keris Partisan or Fang on CRUSH",
+      "Phase 2: Toxic Blowpipe or Bowfa on RANGED"
+    ],
+    "drops": [
+      "Dragon chainbody (1/128)",
+      "Dragon 2h sword (1/256)",
+      "Kalphite princess (pet 1/3,000)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 954,
+          "name": "Rope",
+          "quantity": 2,
+          "category": "Special Item",
+          "unitPrice": 50,
+          "mandatory": true,
+          "note": "Lair access"
+        },
+        {
+          "itemId": 25985,
+          "name": "Keris partisan",
+          "quantity": 1,
+          "category": "Weapon",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Phase 1 crush weapon"
+        },
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Melee boost"
+        },
+        {
+          "itemId": 2444,
+          "name": "Ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Range boost"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 12,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "abyssal_sire",
+    "name": "Abyssal Sire",
+    "category": "SLAYER",
+    "difficulty": "ADVANCED",
+    "primaryStyle": "HYBRID",
+    "recommendedCombatLevel": 90,
+    "suggestedGearBudget": 3000000,
+    "solo": true,
+    "group": false,
+    "estimatedGpPerKill": 55000,
+    "estimatedGpHour": 1600000,
+    "weakness": "Respiratory vents: Ranged (Blowpipe/Bowfa). Sire body: Demonbane (Arclight/Emberlight on Slash/Crush), Fang.",
+    "overheadPrayer": "Protect from Missiles (during spawns) / Protect from Melee",
+    "offensivePrayer": "Piety",
+    "howToGetThere": "Abyssal Nexus via Fairy Ring DIP (Priest in Peril required).",
+    "fightStrategy": "Phase 1: Cast Shadow Barrage or Smoke spell to disorient Sire. While disoriented, shoot all 4 Respiratory Vents around the room using Toxic Blowpipe or Bowfa. Re-stun Sire if he wakes.\nPhase 2: Sire drops down to fight. Stand in melee range and attack with Arclight / Emberlight. Dodge the miasma poison pools spawned beneath your feet.\nPhase 3: Sire teleports you next to him and starts a self-destruct countdown. Immediately run 4 tiles away before the explosion! Finish him off with Melee.",
+    "mechanicsSummary": "1. Respiratory Vents: Must destroy all 4 vents while Sire is stunned to begin the melee phase.\n2. Miasma Pools: Acid puddles that deal rapid poison damage; step away.\n3. Teleport \u0026 Explosion: Teleports you directly beneath him and opens his chest to explode for 70+ damage; RUN AWAY.",
+    "phaseChanges": "Vents (Phase 1) -\u003e Melee engagement (Phase 2) -\u003e Explosion \u0026 frenzy (Phase 3).",
+    "importantWarnings": "When Sire teleports you in Phase 3, IMMEDIATELY run away! The chest explosion is lethal.",
+    "beginnerTips": "Arclight or Emberlight deals huge demonbane bonus damage against Sire.",
+    "advancedTips": "Blood barrage scions to heal back to full health between kills.",
+    "minSkills": [
+      {
+        "skill": "SLAYER",
+        "level": 85
+      },
+      {
+        "skill": "ATTACK",
+        "level": 80
+      },
+      {
+        "skill": "STRENGTH",
+        "level": 85
+      },
+      {
+        "skill": "MAGIC",
+        "level": 75
+      },
+      {
+        "skill": "PRAYER",
+        "level": 70
+      }
+    ],
+    "recSkills": {
+      "ATTACK": 88,
+      "STRENGTH": 90,
+      "PRAYER": 77
+    },
+    "quests": [],
+    "prerequisites": [
+      "Level 85 Slayer, on an Abyssal Demon Slayer task, Smoke spells (Shadow Barrage / Smoke Blitz) to stun"
+    ],
+    "checklist": [
+      "Ensure Abyssal Demon Slayer task active (Level 85 Slayer)",
+      "Bring Smoke or Shadow spells to disorient Sire",
+      "Destroy all 4 respiratory vents with Ranged",
+      "Run away immediately when teleported in Phase 3"
+    ],
+    "drops": [
+      "Unsired (1/100, placed in Font of Consumption)",
+      "Abyssal bludgeon pieces",
+      "Abyssal dagger (1/100 from Unsired)",
+      "Abyssal orphan (pet 5/128 from Unsired)"
+    ],
+    "inventoryPresets": {
+      "Standard": [
+        {
+          "itemId": 12695,
+          "name": "Super combat potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 12000,
+          "mandatory": true,
+          "note": "Combat boost"
+        },
+        {
+          "itemId": 2444,
+          "name": "Ranging potion(4)",
+          "quantity": 1,
+          "category": "Combat Potion",
+          "unitPrice": 2000,
+          "mandatory": true,
+          "note": "Range boost for vents"
+        },
+        {
+          "itemId": 139,
+          "name": "Prayer potion(4)",
+          "quantity": 4,
+          "category": "Prayer Restore",
+          "unitPrice": 9500,
+          "mandatory": true,
+          "note": "Prayer sustain"
+        },
+        {
+          "itemId": 12791,
+          "name": "Rune pouch (Shadow / Smoke runes)",
+          "quantity": 1,
+          "category": "Rune",
+          "unitPrice": 0,
+          "mandatory": true,
+          "note": "Stun spells"
+        },
+        {
+          "itemId": 385,
+          "name": "Shark",
+          "quantity": 10,
+          "category": "Food",
+          "unitPrice": 900,
+          "mandatory": true,
+          "note": "Food"
+        },
+        {
+          "itemId": 3144,
+          "name": "Cooked karambwan",
+          "quantity": 4,
+          "category": "Food",
+          "unitPrice": 600,
+          "mandatory": true,
+          "note": "Combo heal"
+        }
+      ]
+    }
+  }
+]

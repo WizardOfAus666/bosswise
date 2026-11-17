@@ -1,0 +1,441 @@
+[
+  {
+    "bossId": "venenatis",
+    "bossName": "Venenatis",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED"
+    ],
+    "favoredAttackType": "CRUSH",
+    "wilderness": true,
+    "requiresCrush": true,
+    "notes": "Wilderness spider: Ursine chainmace or Webweaver bow"
+  },
+  {
+    "bossId": "general_graardor",
+    "bossName": "General Graardor",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "SLASH",
+    "notes": "High melee defence; Fang, Bowfa, or Shadow"
+  },
+  {
+    "bossId": "alchemical_hydra",
+    "bossName": "Alchemical Hydra",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED"
+    ],
+    "favoredAttackType": "RANGED",
+    "dragon": true,
+    "requiresBootsOfStone": true,
+    "notes": "Dragonkin creation: DHCB / DHL grant full dragonbane. Boots of stone/brimstone required"
+  },
+  {
+    "bossId": "artio",
+    "bossName": "Artio",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "RANGED",
+    "wilderness": true,
+    "notes": "Wilderness bear: Webweaver bow, Bowfa, or Accursed sceptre"
+  },
+  {
+    "bossId": "tztok_jad",
+    "bossName": "TzTok-Jad",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "RANGED",
+    "notes": "Fight Caves final boss: Blowpipe, Bowfa, or Twisted bow with dragon arrows"
+  },
+  {
+    "bossId": "barrows",
+    "bossName": "Barrows Brothers",
+    "recommendedStyle": "MAGIC",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "MAGIC",
+    "notes": "5 brothers have 0 magic defence; Iban/Trident melts them"
+  },
+  {
+    "bossId": "spindel",
+    "bossName": "Spindel",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "CRUSH",
+    "wilderness": true,
+    "requiresCrush": true,
+    "notes": "Wilderness + Crush weakness! Ursine chainmace, Dragon mace, Cudgel"
+  },
+  {
+    "bossId": "scurrius",
+    "bossName": "Scurrius",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "CRUSH",
+    "rat": true,
+    "requiresCrush": true,
+    "notes": "Ratbone weapons provide +10 flat max hit; heavy crush weakness"
+  },
+  {
+    "bossId": "duke_sucellus",
+    "bossName": "Duke Sucellus",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "SLASH",
+    "notes": "Heavy slash weakness: Soulreaper axe, Scythe, Blade of Saeldor, Abyssal tentacle"
+  },
+  {
+    "bossId": "corporeal_beast",
+    "bossName": "Corporeal Beast",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "STAB",
+    "requiresSpear": true,
+    "notes": "50% damage reduction against non-spear weapons! Zamorakian spear required"
+  },
+  {
+    "bossId": "skotizo",
+    "bossName": "Skotizo",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "SLASH",
+    "demon": true,
+    "notes": "Catacombs demon: Arclight or Emberlight destroys altars and boss"
+  },
+  {
+    "bossId": "cerberus",
+    "bossName": "Cerberus",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED"
+    ],
+    "favoredAttackType": "CRUSH",
+    "demon": true,
+    "notes": "Hellhound demon: Arclight or Emberlight with high prayer bonus"
+  },
+  {
+    "bossId": "chaos_elemental",
+    "bossName": "Chaos Elemental",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "RANGED",
+    "wilderness": true,
+    "notes": "Wilderness entity: Bowfa, Webweaver bow, or Craw\u0027s bow"
+  },
+  {
+    "bossId": "the_leviathan",
+    "bossName": "The Leviathan",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED"
+    ],
+    "favoredAttackType": "RANGED",
+    "notes": "Abyssal leviathan: Ranged only (ZCB, Bowfa, Tbow, Blowpipe, Venator ring)"
+  },
+  {
+    "bossId": "kreearra",
+    "bossName": "Kree\u0027arra",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED"
+    ],
+    "favoredAttackType": "RANGED",
+    "notes": "Flying aviansie: IMMUNE to melee attacks! Must use Ranged"
+  },
+  {
+    "bossId": "calvarion",
+    "bossName": "Calvar\u0027ion",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "CRUSH",
+    "undead": true,
+    "wilderness": true,
+    "requiresCrush": true,
+    "notes": "Wilderness + Undead + Crush! Salve (ei) and Ursine chainmace / Cudgel / Dragon mace"
+  },
+  {
+    "bossId": "kalphite_queen",
+    "bossName": "Kalphite Queen",
+    "recommendedStyle": "HYBRID",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "HYBRID"
+    ],
+    "favoredAttackType": "CRUSH",
+    "kalphite": true,
+    "notes": "Phase 1 requires Melee/Crush (Keris/Bludgeon); Phase 2 requires Ranged (Bowfa/Blowpipe)"
+  },
+  {
+    "bossId": "king_black_dragon",
+    "bossName": "King Black Dragon",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED"
+    ],
+    "favoredAttackType": "RANGED",
+    "dragon": true,
+    "requiresDragonfire": true,
+    "notes": "Dragonfire protection shield + antifire potion mandatory"
+  },
+  {
+    "bossId": "phantom_muspah",
+    "bossName": "Phantom Muspah",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "RANGED",
+    "notes": "Ranged primary with crossbow and Sapphire dragon bolts (e) for shield phase"
+  },
+  {
+    "bossId": "kril_tsutsaroth",
+    "bossName": "K\u0027ril Tsutsaroth",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "MAGIC"
+    ],
+    "favoredAttackType": "SLASH",
+    "demon": true,
+    "notes": "Demonbane: Arclight and Emberlight grant +70% accuracy and +30% damage"
+  },
+  {
+    "bossId": "nex",
+    "bossName": "Nex",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED"
+    ],
+    "favoredAttackType": "RANGED",
+    "notes": "Zarosian general: Zaryte crossbow, Ruby dragon bolts (e), Tbow, Masori, Blood fury"
+  },
+  {
+    "bossId": "vorkath",
+    "bossName": "Vorkath",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED"
+    ],
+    "favoredAttackType": "RANGED",
+    "dragon": true,
+    "undead": true,
+    "requiresDragonfire": true,
+    "favorsVenomProtection": true,
+    "notes": "Dragon + Undead! Mandatory dragonfire shield and Salve amulet (ei)"
+  },
+  {
+    "bossId": "vetion",
+    "bossName": "Vet\u0027ion",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "CRUSH",
+    "undead": true,
+    "wilderness": true,
+    "requiresCrush": true,
+    "notes": "Wilderness + Undead + Crush! Salve (ei) and Ursine chainmace"
+  },
+  {
+    "bossId": "grotesque_guardians",
+    "bossName": "Grotesque Guardians",
+    "recommendedStyle": "HYBRID",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "HYBRID"
+    ],
+    "favoredAttackType": "CRUSH",
+    "requiresRockHammer": true,
+    "requiresCrush": true,
+    "notes": "Dusk takes Crush melee damage; Dawn takes Ranged damage. Rock hammer required"
+  },
+  {
+    "bossId": "giant_mole",
+    "bossName": "Giant Mole",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED"
+    ],
+    "favoredAttackType": "SLASH",
+    "notes": "High defence; Falador shield 3/4 and light source required. Fang/Dharok optimal"
+  },
+  {
+    "bossId": "kbd",
+    "bossName": "King Black Dragon",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED"
+    ],
+    "favoredAttackType": "RANGED",
+    "dragon": true,
+    "requiresDragonfire": true,
+    "notes": "Dragonfire protection shield + antifire potion mandatory"
+  },
+  {
+    "bossId": "dagannoth_kings",
+    "bossName": "Dagannoth Kings",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "NONE",
+    "notes": "Tribrid rotation: Rex (Magic), Supreme (Melee), Prime (Ranged)"
+  },
+  {
+    "bossId": "kraken",
+    "bossName": "Kraken",
+    "recommendedStyle": "MAGIC",
+    "allowedStyles": [
+      "MAGIC"
+    ],
+    "favoredAttackType": "MAGIC",
+    "notes": "Submerged: IMMUNE to melee and ranged attacks! Magic only"
+  },
+  {
+    "bossId": "the_whisperer",
+    "bossName": "The Whisperer",
+    "recommendedStyle": "MAGIC",
+    "allowedStyles": [
+      "MAGIC"
+    ],
+    "favoredAttackType": "MAGIC",
+    "notes": "Shadow realm boss: IMMUNE to melee and ranged! Magic only (Shadow, Sanguinesti, Magus ring)"
+  },
+  {
+    "bossId": "abyssal_sire",
+    "bossName": "Abyssal Sire",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "SLASH",
+    "demon": true,
+    "notes": "Abyssal demon: Shadow for vents, Arclight/Emberlight/Scythe for final phase"
+  },
+  {
+    "bossId": "sarachnis",
+    "bossName": "Sarachnis",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "CRUSH",
+    "requiresCrush": true,
+    "notes": "Heavy crush weakness; slash and stab weapons suffer 70%+ damage reduction"
+  },
+  {
+    "bossId": "thermonuclear_smoke_devil",
+    "bossName": "Thermonuclear Smoke Devil",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE",
+      "MAGIC"
+    ],
+    "favoredAttackType": "SLASH",
+    "notes": "Slayer 93 boss: Fang, Scythe, Shadow, or Claws"
+  },
+  {
+    "bossId": "corrupted_gauntlet",
+    "bossName": "Corrupted Gauntlet (CG)",
+    "recommendedStyle": "TRIBRID",
+    "allowedStyles": [
+      "MELEE",
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "NONE",
+    "notes": "Crystalline Hunllef: Bowfa and Crystal armor representation"
+  },
+  {
+    "bossId": "vardorvis",
+    "bossName": "Vardorvis",
+    "recommendedStyle": "MELEE",
+    "allowedStyles": [
+      "MELEE"
+    ],
+    "favoredAttackType": "SLASH",
+    "notes": "Extreme slash weakness: Soulreaper axe, Scythe, Blade of Saeldor, Bellator ring"
+  },
+  {
+    "bossId": "zulrah",
+    "bossName": "Zulrah",
+    "recommendedStyle": "MAGIC",
+    "allowedStyles": [
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "MAGIC",
+    "favorsVenomProtection": true,
+    "favorsRecoil": true,
+    "notes": "Venomous serpent; Serpentine helm and Ring of suffering are top tier"
+  },
+  {
+    "bossId": "commander_zilyana",
+    "bossName": "Commander Zilyana",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "RANGED",
+    "notes": "Run-and-gun combat: Bowfa, Tbow, or Shadow; Melee not viable"
+  },
+  {
+    "bossId": "callisto",
+    "bossName": "Callisto",
+    "recommendedStyle": "RANGED",
+    "allowedStyles": [
+      "RANGED",
+      "MAGIC"
+    ],
+    "favoredAttackType": "RANGED",
+    "wilderness": true,
+    "notes": "Wilderness beast: Webweaver bow or Bowfa"
+  }
+]

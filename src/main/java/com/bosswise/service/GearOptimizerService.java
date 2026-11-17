@@ -19,6 +19,13 @@ import com.bosswise.model.PlayerAccount;
 import com.bosswise.model.strategy.MonsterStrategy;
 import com.bosswise.model.strategy.StrategyMethod;
 import com.bosswise.model.strategy.StrategyTier;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -81,296 +88,48 @@ public class GearOptimizerService {
     }
 
         private void initBossProfiles() {
-        // 1. Scurrius (Rat, Crush weakness, Ratbone weapons)
-        registerProfile(BossCombatProfile.builder("scurrius", "Scurrius", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.CRUSH)
-                .rat()
-                .requiresCrush()
-                .notes("Ratbone weapons provide +10 flat max hit; heavy crush weakness")
-                .build());
-
-        // 2. Giant Mole
-        registerProfile(BossCombatProfile.builder("giant_mole", "Giant Mole", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED)
-                .favoredAttackType(AttackType.SLASH)
-                .notes("High defence; Falador shield 3/4 and light source required. Fang/Dharok optimal")
-                .build());
-
-        // 3. Barrows Brothers
-        registerProfile(BossCombatProfile.builder("barrows", "Barrows Brothers", CombatStyle.MAGIC)
-                .allowedStyles(CombatStyle.MAGIC, CombatStyle.RANGED, CombatStyle.MELEE)
-                .favoredAttackType(AttackType.MAGIC)
-                .notes("5 brothers have 0 magic defence; Iban/Trident melts them")
-                .build());
-
-        // 4. King Black Dragon (KBD)
-        registerProfile(BossCombatProfile.builder("king_black_dragon", "King Black Dragon", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MELEE)
-                .favoredAttackType(AttackType.RANGED)
-                .dragon()
-                .requiresDragonfire()
-                .notes("Dragonfire protection shield + antifire potion mandatory")
-                .build());
-        registerProfile(BossCombatProfile.builder("kbd", "King Black Dragon", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MELEE)
-                .favoredAttackType(AttackType.RANGED)
-                .dragon()
-                .requiresDragonfire()
-                .notes("Dragonfire protection shield + antifire potion mandatory")
-                .build());
-
-        // 5. Sarachnis (Heavy Crush weakness)
-        registerProfile(BossCombatProfile.builder("sarachnis", "Sarachnis", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.CRUSH)
-                .requiresCrush()
-                .notes("Heavy crush weakness; slash and stab weapons suffer 70%+ damage reduction")
-                .build());
-
-        // 6. Dagannoth Kings (Tribrid)
-        registerProfile(BossCombatProfile.builder("dagannoth_kings", "Dagannoth Kings", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED, CombatStyle.MAGIC)
-                .notes("Tribrid rotation: Rex (Magic), Supreme (Melee), Prime (Ranged)")
-                .build());
-
-        // 7. Vorkath (Dragon + Undead)
-        registerProfile(BossCombatProfile.builder("vorkath", "Vorkath", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MELEE)
-                .favoredAttackType(AttackType.RANGED)
-                .dragon()
-                .undead()
-                .requiresDragonfire()
-                .favorsVenomProtection()
-                .notes("Dragon + Undead! Mandatory dragonfire shield and Salve amulet (ei)")
-                .build());
-
-        // 8. Zulrah (Venom + Recoil)
-        registerProfile(BossCombatProfile.builder("zulrah", "Zulrah", CombatStyle.MAGIC)
-                .allowedStyles(CombatStyle.MAGIC, CombatStyle.RANGED)
-                .favoredAttackType(AttackType.MAGIC)
-                .favorsVenomProtection()
-                .favorsRecoil()
-                .notes("Venomous serpent; Serpentine helm and Ring of suffering are top tier")
-                .build());
-
-        // 9. Phantom Muspah
-        registerProfile(BossCombatProfile.builder("phantom_muspah", "Phantom Muspah", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.RANGED)
-                .notes("Ranged primary with crossbow and Sapphire dragon bolts (e) for shield phase")
-                .build());
-
-        // 10. General Graardor
-        registerProfile(BossCombatProfile.builder("general_graardor", "General Graardor", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.SLASH)
-                .notes("High melee defence; Fang, Bowfa, or Shadow")
-                .build());
-
-        // 11. Commander Zilyana (Ranged/Magic only)
-        registerProfile(BossCombatProfile.builder("commander_zilyana", "Commander Zilyana", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.RANGED)
-                .notes("Run-and-gun combat: Bowfa, Tbow, or Shadow; Melee not viable")
-                .build());
-
-        // 12. K'ril Tsutsaroth (Demon)
-        registerProfile(BossCombatProfile.builder("kril_tsutsaroth", "K'ril Tsutsaroth", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.SLASH)
-                .demon()
-                .notes("Demonbane: Arclight and Emberlight grant +70% accuracy and +30% damage")
-                .build());
-
-        // 13. Kree'arra (IMMUNE TO MELEE)
-        registerProfile(BossCombatProfile.builder("kreearra", "Kree'arra", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED)
-                .favoredAttackType(AttackType.RANGED)
-                .notes("Flying aviansie: IMMUNE to melee attacks! Must use Ranged")
-                .build());
-
-        // 14. Cerberus (Demon)
-        registerProfile(BossCombatProfile.builder("cerberus", "Cerberus", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED)
-                .favoredAttackType(AttackType.CRUSH)
-                .demon()
-                .notes("Hellhound demon: Arclight or Emberlight with high prayer bonus")
-                .build());
-
-        // 15. Alchemical Hydra (Dragonkin + Karuulm heat)
-        registerProfile(BossCombatProfile.builder("alchemical_hydra", "Alchemical Hydra", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MELEE)
-                .favoredAttackType(AttackType.RANGED)
-                .dragon()
-                .requiresBootsOfStone()
-                .notes("Dragonkin creation: DHCB / DHL grant full dragonbane. Boots of stone/brimstone required")
-                .build());
-
-        // 16. Kraken (MAGIC ONLY!)
-        registerProfile(BossCombatProfile.builder("kraken", "Kraken", CombatStyle.MAGIC)
-                .allowedStyles(CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.MAGIC)
-                .notes("Submerged: IMMUNE to melee and ranged attacks! Magic only")
-                .build());
-
-        // 17. Corporeal Beast (SPEAR ONLY!)
-        registerProfile(BossCombatProfile.builder("corporeal_beast", "Corporeal Beast", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.STAB)
-                .requiresSpear()
-                .notes("50% damage reduction against non-spear weapons! Zamorakian spear required")
-                .build());
-
-        // 18. Calvar'ion (Wilderness + Undead + Crush)
-        registerProfile(BossCombatProfile.builder("calvarion", "Calvar'ion", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.CRUSH)
-                .wilderness()
-                .undead()
-                .requiresCrush()
-                .notes("Wilderness + Undead + Crush! Salve (ei) and Ursine chainmace / Cudgel / Dragon mace")
-                .build());
-
-        // 19. Spindel (Wilderness + Crush)
-        registerProfile(BossCombatProfile.builder("spindel", "Spindel", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.CRUSH)
-                .wilderness()
-                .requiresCrush()
-                .notes("Wilderness + Crush weakness! Ursine chainmace, Dragon mace, Cudgel")
-                .build());
-
-        // 20. Artio (Wilderness + Ranged/Magic)
-        registerProfile(BossCombatProfile.builder("artio", "Artio", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.RANGED)
-                .wilderness()
-                .notes("Wilderness bear: Webweaver bow, Bowfa, or Accursed sceptre")
-                .build());
-
-        // 21. Callisto
-        registerProfile(BossCombatProfile.builder("callisto", "Callisto", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.RANGED)
-                .wilderness()
-                .notes("Wilderness beast: Webweaver bow or Bowfa")
-                .build());
-
-        // 22. Venenatis (Wilderness + Crush)
-        registerProfile(BossCombatProfile.builder("venenatis", "Venenatis", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED)
-                .favoredAttackType(AttackType.CRUSH)
-                .wilderness()
-                .requiresCrush()
-                .notes("Wilderness spider: Ursine chainmace or Webweaver bow")
-                .build());
-
-        // 23. Vet'ion (Wilderness + Undead + Crush)
-        registerProfile(BossCombatProfile.builder("vetion", "Vet'ion", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.CRUSH)
-                .wilderness()
-                .undead()
-                .requiresCrush()
-                .notes("Wilderness + Undead + Crush! Salve (ei) and Ursine chainmace")
-                .build());
-
-        // 24. Chaos Elemental (Wilderness)
-        registerProfile(BossCombatProfile.builder("chaos_elemental", "Chaos Elemental", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MELEE, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.RANGED)
-                .wilderness()
-                .notes("Wilderness entity: Bowfa, Webweaver bow, or Craw's bow")
-                .build());
-
-        // 25. Duke Sucellus (SLASH ONLY!)
-        registerProfile(BossCombatProfile.builder("duke_sucellus", "Duke Sucellus", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.SLASH)
-                .notes("Heavy slash weakness: Soulreaper axe, Scythe, Blade of Saeldor, Abyssal tentacle")
-                .build());
-
-        // 26. Vardorvis (SLASH ONLY!)
-        registerProfile(BossCombatProfile.builder("vardorvis", "Vardorvis", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.SLASH)
-                .notes("Extreme slash weakness: Soulreaper axe, Scythe, Blade of Saeldor, Bellator ring")
-                .build());
-
-        // 27. The Whisperer (MAGIC ONLY!)
-        registerProfile(BossCombatProfile.builder("the_whisperer", "The Whisperer", CombatStyle.MAGIC)
-                .allowedStyles(CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.MAGIC)
-                .notes("Shadow realm boss: IMMUNE to melee and ranged! Magic only (Shadow, Sanguinesti, Magus ring)")
-                .build());
-
-        // 28. The Leviathan (RANGED ONLY!)
-        registerProfile(BossCombatProfile.builder("the_leviathan", "The Leviathan", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED)
-                .favoredAttackType(AttackType.RANGED)
-                .notes("Abyssal leviathan: Ranged only (ZCB, Bowfa, Tbow, Blowpipe, Venator ring)")
-                .build());
-
-        // 29. Nex (RANGED ONLY!)
-        registerProfile(BossCombatProfile.builder("nex", "Nex", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED)
-                .favoredAttackType(AttackType.RANGED)
-                .notes("Zarosian general: Zaryte crossbow, Ruby dragon bolts (e), Tbow, Masori, Blood fury")
-                .build());
-
-        // 30. Kalphite Queen (Hybrid)
-        registerProfile(BossCombatProfile.builder("kalphite_queen", "Kalphite Queen", CombatStyle.HYBRID)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED, CombatStyle.HYBRID)
-                .favoredAttackType(AttackType.CRUSH)
-                .kalphite()
-                .notes("Phase 1 requires Melee/Crush (Keris/Bludgeon); Phase 2 requires Ranged (Bowfa/Blowpipe)")
-                .build());
-
-        // 31. Abyssal Sire (Demon)
-        registerProfile(BossCombatProfile.builder("abyssal_sire", "Abyssal Sire", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.SLASH)
-                .demon()
-                .notes("Abyssal demon: Shadow for vents, Arclight/Emberlight/Scythe for final phase")
-                .build());
-
-        // 32. Grotesque Guardians (Crush + Ranged)
-        registerProfile(BossCombatProfile.builder("grotesque_guardians", "Grotesque Guardians", CombatStyle.HYBRID)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.RANGED, CombatStyle.HYBRID)
-                .favoredAttackType(AttackType.CRUSH)
-                .requiresRockHammer()
-                .requiresCrush()
-                .notes("Dusk takes Crush melee damage; Dawn takes Ranged damage. Rock hammer required")
-                .build());
-
-        // 33. Thermonuclear Smoke Devil
-        registerProfile(BossCombatProfile.builder("thermonuclear_smoke_devil", "Thermonuclear Smoke Devil", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.SLASH)
-                .notes("Slayer 93 boss: Fang, Scythe, Shadow, or Claws")
-                .build());
-
-        // 34. Skotizo (Demon)
-        registerProfile(BossCombatProfile.builder("skotizo", "Skotizo", CombatStyle.MELEE)
-                .allowedStyles(CombatStyle.MELEE)
-                .favoredAttackType(AttackType.SLASH)
-                .demon()
-                .notes("Catacombs demon: Arclight or Emberlight destroys altars and boss")
-                .build());
-
-        // 35. Corrupted Gauntlet
-        registerProfile(BossCombatProfile.builder("corrupted_gauntlet", "Corrupted Gauntlet (CG)", CombatStyle.TRIBRID)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MAGIC, CombatStyle.MELEE)
-                .notes("Crystalline Hunllef: Bowfa and Crystal armor representation")
-                .build());
-
-        // 36. TzTok-Jad
-        registerProfile(BossCombatProfile.builder("tztok_jad", "TzTok-Jad", CombatStyle.RANGED)
-                .allowedStyles(CombatStyle.RANGED, CombatStyle.MAGIC)
-                .favoredAttackType(AttackType.RANGED)
-                .notes("Fight Caves final boss: Blowpipe, Bowfa, or Twisted bow with dragon arrows")
-                .build());
+        try (InputStream is = getClass().getResourceAsStream("/data/boss_profiles.json")) {
+            if (is == null) return;
+            JsonElement parsed = new JsonParser().parse(new InputStreamReader(is, StandardCharsets.UTF_8));
+            JsonArray arr = (parsed != null && parsed.isJsonArray()) ? parsed.getAsJsonArray() : null;
+            if (arr == null) return;
+            for (JsonElement elem : arr) {
+                if (!elem.isJsonObject()) continue;
+                JsonObject o = elem.getAsJsonObject();
+                BossCombatProfile.Builder b = BossCombatProfile.builder(
+                        o.get("bossId").getAsString(),
+                        o.get("bossName").getAsString(),
+                        CombatStyle.valueOf(o.get("recommendedStyle").getAsString())
+                );
+                if (o.has("allowedStyles") && o.get("allowedStyles").isJsonArray()) {
+                    List<CombatStyle> styles = new ArrayList<>();
+                    for (JsonElement se : o.getAsJsonArray("allowedStyles")) {
+                        styles.add(CombatStyle.valueOf(se.getAsString()));
+                    }
+                    b.allowedStyles(styles.toArray(new CombatStyle[0]));
+                }
+                if (o.has("favoredAttackType")) b.favoredAttackType(AttackType.valueOf(o.get("favoredAttackType").getAsString()));
+                if (o.has("dragon") && o.get("dragon").getAsBoolean()) b.dragon();
+                if (o.has("demon") && o.get("demon").getAsBoolean()) b.demon();
+                if (o.has("undead") && o.get("undead").getAsBoolean()) b.undead();
+                if (o.has("kalphite") && o.get("kalphite").getAsBoolean()) b.kalphite();
+                if (o.has("rat") && o.get("rat").getAsBoolean()) b.rat();
+                if (o.has("wilderness") && o.get("wilderness").getAsBoolean()) b.wilderness();
+                if (o.has("requiresDragonfire") && o.get("requiresDragonfire").getAsBoolean()) b.requiresDragonfire();
+                if (o.has("requiresWyvernShield") && o.get("requiresWyvernShield").getAsBoolean()) b.requiresWyvernShield();
+                if (o.has("requiresMirrorShield") && o.get("requiresMirrorShield").getAsBoolean()) b.requiresMirrorShield();
+                if (o.has("requiresLeafBladed") && o.get("requiresLeafBladed").getAsBoolean()) b.requiresLeafBladed();
+                if (o.has("requiresRockHammer") && o.get("requiresRockHammer").getAsBoolean()) b.requiresRockHammer();
+                if (o.has("requiresBootsOfStone") && o.get("requiresBootsOfStone").getAsBoolean()) b.requiresBootsOfStone();
+                if (o.has("requiresCrush") && o.get("requiresCrush").getAsBoolean()) b.requiresCrush();
+                if (o.has("requiresSpear") && o.get("requiresSpear").getAsBoolean()) b.requiresSpear();
+                if (o.has("favorsVenomProtection") && o.get("favorsVenomProtection").getAsBoolean()) b.favorsVenomProtection();
+                if (o.has("favorsRecoil") && o.get("favorsRecoil").getAsBoolean()) b.favorsRecoil();
+                if (o.has("favorsVoid") && o.get("favorsVoid").getAsBoolean()) b.favorsVoid();
+                if (o.has("notes")) b.notes(o.get("notes").getAsString());
+                registerProfile(b.build());
+            }
+        } catch (Exception ignored) {}
     }
 
     private void registerProfile(BossCombatProfile profile) {
