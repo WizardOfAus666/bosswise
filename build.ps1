@@ -49,10 +49,18 @@ if (Test-Path "$projDir\src\main\resources") {
     Copy-Item -Path "$projDir\src\main\resources\*" -Destination "$projDir\target\classes" -Recurse -Force
 }
 
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+function Write-ArgFile($path, [string[]]$lines) {
+    [System.IO.File]::WriteAllText($path, ($lines -join "`n"), $utf8NoBom)
+}
+
 Write-Host "[INFO] --- compiling main Java sources (Java 11 target) ---"
 $mainSources = Get-ChildItem -Path "$projDir\src\main\java" -Recurse -Filter "*.java" | Select-Object -ExpandProperty FullName
 if ($mainSources) {
-    & $javac --release 11 -encoding UTF-8 -cp $cp -d "$projDir\target\classes" $mainSources
+    $mainArgFile = "$projDir\target\javac-main-args.txt"
+    $mainArgs = @("--release", "11", "-encoding", "UTF-8", "-cp", "`"$($cp.Replace('\', '/'))`"", "-d", "`"$($projDir.Replace('\', '/'))/target/classes`"") + ($mainSources | ForEach-Object { "`"$($_.Replace('\', '/'))`"" })
+    Write-ArgFile $mainArgFile $mainArgs
+    & $javac "@$mainArgFile"
     if ($LASTEXITCODE -ne 0) {
         Write-Error "Compilation failed."
         exit $LASTEXITCODE
@@ -64,7 +72,11 @@ if ($Goals -contains "test-compile" -or $Goals -contains "test" -or $Goals -cont
     Write-Host "[INFO] --- compiling test Java sources ---"
     $testSources = Get-ChildItem -Path "$projDir\src\test\java" -Recurse -Filter "*.java" | Select-Object -ExpandProperty FullName
     if ($testSources) {
-        & $javac --release 11 -encoding UTF-8 -cp "$projDir\target\classes;$cp" -d "$projDir\target\test-classes" $testSources
+        $testArgFile = "$projDir\target\javac-test-args.txt"
+        $testCp = "$projDir\target\classes;$cp".Replace('\', '/')
+        $testArgs = @("--release", "11", "-encoding", "UTF-8", "-cp", "`"$testCp`"", "-d", "`"$($projDir.Replace('\', '/'))/target/test-classes`"") + ($testSources | ForEach-Object { "`"$($_.Replace('\', '/'))`"" })
+        Write-ArgFile $testArgFile $testArgs
+        & $javac "@$testArgFile"
         if ($LASTEXITCODE -ne 0) {
             Write-Error "Test compilation failed."
             exit $LASTEXITCODE
@@ -84,7 +96,11 @@ if ($Goals -contains "test" -or $Goals -contains "package" -or $Goals -contains 
 
     if ($testClasses) {
         Write-Host "[INFO] Executing tests: $($testClasses -join ', ')"
-        & $java -cp "$projDir\target\test-classes;$projDir\target\classes;$cp" org.junit.runner.JUnitCore $testClasses
+        $junitArgFile = "$projDir\target\junit-args.txt"
+        $junitCp = "$projDir\target\test-classes;$projDir\target\classes;$cp".Replace('\', '/')
+        $junitArgs = @("-cp", "`"$junitCp`"", "org.junit.runner.JUnitCore") + $testClasses
+        Write-ArgFile $junitArgFile $junitArgs
+        & $java "@$junitArgFile"
         if ($LASTEXITCODE -ne 0) {
             Write-Error "Unit tests failed."
             exit $LASTEXITCODE
@@ -94,7 +110,6 @@ if ($Goals -contains "test" -or $Goals -contains "package" -or $Goals -contains 
 
 # Generate JVM argument files for zero-command-length-limit launches without UTF-8 BOM
 $fullCp = "$projDir\target\test-classes;$projDir\target\classes;$cp"
-$utf8NoBom = New-Object System.Text.UTF8Encoding $false
 
 $jvmArgs = "-ea`n-Dsun.java2d.d3d=false`n-Dsun.java2d.noddraw=true`n-cp`n$fullCp`ncom.bosswise.BossWisePluginTest`n--developer-mode`n--debug"
 [System.IO.File]::WriteAllText("$projDir\target\jvm-args.txt", $jvmArgs, $utf8NoBom)

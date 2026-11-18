@@ -51,8 +51,8 @@ public class WikiSyncService {
 
     private static final String ENDPOINT = "https://sync.runescape.wiki/runelite/player/";
     private static final String PROFILE = "/STANDARD";
-    private static final String USER_AGENT =
-            "BossWise-RuneLite-Plugin/1.0.0 (gear advisor; contact via plugin repository)";
+    public static final String USER_AGENT =
+            "BossWise-RuneLite-Plugin/1.0.0 (https://github.com/WizardOfAus666/bosswise)";
 
     /** WikiSync quest encoding. */
     private static final int QUEST_IN_PROGRESS = 1;

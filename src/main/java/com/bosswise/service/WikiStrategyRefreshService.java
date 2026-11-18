@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 public class WikiStrategyRefreshService {
     private static final Logger log = LoggerFactory.getLogger(WikiStrategyRefreshService.class);
     private static final String WIKI_API_ENDPOINT = "https://oldschool.runescape.wiki/api.php";
-    private static final String USER_AGENT = "BossWise-RuneLite-Plugin/1.0.0 (RuneLite Plugin Hub; https://github.com/bosswise)";
+    private static final String USER_AGENT = WikiSyncService.USER_AGENT;
 
     private final OkHttpClient httpClient;
     private final WikiCacheService cacheService;
