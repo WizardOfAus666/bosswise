@@ -32,13 +32,6 @@ public class AccountScannerService {
 
     private volatile PlayerAccount currentAccount = PlayerAccount.createDefault();
 
-    /**
-     * True while the account in use came from somewhere other than this client
-     * session (a WikiSync lookup, or a test fixture). Client scans leave it alone
-     * so a looked-up profile is not overwritten on the next tick.
-     */
-    private volatile boolean externalAccount = false;
-
     @Inject
     public AccountScannerService(Client client, QuestScannerService questScannerService) {
         this.client = client;
@@ -62,10 +55,6 @@ public class AccountScannerService {
     }
 
     public synchronized void scanAccount() {
-        if (externalAccount) {
-            log.debug("Using a looked-up account; skipping client scan");
-            return;
-        }
         if (client == null || client.getGameState() != GameState.LOGGED_IN) {
             log.debug("Client not logged in; preserving existing account state");
             return;
@@ -136,23 +125,6 @@ public class AccountScannerService {
     public void setCustomAccount(PlayerAccount account) {
         if (account != null) {
             this.currentAccount = account;
-            this.externalAccount = true;
-            notifyListeners();
-        }
-    }
-
-    /** True when recommendations are based on a looked-up account rather than this client. */
-    public boolean isUsingExternalAccount() {
-        return externalAccount;
-    }
-
-    /** Drops a looked-up account and goes back to this client session. */
-    public synchronized void clearCustomAccount() {
-        this.externalAccount = false;
-        if (client != null && client.getGameState() == GameState.LOGGED_IN) {
-            scanAccount();
-        } else {
-            this.currentAccount = PlayerAccount.createDefault();
             notifyListeners();
         }
     }

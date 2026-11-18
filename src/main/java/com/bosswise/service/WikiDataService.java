@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
 public class WikiDataService {
     private static final Logger log = LoggerFactory.getLogger(WikiDataService.class);
     private static final String WIKI_API_ENDPOINT = "https://oldschool.runescape.wiki/api.php";
-    private static final String USER_AGENT = WikiSyncService.USER_AGENT;
+    public static final String USER_AGENT = "BossWise-RuneLite-Plugin/1.0.0 (https://github.com/WizardOfAus666/bosswise)";
 
     private final OkHttpClient httpClient;
     private final WikiCacheService cacheService;

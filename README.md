@@ -7,7 +7,6 @@
 ### 1. Real-Time Account & Quest Sync
 - Automatically reads your logged-in character's stats, combat level, completed quests, equipped gear, and bank items.
 - Distinguishes base skill levels from temporary boosts so unlock checks stay accurate.
-- **WikiSync Lookup:** Look up any RSN in **Settings → WikiSync Lookup** to generate recommendations for another account without logging into it.
 
 ### 2. Boss & Monster Readiness (75+ Encounters)
 Categorizes bosses, raids, Slayer creatures, and Wilderness encounters based on your current stats and quests:
@@ -34,7 +33,7 @@ Categorizes bosses, raids, Slayer creatures, and Wilderness encounters based on 
 ## How to Use
 
 1. Enable **BossWise** in your RuneLite plugin list and click the **golden scale & skull** icon on the right sidebar.
-2. Log in to Old School RuneScape to scan your stats and quests automatically (or enter a username in **Settings → WikiSync Lookup**).
+2. Log in to Old School RuneScape to scan your stats and quests automatically.
 3. Browse **Boss Finder** to pick a target, or open **Gear Optimizer**, **DPS Lab**, **Guides**, or **Supplies** directly from the tabs.
 
 ## License
